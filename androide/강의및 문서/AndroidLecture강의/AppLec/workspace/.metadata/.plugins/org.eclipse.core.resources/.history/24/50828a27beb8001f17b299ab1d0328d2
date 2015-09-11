@@ -1,0 +1,14 @@
+<?xml version="1.0"encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:padding="4dip" android:gravity="center_horizontal"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<Button android:id="@+id/call" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Content Provider 호출">
+	</Button>
+	<TextView android:id="@+id/callback" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="0"
+		android:gravity="center_horizontal" android:paddingTop="4dip" />
+	<ListView android:id="@android:id/list"
+		android:drawSelectorOnTop="false" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+</LinearLayout>

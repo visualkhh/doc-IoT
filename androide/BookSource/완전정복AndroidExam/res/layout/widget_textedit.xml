@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="100px"
+    android:gravity="bottom"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_marginLeft = "10px"
+    android:layout_marginRight = "15px"
+    android:id="@+id/text" 
+    android:textColor="#ffffff"
+    android:textSize="20px"
+    android:layout_gravity="bottom"
+    />
+<EditText
+	android:id="@+id/edit"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_gravity="bottom"
+    android:layout_marginLeft = "10px"
+    android:layout_marginRight = "15px"
+    android:textColor="#000000"
+    android:textSize="20px"
+    />
+</LinearLayout>

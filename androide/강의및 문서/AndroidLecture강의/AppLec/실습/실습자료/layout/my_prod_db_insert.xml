@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:stretchColumns="*"
+  android:padding="10dp"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+	<TableRow android:layout_height="fill_parent" >
+		 <TextView android:text="상품코드값 " android:layout_height="wrap_content" android:layout_width="wrap_content" />
+		 <EditText  android:id="@+id/et_prod_code" android:hint="상품코드값을 입력하세요"
+		    android:layout_height="wrap_content" android:layout_width="fill_parent"     
+		    android:singleLine="true" android:layout_span="2"  android:layout_weight="1"/>	     
+	</TableRow>
+	<TableRow  android:layout_height="fill_parent">
+		 <TextView android:text="상품명 " android:layout_height="wrap_content" android:layout_width="wrap_content" />
+		 <EditText  android:id="@+id/et_prod_name" android:hint="상품명을 입력하세요"
+		    android:layout_height="wrap_content" android:layout_width="fill_parent"     
+		    android:singleLine="true" android:layout_span="2"  android:layout_weight="1"/>	     
+	</TableRow>
+	<TableRow android:layout_weight="1"  android:layout_height="fill_parent">
+	<Button android:id="@+id/btn_del" android:text="삭제 " android:layout_height="wrap_content" android:visibility="invisible" 
+	android:layout_column="1"  android:layout_width="fill_parent"  />
+	<Button android:id="@+id/btn_ok" android:text="확인 " android:layout_height="wrap_content"
+	android:layout_column="2"  android:layout_width="fill_parent"  />
+	</TableRow>		
+</TableLayout>

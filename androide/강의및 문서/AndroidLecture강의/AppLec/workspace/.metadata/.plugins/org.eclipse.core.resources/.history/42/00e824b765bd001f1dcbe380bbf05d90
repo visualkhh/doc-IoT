@@ -1,0 +1,23 @@
+<?xml version="1.0"encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="검색할장소또는주소입력" />
+	<EditText android:id="@+id/placename" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:hint="Name" />
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<Button android:id="@+id/geocode" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Geo Code" />
+		<Button android:id="@+id/map_it" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Map"
+			android:visibility="gone" />
+	</LinearLayout>
+	<TextView android:id="@+id/result" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="검색결과" />
+	<com.google.android.maps.MapView
+		android:id="@+id/map" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:apiKey="0cDZoKo7pJ3d-vaPjqr4ma9XkayNInycNzzVZVw"
+		android:clickable="true" />
+</LinearLayout>

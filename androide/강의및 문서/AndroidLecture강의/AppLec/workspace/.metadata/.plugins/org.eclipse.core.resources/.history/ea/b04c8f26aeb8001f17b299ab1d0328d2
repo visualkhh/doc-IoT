@@ -1,0 +1,37 @@
+package hest.co.kr;
+
+import android.app.Activity;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+
+public class MyProdDBManager extends Activity {
+	private MyProdDBHelper openHelper;
+	private SQLiteDatabase sdb;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.my_prod_db_manager);
+		if (checkDBCount()==0) initMyProdDB();		
+	}
+	private int checkDBCount() {
+		// db 연결 준비
+		openHelper = new MyProdDBHelper(this, null, null, 0);
+		sdb = openHelper.getReadableDatabase();
+		// DB 조회
+		Cursor c = sdb.query(MyProdDBCons.TABLE_NAME, null, null, null, null, null, null);
+		startManagingCursor(c);
+		int count = c.getCount();
+		c.close();
+		sdb.close();
+		return count;
+		}	
+}
+
+
+
+
+
+
+
+

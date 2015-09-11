@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/exam.AndroidExam"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<exam.Widget.SoundEditWidget2  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    />
+<exam.Widget.SoundEditWidget2  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    custom:sound="2"
+    />
+<exam.Widget.SoundEditWidget2  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    custom:sound="2"
+    custom:speed="0.5"
+    custom:volume="0.5" 
+    />
+</LinearLayout>

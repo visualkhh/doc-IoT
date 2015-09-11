@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <ProgressBar 
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="10"
+        android:secondaryProgress="50" 
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/decfirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dec First" />
+        <Button android:id="@+id/incfirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inc First" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/decsecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dec Second" />
+        <Button android:id="@+id/incsecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inc Second" />
+    </LinearLayout>
+    <ProgressBar 
+        android:id="@+id/progcircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:visibility="invisible"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start" />
+        <Button android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop" />
+    </LinearLayout>
+</LinearLayout>

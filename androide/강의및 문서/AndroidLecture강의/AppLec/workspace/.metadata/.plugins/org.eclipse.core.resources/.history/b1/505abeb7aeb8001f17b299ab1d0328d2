@@ -1,0 +1,10 @@
+package hest.co.kr;
+
+import android.app.ListActivity;
+
+public class MyProdDBList extends ListActivity {
+	private MyProdDBHelper openHelper;
+	private SQLiteDatabase sdb;
+	private SimpleCursorAdapter myAdapter;
+	private String searchCode = null;
+}

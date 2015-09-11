@@ -1,0 +1,41 @@
+package hest.co.kr;
+
+import android.app.ListActivity;
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.widget.SimpleCursorAdapter;
+
+public class MyProdDBList extends ListActivity {
+	private MyProdDBHelper openHelper;
+	private SQLiteDatabase sdb;
+	private SimpleCursorAdapter myAdapter;
+	private String searchCode = null;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		// Intent parameter 가져오기
+		Intent i = getIntent();
+		searchCode = i.getStringExtra("searchCode");
+		if(searchCode==null) searchCode = "";		
+	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		// DB 연결 준비
+		openHelper = new MyProdDBHelper(this, MyProdDBCons.DB_NAME, null, MyProdDBCons.DB_VERSION);
+		sdb = openHelper.getReadableDatabase();
+		// 반환할 컬럼 항목, _id 컬럼 정의
+		String columns[] = {MyProdDBCons._ID, MyProdDBCons.PROD_CODE, MyProdDBCons.PROD_NAME};
+		String order_by = MyProdDBCons.PROD_NAME;
+		String qWhere = MyProdDBCons.PROD_NAME+ " like ?";
+		String qLike ="%" + searchCode + "%";		
+	}
+}
+
+
+
+
+

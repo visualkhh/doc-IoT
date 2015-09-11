@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="hest.co.kr" android:versionCode="1" android:versionName="1.0">
+	<application android:icon="@drawable/s_1" android:label="okgosu android">
+		<activity android:name=".MyMainList" android:label="작성한 액티비티 리스트">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyProdDBManager" android:label="MyProdDBManager">
+			<intent-filter>
+				<action android:name="MyProdDBManager" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyProdDBList" android:label="MyProdDBList">
+			<intent-filter>
+				<action android:name="MyProdDBList" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyReadBin" android:label="MyReadBin">
+			<intent-filter>
+				<action android:name="MyReadBin" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyResXML" android:label="MyResXML">
+			<intent-filter>
+				<action android:name="MyResXML" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyRawXML" android:label="MyRawXML">
+			<intent-filter>
+				<action android:name="MyRawXML" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyXMLPrefView" android:label="MyXMLPrefView">
+			<intent-filter>
+				<action android:name="MyXMLPrefView" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyXMLPref" android:label="MyXMLPref">
+			<intent-filter>
+				<action android:name="MyXMLPref" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyBundle" android:label="MyBundle">
+			<intent-filter>
+				<action android:name="MyBundle" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyActivityCycle" android:label="MyActivityCycle">
+			<intent-filter>
+				<action android:name="MyActivityCycle" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyAlarm" android:label="MyAlarm">
+			<intent-filter>
+				<action android:name="MyAlarm" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyIntentCaller" android:label="MyIntentCaller">
+			<intent-filter>
+				<action android:name="MyIntentCaller" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyIntentReceiver" android:label="MyIntentReceiver">
+			<intent-filter>
+				<action android:name="MyIntentReceiver" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyIntentExam" android:label="MyIntentExam">
+			<intent-filter>
+				<action android:name="MyIntentExam" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".MyListView" android:label="MyListView">
+			<intent-filter>
+				<action android:name="android.intent.action.GET_CONTENT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="audio/wav" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="MyListView" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyTab" android:label="MyTab">
+			<intent-filter>
+				<action android:name="abcd" />
+				<category android:name="android.intent.category.ALTERNATIVE" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="MyTab" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MySpinner" android:label="MySpinner">
+			<intent-filter>
+				<action android:name="abcd" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="MySpinner" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyScrollView" android:label="MyScrollView">
+			<intent-filter>
+				<action android:name="MyEditText" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyEditText" android:label="MyEditText">
+			<intent-filter>
+				<action android:name="MyEditText" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyImageView" android:label="MyImageView">
+			<intent-filter>
+				<action android:name="MyImageView" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".MyTextStyle" android:label="MyTextStyle">
+			<intent-filter>
+				<action android:name="MyTextStyle" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyWebView" android:label="MyWebView">
+			<intent-filter>
+				<action android:name="MyWebView" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".MySecondApp" android:label="MySecondApp">
+			<intent-filter>
+				<action android:name="MySecondApp" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".MyAndroid" android:label="MyAndroid">
+			<intent-filter>
+				<action android:name="MyAndroid" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".HelloAndroid" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="HelloAndroid" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+	</application>
+	<uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.SET_WALLPAPER"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+</manifest> 

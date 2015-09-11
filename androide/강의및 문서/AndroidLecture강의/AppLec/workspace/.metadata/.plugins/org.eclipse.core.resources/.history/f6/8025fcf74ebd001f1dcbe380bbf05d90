@@ -1,0 +1,45 @@
+package hest.co.kr;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class MyBindingDemo extends Activity {
+	TextView mCallbackText;
+	private boolean isBinded;
+	IMyRemoteService myRemoteService = null;
+
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.my_binding_demo);
+		mCallbackText = (TextView) findViewById(R.id.callback);
+		mCallbackText.setText("아직 서비스에 바인딩 안됨");
+		Button button = (Button) findViewById(R.id.bind);
+		button.setOnClickListener(mBindListener);
+		button = (Button) findViewById(R.id.unbind);
+		button.setOnClickListener(mUnbindListener);
+		Button call_btn = (Button) findViewById(R.id.call);
+		call_btn.setOnClickListener(mCalllListener);
+	}
+
+	private OnClickListener mBindListener = new OnClickListener() {
+		public void onClick(View v) {
+			isBinded = true;
+			// startService(new Intent("MyBindingService"));
+			bindService(new Intent("MyBindingService"), myServiceConnection,
+					Context.BIND_AUTO_CREATE);
+			mCallbackText.setText("Binding.....");
+		}
+	};
+	private OnClickListener mUnbindListener = new OnClickListener() {
+		public void onClick(View v) {
+			if (isBinded) {
+				// stopService(new Intent(" MyBindingService"));
+				unbindService(myServiceConnection);
+				isBinded = false;
+				mCallbackText.setText("Unbinding....");
+			}
+		}
+	};
+}

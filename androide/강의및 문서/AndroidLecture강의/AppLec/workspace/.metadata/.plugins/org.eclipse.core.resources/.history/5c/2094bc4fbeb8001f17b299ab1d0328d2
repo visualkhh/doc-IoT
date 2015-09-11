@@ -1,0 +1,12 @@
+package hest.co.kr;
+
+import android.app.ListActivity;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class MyCPDemo extends ListActivity {
+	TextView mCallbackText;
+	Button call_btn;
+	private static String[] MY_PROJECTION= new String[] {
+	MyProdDBCons._ID, MyProdDBCons.PROD_CODE, MyProdDBCons.PROD_NAME};
+}

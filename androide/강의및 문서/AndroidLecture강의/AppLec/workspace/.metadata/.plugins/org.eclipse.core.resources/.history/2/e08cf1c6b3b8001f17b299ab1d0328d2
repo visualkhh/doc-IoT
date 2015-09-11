@@ -1,0 +1,14 @@
+package hest.co.kr;
+
+import android.provider.BaseColumns;
+
+public class MyProdDBCons implements BaseColumns {
+	//DB 정보
+	public static final String DB_NAME = "my_prod_sqlite.db";
+	public static final int DB_VERSION = 1;
+	//TABLE 정보
+	public static final String TABLE_NAME ="prod";
+	//COLUMN 정보
+	public static final String PROD_CODE ="prod_code";
+	public static final String PROD_NAME ="prod_name";
+}

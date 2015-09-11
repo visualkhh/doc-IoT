@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TableRow>
+		<Button android:id="@+id/btn11" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Button 11" />
+		<Button android:id="@+id/btn12" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Button 12" />
+	</TableRow>
+	<TableRow>
+		<Button android:id="@+id/btn21" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Button 21" />
+		<Button android:id="@+id/btn22" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Button 22" />
+	</TableRow>
+</TableLayout>

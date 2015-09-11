@@ -1,0 +1,40 @@
+package hest.co.kr;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class MyHandlerServiceApp extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.my_handler_demo);
+		Button btn_start = (Button) findViewById(R.id.btn_start);
+		Button btn_stop = (Button) findViewById(R.id.btn_stop);		
+		
+		btn_start.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				startService(new Intent("MyHandlerService"));
+				Toast.makeText(getApplicationContext(), "Service 시작", 
+						Toast.LENGTH_SHORT).show();				
+			}
+		});
+		
+		btn_stop.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				stopService(new Intent("MyHandlerService"));
+				Toast.makeText(getApplicationContext(), "Service 종료", 
+						Toast.LENGTH_SHORT).show();				
+			}
+		});
+	}
+}
+
+
+
+

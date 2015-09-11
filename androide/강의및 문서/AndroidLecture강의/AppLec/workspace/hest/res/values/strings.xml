@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">반갑습니다. 안드로이드!</string>
+    <string name="app_name">OkGosu 안드로이드앱</string>
+</resources>

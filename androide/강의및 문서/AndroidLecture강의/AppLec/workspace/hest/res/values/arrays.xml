@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="colors">
+		<item>red</item>
+		<item>yellow</item>
+		<item>green</item>
+		<item>blue</item>
+		<item>orange</item>
+	</string-array>
+	<string-array name="color_data">
+		<item>#FFFF0000</item>
+		<item>#FFFFFF00</item>
+		<item>#FF00FF00</item>
+		<item>#FF0000FF</item>
+		<item>#FFCCCCCC</item>
+	</string-array>
+</resources>

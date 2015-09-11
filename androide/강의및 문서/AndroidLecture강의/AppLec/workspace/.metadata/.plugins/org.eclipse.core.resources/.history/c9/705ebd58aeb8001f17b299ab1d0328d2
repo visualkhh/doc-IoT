@@ -1,0 +1,48 @@
+package hest.co.kr;
+
+import android.app.Activity;
+import android.content.ContentValues;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+
+public class MyProdDBManager extends Activity {
+	private MyProdDBHelper openHelper;
+	private SQLiteDatabase sdb;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.my_prod_db_manager);
+		if (checkDBCount() == 0)	initMyProdDB();
+		
+		
+	}
+
+	private int checkDBCount() {
+		// db ¿¬°á ÁØºñ
+		openHelper = new MyProdDBHelper(this, null, null, 0);
+		sdb = openHelper.getReadableDatabase();
+		// DB Á¶È¸
+		Cursor c = sdb.query(MyProdDBCons.TABLE_NAME, null, null, null, null,
+				null, null);
+		startManagingCursor(c);
+		int count = c.getCount();
+		c.close();
+		sdb.close();
+		return count;
+	}
+
+	private void initMyProdDB() {
+		sdb = openHelper.getWritableDatabase();
+		// ÄÃ·³º°·Î °ª ¼³Á¤ÇÏ´Â map °´Ã¼
+		ContentValues values = new ContentValues();
+		String[] items = { "»õ¿ì±ø", "¸Àµ¿»ê", "Ä«¶ó¸áÄÜ", "¿ÀÂ¡¾î¶¥Äá", "²ÜÂ¯±¸" };
+		for (int i = 0; i < items.length; i++) {
+			values.put(MyProdDBCons.PROD_CODE, "SNK" + i);
+			values.put(MyProdDBCons.PROD_NAME, items[i]);
+			sdb.insert(MyProdDBCons.TABLE_NAME, null, values);
+		}
+		sdb.close();
+	}
+}

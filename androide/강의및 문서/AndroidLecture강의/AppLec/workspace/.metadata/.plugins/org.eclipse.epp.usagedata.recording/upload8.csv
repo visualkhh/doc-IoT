@@ -1,0 +1,251 @@
+what,kind,bundleId,bundleVersion,description,time
+opened,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045553062
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045553171
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.window.maximizePart",1283045555203
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1283045557437
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1283045559515
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.delete.line",1283045568718
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1283045569000
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1283045569781
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.toggleOverwrite",1283045574500
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.toggleOverwrite",1283045575687
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1283045579296
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.undo",1283045584921
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1283045586125
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045587390
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045588109
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045591218
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1283045600359
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1283045600796
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1283045604781
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1283045607375
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045609203
+executed,command,org.eclipse.ui.ide,3.5.2.M20100113-0800,"org.eclipse.jdt.ui.edit.text.java.correction.assist.proposals",1283045614093
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045614890
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045615109
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1283045623171
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1283045626171
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.delete.line",1283045628109
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.delete.line",1283045628843
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045630750
+executed,command,org.eclipse.ui.ide,3.5.2.M20100113-0800,"org.eclipse.jdt.ui.edit.text.java.correction.assist.proposals",1283045632984
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045635468
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045636281
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045637562
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045639625
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045642687
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1283045653546
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.select.lineEnd",1283045654062
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1283045654312
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1283045669500
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1283045670109
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1283045679109
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045689750
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045695671
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045704828
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1283045708468
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1283045712765
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1283045727140
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.window.maximizePart",1283045731671
+activated,view,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.PackageExplorer",1283045734250
+opened,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045734562
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045734640
+activated,view,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.PackageExplorer",1283045736421
+opened,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045736656
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045736734
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045743140
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1283045754421
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1283045761812
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045768062
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045769640
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045770593
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045774093
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1283045789406
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045791250
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045791484
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.delete.line",1283045793046
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.delete.line",1283045794000
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045798515
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045805671
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1283045810000
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045810812
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1283045812625
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045813343
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1283045817609
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1283045818453
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045819281
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.select.lineEnd",1283045826171
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1283045831812
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1283045831984
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1283045832140
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045832968
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045842125
+executed,command,org.eclipse.ui.ide,3.5.2.M20100113-0800,"org.eclipse.jdt.ui.edit.text.java.correction.assist.proposals",1283045847156
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045848500
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045848765
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045851500
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045865906
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.delete.line",1283045869156
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.delete.line",1283045869375
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045870218
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1283045873609
+activated,view,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.PackageExplorer",1283045875953
+opened,editor,com.android.ide.eclipse.adt,0.9.7.v201005071157-36220,"com.android.ide.eclipse.editors.manifest.ManifestEditor",1283045876781
+activated,editor,com.android.ide.eclipse.adt,0.9.7.v201005071157-36220,"com.android.ide.eclipse.editors.manifest.ManifestEditor",1283045876828
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1283045888656
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1283045891406
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1283045891781
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1283045893187
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1283045895718
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.undo",1283045897234
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045899656
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1283045901375
+activated,editor,com.android.ide.eclipse.adt,0.9.7.v201005071157-36220,"com.android.ide.eclipse.editors.manifest.ManifestEditor",1283045902328
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1283045903437
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1283045904734
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1283045912453
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1283045915000
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1283045916828
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.undo",1283045917734
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1283045918609
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1283045919671
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045920031
+executed,command,org.eclipse.debug.ui,3.5.2.v20091028_r352,"org.eclipse.debug.ui.commands.RunLast",1283045921453
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045923125
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045926890
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045929484
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045935437
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1283045935468
+activated,editor,com.android.ide.eclipse.adt,0.9.7.v201005071157-36220,"com.android.ide.eclipse.editors.manifest.ManifestEditor",1283045942890
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1283045945781
+closed,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045945781
+closed,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045945812
+closed,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283045945812
+closed,editor,com.android.ide.eclipse.adt,0.9.7.v201005071157-36220,"com.android.ide.eclipse.editors.manifest.ManifestEditor",1283045945828
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.closeAll",1283045945843
+activated,view,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.PackageExplorer",1283045948000
+opened,editor,com.android.ide.eclipse.adt,0.9.7.v201005071157-36220,"com.android.ide.eclipse.editors.layout.LayoutEditor",1283045948312
+activated,editor,com.android.ide.eclipse.adt,0.9.7.v201005071157-36220,"com.android.ide.eclipse.editors.layout.LayoutEditor",1283045948390
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1283045953359
+error,log,,,"Argument cannot be null",1283045954437
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.text.contentAssist.proposals",1283045957312
+error,log,,,"Argument cannot be null",1283045957578
+error,log,,,"Argument cannot be null",1283045958375
+error,log,,,"Argument cannot be null",1283045959218
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1283045959218
+executed,command,org.eclipse.debug.ui,3.5.2.v20091028_r352,"org.eclipse.debug.ui.commands.RunLast",1283045960281
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045961656
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045961656
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045961765
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045965250
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045966843
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045974000
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1283045974031
+activated,editor,com.android.ide.eclipse.adt,0.9.7.v201005071157-36220,"com.android.ide.eclipse.editors.layout.LayoutEditor",1283045979203
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045991734
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045991734
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045991859
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283045999296
+activated,view,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.PackageExplorer",1283046001828
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283046005156
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283046008312
+executed,command,org.eclipse.ltk.ui.refactoring,3.4.101.r352_v20100209,"org.eclipse.ltk.ui.refactoring.commands.deleteResources",1283046008312
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1283046008312
+activated,editor,com.android.ide.eclipse.adt,0.9.7.v201005071157-36220,"com.android.ide.eclipse.editors.layout.LayoutEditor",1283046009062
+activated,view,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.PackageExplorer",1283046010687
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283046011734
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283046011750
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283046011875
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283046018281
+activated,editor,com.android.ide.eclipse.adt,0.9.7.v201005071157-36220,"com.android.ide.eclipse.editors.layout.LayoutEditor",1283046019312
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.window.maximizePart",1283046058984
+activated,view,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.PackageExplorer",1283046363859
+opened,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283046364125
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283046364218
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.window.maximizePart",1283046536281
+activated,view,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.PackageExplorer",1283046537796
+opened,editor,com.android.ide.eclipse.adt,0.9.7.v201005071157-36220,"com.android.ide.eclipse.editors.manifest.ManifestEditor",1283046538046
+activated,editor,com.android.ide.eclipse.adt,0.9.7.v201005071157-36220,"com.android.ide.eclipse.editors.manifest.ManifestEditor",1283046538171
+activated,editor,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1283046712937
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283048087125
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1283048233437
+activated,editor,com.android.ide.eclipse.adt,0.9.7.v201005071157-36220,"com.android.ide.eclipse.editors.layout.LayoutEditor",1283048239000
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1283048241890
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.toggleOverwrite",1283048241906
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.toggleOverwrite",1283048242828
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1283048243078
+error,log,,,"Argument cannot be null",1283048246093
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048246109
+error,log,,,"Argument cannot be null",1283048246312
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048246312
+error,log,,,"Argument cannot be null",1283048246484
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048246484
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048246625
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048246812
+error,log,,,"Argument cannot be null",1283048247078
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048247078
+error,log,,,"Argument cannot be null",1283048247250
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048247250
+error,log,,,"Argument cannot be null",1283048247406
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048247421
+error,log,,,"Argument cannot be null",1283048247593
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048247609
+error,log,,,"Argument cannot be null",1283048247750
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048247765
+error,log,,,"Argument cannot be null",1283048247921
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048247937
+error,log,,,"Argument cannot be null",1283048248093
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048248109
+error,log,,,"Argument cannot be null",1283048248250
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048248265
+error,log,,,"Argument cannot be null",1283048248421
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048248437
+error,log,,,"Argument cannot be null",1283048248640
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048248656
+error,log,,,"Argument cannot be null",1283048248828
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048248843
+error,log,,,"Argument cannot be null",1283048249000
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048249015
+error,log,,,"Argument cannot be null",1283048249171
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048249187
+error,log,,,"Argument cannot be null",1283048249359
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048249375
+error,log,,,"Argument cannot be null",1283048249546
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048249562
+error,log,,,"Argument cannot be null",1283048249718
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048249734
+error,log,,,"Argument cannot be null",1283048249937
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048249937
+error,log,,,"Argument cannot be null",1283048250109
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048250125
+error,log,,,"Argument cannot be null",1283048250281
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048250296
+error,log,,,"Argument cannot be null",1283048250453
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048250468
+error,log,,,"Argument cannot be null",1283048250734
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048250750
+error,log,,,"Argument cannot be null",1283048250921
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048250937
+error,log,,,"Argument cannot be null",1283048251093
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048251109
+error,log,,,"Argument cannot be null",1283048251265
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048251265
+error,log,,,"Argument cannot be null",1283048251437
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048251437
+error,log,,,"Argument cannot be null",1283048251687
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048251703
+error,log,,,"Argument cannot be null",1283048251875
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048251890
+error,log,,,"Argument cannot be null",1283048252312
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048252312
+error,log,,,"Argument cannot be null",1283048252500
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1283048252500
+error,log,,,"Argument cannot be null",1283048252703
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048252718
+error,log,,,"Argument cannot be null",1283048252890
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048252890
+error,log,,,"Argument cannot be null",1283048253078
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048253093
+error,log,,,"Argument cannot be null",1283048253328
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineUp",1283048253328
+error,log,,,"Argument cannot be null",1283048253578

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, AndroidExam!</string>
+    <string name="app_name">AndroidExam</string>
+    <string name="insa">Hello</string>
+    <string name="anyoung">안녕하세요</string>
+    <string name="textstr">Resource Text</string>
+    <string name="attrbtn">Attr Button</string>
+</resources>

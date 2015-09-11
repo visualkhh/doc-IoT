@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:stretchColumns="*" android:padding="10dp" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TableRow android:layout_weight="1" android:layout_height="fill_parent">
+		<Button android:id="@+id/btn_1" android:text="전화걸기"
+			android:layout_weight="1" android:layout_height="fill_parent"
+			android:layout_width="fill_parent" />
+		<Button android:id="@+id/btn_2" android:text="연락처보기"
+			android:layout_weight="1" android:layout_height="fill_parent"
+			android:layout_width="fill_parent" />
+		<Button android:id="@+id/btn_3" android:text="사진보기"
+			android:layout_weight="1" android:layout_height="fill_parent"
+			android:layout_width="fill_parent" />
+	</TableRow>
+	<TableRow android:layout_weight="1" android:layout_height="fill_parent">
+		<Button android:id="@+id/btn_4" android:text="그림파일보기"
+			android:layout_weight="1" android:layout_height="fill_parent"
+			android:layout_width="fill_parent" />
+		<Button android:id="@+id/btn_5" android:text="음악파일재생"
+			android:layout_weight="1" android:layout_height="fill_parent"
+			android:layout_width="fill_parent" />
+		<Button android:id="@+id/btn_6" android:text="오디오 타입"
+			android:layout_weight="1" android:layout_height="fill_parent"
+			android:layout_width="fill_parent" />
+	</TableRow>
+	<TableRow android:layout_weight="1" android:layout_height="fill_parent">
+		<Button android:id="@+id/btn_7" android:text="SMS"
+			android:layout_weight="1" android:layout_height="fill_parent"
+			android:layout_width="fill_parent" />
+		<Button android:id="@+id/btn_8" android:text="MMS"
+			android:layout_weight="1" android:layout_height="fill_parent"
+			android:layout_width="fill_parent" />
+		<Button android:id="@+id/btn_9" android:text="웹사이트"
+			android:layout_weight="1" android:layout_height="fill_parent"
+			android:layout_width="fill_parent" />
+	</TableRow>		
+</TableLayout>

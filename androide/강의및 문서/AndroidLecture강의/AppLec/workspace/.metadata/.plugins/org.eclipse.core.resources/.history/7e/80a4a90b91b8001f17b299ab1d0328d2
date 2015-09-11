@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<CheckBoxPreference android:title="체크!"
+		android:summary="체크하세요...." android:key="my_pref_cb"></CheckBoxPreference>
+<EditTextPreference android:summary="이름을 입력하세요." android:title="이름" android:key="my_ed"></EditTextPreference>
+</PreferenceScreen>

@@ -1,0 +1,7 @@
+package hest.co.kr;
+
+import android.provider.BaseColumns;
+
+public class MyProdDBCons implements BaseColumns {
+
+}

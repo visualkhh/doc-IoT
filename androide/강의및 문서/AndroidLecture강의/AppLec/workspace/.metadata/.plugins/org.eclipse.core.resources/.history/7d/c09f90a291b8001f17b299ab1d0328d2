@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<CheckBoxPreference android:title="체크!"
+		android:summary="체크하세요...." android:key="my_pref_cb"></CheckBoxPreference>
+	<EditTextPreference android:summary="이름을 입력하세요."
+		android:title="이름" android:key="my_ed"></EditTextPreference>
+	<ListPreference android:key="list_preference"
+		android:title="배경색 변경" android:summary="List 형태 환경설정" android:entries="@array/colors"
+		android:entryValues="@array/color_data" android:dialogTitle="배경색을 고르시오" />
+<PreferenceCategory></PreferenceCategory>
+</PreferenceScreen>

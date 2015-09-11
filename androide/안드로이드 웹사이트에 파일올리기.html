@@ -1,0 +1,498 @@
+<div id="content">
+			<!--------------- || 검색 결과 리스트 --------------->
+			
+			<!--------------- || 검색 결과 댓글 리스트 --------------->
+			
+			<!--------------- || 위치 로그 --------------->
+			
+			<!--------------- || 태그 클라우드 --------------->
+			
+			<!--------------- || 방명록 --------------->
+			
+			<!--------------- || 공지사항 글 --------------->
+			
+			<!--------------- || 보호 글 --------------->
+			
+			<!--------------- || 글 --------------->
+			
+				<!---------- || 글 ---------->
+				<div class="entry">
+					<!---------- || 글 제목 | 카테고리 | 작성일 | 글 관리 ---------->
+					<div class="titleWrap">
+						<h2><a href="/166">[펌][안드로이드예제] 카메라로 찍은 사진(이미지파일)을 웹서버에 전송하는 프로그램예제</a></h2>
+						<span class="category"><a href="/category/안드로이드/Tip%26Tech">안드로이드/Tip&amp;Tech</a></span>
+						<span class="date">2010/12/29 15:11</span>
+						<span class="author">Posted by 흑곰맨</span>
+					</div><!-- titleWrap close -->
+					
+					<!---------- || 본문 ---------->
+					<div class="article">
+						<fieldset style="margin:20px 0px 20px 0px;padding:5px;"><legend><span><strong>크리에이티브 커먼즈 라이선스</strong></span></legend><!--Creative Commons License--><div style="float: left; width: 88px; margin-top: 3px;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/kr/" target="_blank"><img alt="Creative Commons License" style="border-width: 0" src="http://i.creativecommons.org/l/by-nc-sa/2.0/kr/88x31.png"></a></div><div style="margin-left: 92px; margin-top: 3px; text-align: justify;">이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/kr/" target="_blank">크리에이티브 커먼즈 코리아 저작자표시-비영리-동일조건변경허락 2.0 대한민국 라이선스</a>에 따라 이용하실 수 있습니다.
+			<!-- Creative Commons License-->
+			<!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+			<Work rdf:about="">
+			<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/kr/" />
+			</Work>
+			<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/">
+			<permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+			<permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+			<requires rdf:resource="http://web.resource.org/cc/Notice"/>
+			<requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+			<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+			<requires rdf:resource="http://web.resource.org/cc/ShareAlike"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/></License></rdf:RDF> --></div></fieldset><div style="margin: 10px; text-align: center">
+<iframe style="border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; overflow-x: hidden; overflow-y: hidden; " scrolling="no" width="470" height="70" src="http://guide.allblet.net/allblet.php?id=145728&amp;type=9"></iframe><object name="allblet" id="allblet_player_top_166" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="470" align="middle" height="70" style="display: none; ">
+<param name="allowScriptAccess" value="always">
+<param name="allowFullScreen" value="false">
+<param name="quality" value="high">
+<param name="wmode" value="transparent">
+<param name="movie" value="http://showman.allblet.net/abp.swf">
+<param name="FlashVars" value="aid=145728&amp;type=9">
+<embed src="http://showman.allblet.net/abp.swf" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="transparent" flashvars="aid=145728&amp;type=9" width="470" align="middle" height="70"></object>
+</div>출처 : <a href="http://cafe.naver.com/sunschool.cafe?iframe_url=/ArticleRead.nhn%3Farticleid=4408">http://cafe.naver.com/sunschool.cafe?iframe_url=/ArticleRead.nhn%3Farticleid=4408</a><br>
+<br>
+<p><span style="FONT-SIZE: 10pt">우선 안드로이드 어플에서 서버로 이미지 파일을 전송하게 하려면 서버측에서 이미지 파일을 받아서 저장해주는&nbsp;</span></p>
+<p><span style="FONT-SIZE: 10pt">프로그램이 필요하다.&nbsp;</span></p>
+<p><span style="FONT-SIZE: 10pt">&nbsp;</span></p>
+<p><span style="FONT-SIZE: 10pt">multipart/form-data 를 이용하면 파일을 업로드하는 프로그램을 작성할 수 있다.</span></p>
+<p><span style="FONT-SIZE: 10pt">&nbsp;com.oreilly.servlet 패키지의 MultipartRequest 클래스를 이용하여 쉽게 파일 업로드를&nbsp; 구현할 수 있다.</span><br>
+<font size="4"><a href="http://www.servlets.com/cos/cos-05Nov2002.zip" target="_blank"><span style="FONT-SIZE: 10pt">http://www.servlets.com/cos/cos-05Nov2002.zip</span></a></font><font size="4"><span style="FONT-SIZE: 10pt"> 사이트에서 cos-05Nov2002.zip 파일을 다운로드 받아서</span><br>
+<span style="FONT-SIZE: 10pt">압축을 풀어 cos.jar 파일을 &lt;Tomcat&gt;/common/lib&nbsp;에 복사합니다.&nbsp;&nbsp;&nbsp;</span><br>
+</font><font size="4"><span style="FONT-SIZE: 10pt">***************************************************************************</span></font></p>
+<p><font size="4"></font><span style="FONT-SIZE: 10pt"></span></p>
+<table border="0" cellspacing="1" cellpadding="0" width="671" bgcolor="#b7bbb5" height="40">
+<tbody>
+<tr bgcolor="#f5f4e0">
+<td width="671">
+<p>&nbsp;</p>
+<p><font size="4"><span style="FONT-SIZE: 10pt">&lt;%@ page import="java.io.*,com.oreilly.servlet.*,com.oreilly.servlet.multipart.*"%&gt;</span></font></p>
+<p><font size="4"><span style="FONT-SIZE: 10pt">&lt;% request.setCharacterEncoding("euc-kr"); %&gt;</span></font><span style="FONT-SIZE: 10pt">&nbsp;</span></p>
+<p><font size="4"><span style="FONT-SIZE: 10pt">&lt;html&gt;</span><br>
+<span style="FONT-SIZE: 10pt">&lt;head&gt;&lt;title&gt;upload test&lt;/title&gt;&lt;/head&gt;</span><br>
+<span style="FONT-SIZE: 10pt">&lt;body&gt;</span><br>
+<span style="FONT-SIZE: 10pt">&lt;h3&gt;파일 upload&lt;/h3&gt;</span></font></p>
+<p><font size="4"></font><span style="FONT-SIZE: 10pt"></span></p>
+<p><font size="4"><span style="FONT-SIZE: 10pt">&lt;%&nbsp; </span><br>
+<span style="FONT-SIZE: 10pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String dir=application.getRealPath("/upload");</span><br>
+<span style="FONT-SIZE: 10pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; int max= 5*1024*1024;</span></font></p>
+<p><font size="4"><span style="FONT-SIZE: 10pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<font color="#009e25">//최대크기 max바이트, dir 디렉토리에 파일을 업로드하는 MultipartRequest<br>
+<span style="FONT-SIZE: 10pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;//객체를 생성한다.</span></font></span><br>
+<span style="FONT-SIZE: 10pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp; MultipartRequest m = new MultipartRequest(request,dir,max,"UTF-8",</strong></span></font></p>
+<p><font size="4"><strong><span style="FONT-SIZE: 10pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new&nbsp; DefaultFileRenamePolicy());</span><br>
+</strong><span style="FONT-SIZE: 10pt">%&gt;</span></font></p>
+<p><font size="4"><span style="FONT-SIZE: 10pt">&lt;c:set var="file1" value='&lt;%= m.getFilesystemName("file1")%&gt;' /&gt;&nbsp;&nbsp; <font color="#009e25">// 파일이름을 file1 이라는 파라메터로 넘겨받음</font></span><br>
+<span style="FONT-SIZE: 10pt">&lt;c:set var="ofile1" value='&lt;%= m.getOriginalFileName("file1") %&gt;' /&gt;</span></font></p>
+<p><font size="4"></font><span style="FONT-SIZE: 10pt"></span></p>
+<p><font size="4"><span style="FONT-SIZE: 10pt">&lt;p&gt;</span></font></p>
+<p><font size="4"><span style="FONT-SIZE: 10pt">&lt;li&gt;제목: ${subject}&lt;br&gt;</span><br>
+<span style="FONT-SIZE: 10pt">&lt;li&gt;업로드파일1: &lt;a href=/upload/${file1}&gt;${ofile1}&lt;/a&gt;&lt;br&gt;</span><br>
+</font></p>
+<p><font size="4"><span style="FONT-SIZE: 10pt">&lt;/body&gt;</span><br>
+<span style="FONT-SIZE: 10pt">&lt;/html&gt;</span></font></p>
+<p><font size="4"><span style="FONT-SIZE: 10pt"></span></font>&nbsp;</p></td></tr></tbody></table>&nbsp;<font size="3"> </font>
+<p></p>
+<p><span style="FONT-SIZE: 12pt">&nbsp;</span></p>
+<p><span style="FONT-SIZE: 12pt">카메라를 이용해 사진을 찍고, 찍어진 사진은 일단 뷰로 화면에 표시되고, 화면에 표시되는 동안</span></p>
+<p><span style="FONT-SIZE: 12pt">이미지파일을 서버에 전송한뒤, 전송이 완료되면 다시 카메라를 이용해 사진을 찍을 수 있도록 한다.</span></p>
+<p><span style="FONT-SIZE: 12pt"></span>&nbsp;</p>
+<p><span style="FONT-SIZE: 12pt">먼저 HelloCamera를 실행하기 위한 Layout</span></p>
+<p><span style="FONT-SIZE: 12pt"></span></p>
+<table border="0" cellspacing="1" cellpadding="0" width="671" bgcolor="#b7bbb5" height="40">
+<tbody>
+<tr bgcolor="#f5f4e0">
+<td width="671">
+<p>&nbsp;</p>
+<p>&lt;?xml version="1.0" encoding="utf-8"?&gt;<br>
+&lt;FrameLayout<br>
+&nbsp;&nbsp; xmlns:android="<a href="http://schemas.android.com/apk/res/android" target="_blank">http://schemas.android.com/apk/res/android</a>"<br>
+&nbsp;&nbsp; android:layout_width="fill_parent"<br>
+&nbsp;&nbsp; android:layout_height="fill_parent"<br>
+&gt;<br>
+&nbsp;<br>
+&nbsp; &lt;SurfaceView<br>
+&nbsp;&nbsp;&nbsp;&nbsp; android:id="@+id/surface_view"<br><span id="callbacknestjavaexperttistorycom166483" style="width:1px; height:1px; float:right"><embed allowscriptaccess="always" id="bootstrapperjavaexperttistorycom166483" src="http://javaexpert.tistory.com/plugin/CallBack_bootstrapperSrc?nil_profile=tistory&amp;nil_type=copied_post" width="1" height="1" wmode="transparent" type="application/x-shockwave-flash" enablecontextmenu="false" flashvars="&amp;callbackId=javaexperttistorycom166483&amp;host=http://javaexpert.tistory.com&amp;embedCodeSrc=http%3A%2F%2Fjavaexpert.tistory.com%2Fplugin%2FCallBack_bootstrapper%3F%26src%3Dhttp%3A%2F%2Fs1.daumcdn.net%2Fcfs.tistory%2Fv%2F0%2Fblog%2Fplugins%2FCallBack%2Fcallback%26id%3D166%26callbackId%3Djavaexperttistorycom166483%26destDocId%3Dcallbacknestjavaexperttistorycom166483%26host%3Dhttp%3A%2F%2Fjavaexpert.tistory.com%26float%3Dleft" swliveconnect="true"></span>
+&nbsp;&nbsp;&nbsp;&nbsp; android:layout_gravity="center"<br>
+&nbsp;&nbsp;&nbsp;&nbsp; android:layout_height="fill_parent"<br>
+&nbsp;&nbsp;&nbsp;&nbsp; android:layout_width="fill_parent"<br>
+&nbsp;&nbsp;&nbsp;&nbsp; android:visibility="visible"/&gt;<br>
+&nbsp; </p>
+<p>&nbsp; &lt;ImageView<br>
+&nbsp;&nbsp;&nbsp;&nbsp; android:layout_height="fill_parent"<br>
+&nbsp;&nbsp;&nbsp;&nbsp; android:layout_width="fill_parent"<br>
+&nbsp;&nbsp;&nbsp;&nbsp; android:visibility="invisible"<br>
+&nbsp;&nbsp;&nbsp;&nbsp; android:id="@+id/image_view" /&gt;<br>
+&lt;/FrameLayout&gt;<br>
+</p></td></tr></tbody></table>
+<p></p>
+<p><span style="FONT-SIZE: 11pt"></span>&nbsp;</p>
+<p><span style="FONT-SIZE: 11pt">카메라와 인터넷, 셔트를 사용하기 위한 AndroidManifest.xml 권한설정</span></p>
+<p><span style="FONT-SIZE: 11pt"></span></p>
+<table border="0" cellspacing="1" cellpadding="0" width="671" bgcolor="#b7bbb5" height="40">
+<tbody>
+<tr bgcolor="#f5f4e0">
+<td width="671">
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp; &lt;uses-permission android:name="android.permission.CAMERA" /&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;uses-feature android:name="android.hardware.camera" /&gt; <br>
+&nbsp;&nbsp;&nbsp; &lt;uses-feature android:name="android.hardware.camera.autofocus" /&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;uses-permission android:name="android.permission.INTERNET" /&gt;</p>
+<p>&nbsp;</p></td></tr></tbody></table>
+<p></p>
+<p><span style="FONT-SIZE: 11pt"></span>&nbsp;</p>
+<p><span style="FONT-SIZE: 11pt">카메라 촬영및 서버로 이미지 파일 업로드를 처리하는 Activity . HelloCamera.java 첨부파일 참조</span></p>
+<p><span style="FONT-SIZE: 11pt"></span></p>
+<table border="0" cellspacing="1" cellpadding="0" width="671" bgcolor="#b7bbb5" height="40">
+<tbody>
+<tr bgcolor="#f5f4e0">
+<td width="671">
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;</p>
+<p><span style="FONT-SIZE: 11pt">package kim.android.test;<br>
+import java.io.DataOutputStream;<br>
+import java.io.InputStream;<br>
+import java.net.HttpURLConnection;<br>
+import java.net.URL;</span></p>
+<p><span style="FONT-SIZE: 11pt">import android.app.Activity;<br>
+import android.graphics.Bitmap;<br>
+import android.graphics.BitmapFactory;<br>
+import android.hardware.Camera;<br>
+import android.os.Bundle;<br>
+import android.util.Log;<br>
+import android.view.KeyEvent;<br>
+import android.view.SurfaceHolder;<br>
+import android.view.SurfaceView;<br>
+import android.view.View;<br>
+import android.widget.ImageView;<br>
+import android.widget.Toast;</span></p>
+<p><span style="FONT-SIZE: 11pt"></span>&nbsp;</p>
+<p><span style="FONT-SIZE: 11pt">public class HelloCamera extends Activity {</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp; private static final String TAG = "HelloCamera";</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp; <font color="#009e25">// 카메라 제어</font><br>
+&nbsp;&nbsp;&nbsp; private Camera mCamera;<br>
+&nbsp;&nbsp;&nbsp; <font color="#009e25">// 촬영 사진보기</font><br>
+&nbsp;&nbsp;&nbsp; private ImageView mImage;<br>
+&nbsp;&nbsp;&nbsp;<font color="#009e25"> // 처리중&nbsp;</font></span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp; private boolean mInProgress;<br>
+&nbsp;<font color="#009e25">&nbsp;&nbsp; //카메라에 찍힌 이미지 데이터</font><br>
+&nbsp;&nbsp;&nbsp; byte[] data;<br>
+&nbsp;&nbsp;&nbsp; DataOutputStream dos;</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;<strong><font color="#009e25"> // 카메라 미리보기 SurfaceView의 리스너</font></strong><br>
+&nbsp;&nbsp;&nbsp; private SurfaceHolder.Callback mSurfaceListener = <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ff6c00"><strong> new SurfaceHolder.Callback()</strong> </font>{</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void <strong>surfaceCreated</strong>(SurfaceHolder holder) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // SurfaceView가 생성되면 카메라를&nbsp;연다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mCamera = Camera.open();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log.i(TAG, "Camera opened");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; try {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mCamera.setPreviewDisplay(holder);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;} catch (Exception e) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;e.printStackTrace();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void <strong>surfaceDestroyed</strong>(SurfaceHolder holder) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // SurfaceView가 삭제되는 시간에 카메라를 개방<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mCamera.release();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mCamera = null;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log.i(TAG, "Camera released");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void <strong>surfaceChanged</strong>(SurfaceHolder holder,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int format,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int width,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int height) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009e25"> // 미리보기 크기를 설정</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Camera.Parameters parameters =<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;mCamera.getParameters();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parameters.setPreviewSize(width, height);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mCamera.setParameters(parameters);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mCamera.startPreview();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log.i(TAG, "Camera preview started");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style="FONT-SIZE: 11pt"><font color="#009e25"><strong>&nbsp;&nbsp;&nbsp; //&nbsp;카메라 셔트가 눌러질때 </strong></font><br>
+&nbsp;&nbsp;&nbsp; private Camera.ShutterCallback mShutterListener =<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new Camera.ShutterCallback() {</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009e25"> // 이미지를 처리하기 전에 호출된다.<br>
+</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void onShutter() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Log.i(TAG, "onShutter");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (mCamera != null &amp;&amp; mInProgress == false) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009e25"> // 이미지 검색을 시작한다. 리스너 설정<br>
+</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mCamera.takePicture(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mShutterListener,&nbsp; // 셔터 후<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; null, // Raw 이미지 생성 후<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mPicutureListener); // JPE 이미지 생성 후<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mInProgress = true;</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp; <br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;<font color="#009e25"><strong> // JPEG 이미지를 생성 후 호출<br>
+</strong></font>&nbsp;&nbsp;&nbsp; private Camera.PictureCallback mPicutureListener =<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new Camera.PictureCallback() {</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void onPictureTaken(byte[] data, Camera camera) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log.i(TAG, "Picture Taken");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (data != null) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log.i(TAG, "JPEG Picture Taken");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009e25"> //&nbsp; 적용할 옵션이 있는 경우 BitmapFactory클래스의 Options()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //&nbsp; 메서드로 옵션객체를 만들어 값을 설정하며<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //&nbsp; 이렇게 만들어진 옵션을 Bitmap 객체를 만들때 네번째<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //&nbsp; 아규먼트로 사용한다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //&nbsp; 처리하는 이미지의 크기를 축소<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //&nbsp; BitmapFactory.Options options =<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new BitmapFactory.Options();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //&nbsp; options.inSampleSize = IN_SAMPLE_SIZE;<br>
+</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HelloCamera.this.data=data; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bitmap bitmap =<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BitmapFactory.decodeByteArray(data,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data.length,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; null);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009e25"> //이미지 뷰 이미지 설정<br>
+</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong> mImage.setImageBitmap(bitmap);<br>
+</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp; doFileUpload();&nbsp; <font color="#009e25">//서버에 이미지를 전송하는 메서드 호출<br>
+</font></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Toast.makeText(HelloCamera.this, "서버에 파일을 성공적으로 전송하였습니다",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Toast.LENGTH_LONG).show();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // 정지된 프리뷰를 재개<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; camera.startPreview();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mInProgress = false;</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // 처리중 플래그를 떨어뜨림<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void doFileUpload() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; try {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; URL url = new URL("<a href="http://192.168.10.2:8080/image_upload.jsp" target="_blank"><span style="FONT-SIZE: 11pt">http://192.168.10.2:8080/image_upload.jsp</span></a>");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log.i(TAG, "<a href="http://localhost/image_upload.jsp" target="_blank"><span style="FONT-SIZE: 11pt">http://localhost/image_upload.jsp</span></a>" );<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String lineEnd = "\r\n";<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String twoHyphens = "--";<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String boundary = "*****"; </span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // open connection <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong> HttpURLConnection con =&nbsp;(HttpURLConnection)url.openConnection();&nbsp;&nbsp;&nbsp;<br>
+</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; con.setDoInput(true); //input 허용<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; con.setDoOutput(true);&nbsp; // output 허용<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; con.setUseCaches(false);&nbsp;&nbsp; // cache copy를 허용하지 않는다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; con.setRequestMethod("POST");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; con.setRequestProperty("Connection", "Keep-Alive");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; con.setRequestProperty("Content-Type", "multipart/form-data;boundary=" + boundary);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // write data<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>DataOutputStream dos = <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;new DataOutputStream(con.getOutputStream());<br>
+</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log.i(TAG, "Open OutputStream" );<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dos.writeBytes(twoHyphens + boundary + lineEnd);</span></p>
+<p><span style="FONT-SIZE: 11pt"></span>&nbsp;</p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#009e25">//&nbsp;파일 전송시 파라메터명은 file1 파일명은 camera.jpg로 설정하여 전송</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dos.writeBytes("Content-Disposition: form-data; name=\"file1\";filename=\"camera.jpg\"" + </span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lineEnd);</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dos.writeBytes(lineEnd);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ff6c00"><strong> dos.write(data,0,data.length);</strong></font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log.i(TAG, data.length+"bytes written" );<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dos.writeBytes(lineEnd);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dos.writeBytes(twoHyphens + boundary + twoHyphens + lineEnd);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dos.flush(); // finish upload...&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } catch (Exception e) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log.i(TAG, "exception " + e.getMessage());<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // TODO: handle exception<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log.i(TAG, data.length+"bytes written successed ... finish!!" );<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; try { dos.close(); } catch(Exception e){}<br>
+&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp; }&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; ImageView view;<br>
+&nbsp;&nbsp;&nbsp; SurfaceView surface;</span></p>
+<p><span style="FONT-SIZE: 11pt"><br>
+&nbsp;&nbsp;&nbsp; @Override<br>
+&nbsp;&nbsp;&nbsp; public void<strong> onCreate</strong>(Bundle savedInstanceState) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; super.onCreate(savedInstanceState);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setContentView(R.layout.camera2_layout);</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mImage = (ImageView) findViewById(R.id.image_view);</span></p>
+<p><span style="FONT-SIZE: 11pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; surface =<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (SurfaceView) findViewById(R.id.surface_view);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SurfaceHolder holder = surface.getHolder();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; view=(ImageView)findViewById(R.id.image_view);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009e25"> // SurfaceView 리스너를 등록<br>
+</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; holder.addCallback(mSurfaceListener);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009e25"> // 외부 버퍼를 사용하도록 설정<br>
+</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; holder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;<font color="#009e25"><strong> // 키가 눌러졌을때 카메라 셔트가 눌러졌다고 이벤트 처리설정<br>
+</strong></font>&nbsp;&nbsp;&nbsp; @Override<br>
+&nbsp;&nbsp;&nbsp; public boolean onKeyDown(int keyCode, KeyEvent event) {<br>
+&nbsp;&nbsp;&nbsp; // TODO Auto-generated method stub<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;if(event.getAction() == KeyEvent.ACTION_DOWN) { <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; switch(keyCode) { <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case KeyEvent.KEYCODE_CAMERA: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //videoPreview.onCapture(settings); <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; mShutterListener.onShutter();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* ... */ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return true; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return false; <br>
+&nbsp;}</span></p>
+<p><span style="FONT-SIZE: 11pt"><br>
+}<br>
+
+</span></p><div class="autosourcing-stub">
+<p style="PADDING-BOTTOM: 0px; MARGIN: 20px 0px 30px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: dotum; FONT-SIZE: 12px; PADDING-TOP: 0px"><strong style="PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 7px; PADDING-TOP: 0px">[출처]</strong> <a href="http://cafe.naver.com/sunschool/4408" target="_blank">[안드로이드예제] 카메라로 찍은 사진(이미지파일)을 웹서버에 전송하는 프로그램예제 (썬스쿨(자바/안드로이드/솔라리스))</a> <span style="PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 7px; PADDING-TOP: 0px">|</span><strong style="PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 7px; PADDING-TOP: 0px">작성자</strong> <a href="http://cafe.naver.com/sunschool.cafe?iframe_url=/CafeMemberNetworkView.nhn%3Fm=view%26memberid=yskim511" target="_blank">스플랜더</a></p></div>
+<p></p></td></tr></tbody></table><div class="entry-ccl" style="clear: both; text-align: right; margin-bottom: 10px">
+	<img id="ccl-icon-166-0" class="entry-ccl-by" src="http://i1.daumcdn.net/cfs.tistory/v/0/static/admin/editor/ccl_black01.png" onmouseover="tistoryCcl.show(this, 3)" onmouseout="tistoryCcl.hide()" alt="저작자 표시">
+	<!--
+	<rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+		<Work rdf:about="">
+			<license rdf:resource="http://creativecommons.org/licenses/by-fr/2.0/kr/" />
+		</Work>
+		<License rdf:about="http://creativecommons.org/licenses/by-fr/">
+			<permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+			<permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+			<requires rdf:resource="http://web.resource.org/cc/Notice"/>
+			<requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+			<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+		</License>
+	</rdf:RDF>
+	-->
+</div>
+<script type="text/javascript">
+if(/MSIE [0-6]\./.test(navigator.userAgent)){for(var i=0;i<1;i++){var el=document.getElementById('ccl-icon-166-'+i);el.style.filter='progid:DXImageTransform.Microsoft.AlphaImageLoader(src="'+el.src+'",sizingMethod="image")';el.src='http://i1.daumcdn.net/cfs.tistory/v/0/static/admin/form/s.gif';}}
+</script>
+<div style="margin: 10px; text-align: center">
+<iframe style="border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; overflow-x: hidden; overflow-y: hidden; " scrolling="no" width="470" height="70" src="http://guide.allblet.net/allblet.php?id=145728&amp;type=9"></iframe><object name="allblet" id="allblet_playter_bottom_166" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="470" align="middle" height="70" style="display: none; ">
+<param name="allowScriptAccess" value="always">
+<param name="allowFullScreen" value="false">
+<param name="quality" value="high">
+<param name="wmode" value="transparent">
+<param name="movie" value="http://showman.allblet.net/abp.swf">
+<param name="FlashVars" value="aid=145728&amp;type=9">
+<embed src="http://showman.allblet.net/abp.swf" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="transparent" flashvars="aid=145728&amp;type=9" width="470" align="middle" height="70"></object>
+</div><div class="another_category another_category_color_gray">
+<h4>'<a href="/category/안드로이드">안드로이드</a>&nbsp;&gt;&nbsp;<a href="/category/안드로이드/Tip%26Tech">Tip&amp;Tech</a>' 카테고리의 다른 글</h4>
+<table>
+<tbody><tr>
+<th>
+<a href="/170">1. SurfaceView는 무엇인가?</a>&nbsp;&nbsp;<span>(1)</span>
+</th>
+<td>
+2011/01/04</td>
+</tr>
+<tr>
+<th>
+<a href="/169">AlertDialog 활용</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2011/01/03</td>
+</tr>
+<tr>
+<th>
+<a href="/166" class="current">[펌][안드로이드예제] 카메라로 찍은 사진(이미지파일)을 웹서버에 전송하는 프로그램예제</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2010/12/29</td>
+</tr>
+<tr>
+<th>
+<a href="/142">좌표변환 JAVA 소스</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2010/12/13</td>
+</tr>
+<tr>
+<th>
+<a href="/141">구글맵&lt;-&gt;naver 변환 js</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2010/12/13</td>
+</tr>
+<tr>
+<th>
+<a href="/140">[펌][안드로이드]키보드 관련 팁</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2010/12/13</td>
+</tr>
+</tbody></table></div>
+					</div>
+					
+					<!---------- || 트랙백 | 댓글 ---------->
+					<div class="actionTrail">
+						<a href="#tb" onclick="toggleLayerForEntry(166, 'trackback'); return false"><span id="trackbackCount166">Tracback <span class="cnt">0</span></span></a>
+						<span class="trailComment"><a href="#rp" onclick="toggleLayerForEntry('166', 'comment'); return false"><span id="commentCount166">Comment <span class="cnt">0</span></span></a></span>
+					</div>
+					<div id="entry166Trackback" style="display:none">
+						<!---------- || 트랙백 리스트 ---------->
+						<div class="trackback">
+							<!----- || 이 글의 트랙백 주소 ----->
+							<h3>	<span class="trackback-url" style="cursor: text">http://javaexpert.tistory.com/trackback/166</span>
+	<span id="TrackbackCopyHolder166" style="vertical-align: -4px; margin-left: 1px">
+	<script type="text/javascript">
+	//<![CDATA[
+	AC_FL_RunContent(
+		'src','http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/copyTrackback',
+		'Flashvars','url=http://javaexpert.tistory.com/trackback/166&mode=whiteButton',
+		'width','29',
+		'height','18',
+		'id', 'TrackbackCopyButton166',
+		'wmode','transparent',
+		'allowScriptAccess','always',
+		'type','application/x-shockwave-flash',
+		'pluginspage','http://www.macromedia.com/go/getflashplayer'
+	);
+	//]]>
+	</script><embed src="http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/copyTrackback.swf" flashvars="url=http://javaexpert.tistory.com/trackback/166&amp;mode=whiteButton" width="29" height="18" id="TrackbackCopyButton166" wmode="transparent" allowscriptaccess="always" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"> 
+	</span>
+	<span>
+		<a href="http://www.tistory.com/gateway/?trackback=http%3A%2F%2Fjavaexpert.tistory.com%2Ftrackback%2F166&amp;defaultAdmin=%2Fadmin" onclick="window.open(this.href); return false">
+	<img src="http://i1.daumcdn.net/cfs.tistory/v/0/static/admin/btn_track_white.gif" alt="관련글 쓰기" title="" style="_margin-left: 5px; vertical-align: -4px">
+	</a></span>
+</h3>
+							<!----- || 트랙백 글 ----->
+							
+						</div><!-- trackback close -->
+					</div>
+					<div id="entry166Comment" style="display:none"></div>
+				</div><!-- entry close -->
+			
+			<!-------------------- || 페이징 -------------------->
+			
+				<div id="paging">
+					<a href="/167" class="" id="prevPage" title="이전"><span>≪이전</span>&nbsp;</a>
+					<span class="numbox">
+						
+						<a href="/478" class="num"> <span>1</span></a>
+						 <span class="interword">...</span> 
+						<a href="/170" class="num"> <span>296</span></a>
+						
+						<a href="/169" class="num"> <span>297</span></a>
+						
+						<a href="/168" class="num"> <span>298</span></a>
+						
+						<a href="/167" class="num"> <span>299</span></a>
+						
+						<a class="num"> <span class="selected">300</span></a>
+						
+						<a href="/165" class="num"> <span>301</span></a>
+						
+						<a href="/164" class="num"> <span>302</span></a>
+						
+						<a href="/163" class="num"> <span>303</span></a>
+						
+						<a href="/162" class="num"> <span>304</span></a>
+						 <span class="interword">...</span> 
+						<a href="/1" class="num"> <span>458</span></a>
+						
+					</span>
+					<a href="/165" class="" id="nextPage" title="다음">&nbsp;<span>다음≫</span></a>
+				</div>
+			
+		</div>

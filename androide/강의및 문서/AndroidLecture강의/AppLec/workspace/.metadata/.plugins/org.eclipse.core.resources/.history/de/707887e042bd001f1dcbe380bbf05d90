@@ -1,0 +1,11 @@
+package hest.co.kr;
+
+import android.app.Activity;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+
+public class MyHandlerDemo extends Activity {
+	ProgressBar bar;
+	TextView txt;
+	boolean isRunning=false;	
+}

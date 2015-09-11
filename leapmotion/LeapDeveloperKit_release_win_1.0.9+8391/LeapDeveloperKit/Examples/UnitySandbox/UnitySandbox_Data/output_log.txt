@@ -1,0 +1,61 @@
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.3165]
+    Renderer: NVIDIA GeForce 8600 GTS
+    Vendor:   NVIDIA
+    VRAM:     880 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 DF24=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+desktop: 1280x1024 60Hz; virtual: 2720x1024 at -1440,0
+<RI> Initializing input.
+<RI> Input initialized.
+Initialize engine version: 3.5.6f4
+Begin MonoManager ReloadAssembly
+Platform assembly: W:\tip\khh\컴퓨터\leapmotion\LeapDeveloperKit_release_win_1.0.9+8391\LeapDeveloperKit\Examples\UnitySandbox\UnitySandbox_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading W:\tip\khh\컴퓨터\leapmotion\LeapDeveloperKit_release_win_1.0.9+8391\LeapDeveloperKit\Examples\UnitySandbox\UnitySandbox_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: W:\tip\khh\컴퓨터\leapmotion\LeapDeveloperKit_release_win_1.0.9+8391\LeapDeveloperKit\Examples\UnitySandbox\UnitySandbox_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading W:\tip\khh\컴퓨터\leapmotion\LeapDeveloperKit_release_win_1.0.9+8391\LeapDeveloperKit\Examples\UnitySandbox\UnitySandbox_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: W:\tip\khh\컴퓨터\leapmotion\LeapDeveloperKit_release_win_1.0.9+8391\LeapDeveloperKit\Examples\UnitySandbox\UnitySandbox_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading W:\tip\khh\컴퓨터\leapmotion\LeapDeveloperKit_release_win_1.0.9+8391\LeapDeveloperKit\Examples\UnitySandbox\UnitySandbox_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: W:\tip\khh\컴퓨터\leapmotion\LeapDeveloperKit_release_win_1.0.9+8391\LeapDeveloperKit\Examples\UnitySandbox\UnitySandbox_Data\Managed\LeapCSharp.NET3.5.dll (this message is harmless)
+Loading W:\tip\khh\컴퓨터\leapmotion\LeapDeveloperKit_release_win_1.0.9+8391\LeapDeveloperKit\Examples\UnitySandbox\UnitySandbox_Data\Managed\LeapCSharp.NET3.5.dll into Unity Child Domain
+- Completed reload, in  0.214 seconds
+adding component...
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
+
+adding component...
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
+
+adding component...
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
+
+adding component...
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
+
+adding component...
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
+
+adding component...
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
+
+adding component...
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
+
+adding component...
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
+
+adding component...
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
+
+adding component...
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
+

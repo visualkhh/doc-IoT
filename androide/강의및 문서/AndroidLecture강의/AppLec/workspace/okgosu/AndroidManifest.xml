@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="okgosu.net"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/zzangu0" android:label="앱관리자">
+        <activity android:name=".MyContactsManager"
+                  android:label="앱관리 메인">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+    <uses-sdk android:minSdkVersion="8" />
+
+<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+</manifest> 

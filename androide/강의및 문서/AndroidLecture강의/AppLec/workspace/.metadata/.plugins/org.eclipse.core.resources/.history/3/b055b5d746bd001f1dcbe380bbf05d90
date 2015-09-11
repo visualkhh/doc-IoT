@@ -1,0 +1,20 @@
+package hest.co.kr;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+
+public class MyHandlerServiceApp extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.my_handler_demo);
+		Button btn_start = (Button) findViewById(R.id.btn_start);
+		Button btn_stop = (Button) findViewById(R.id.btn_stop);		
+	}
+}
+
+
+
+

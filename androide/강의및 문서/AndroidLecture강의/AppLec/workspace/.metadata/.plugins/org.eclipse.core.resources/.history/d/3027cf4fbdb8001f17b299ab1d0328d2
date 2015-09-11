@@ -1,0 +1,65 @@
+package hest.co.kr;
+
+import java.util.HashMap;
+
+import android.content.ContentProvider;
+import android.content.ContentValues;
+import android.content.UriMatcher;
+import android.database.Cursor;
+import android.net.Uri;
+
+public class MyProdContentProvider extends ContentProvider {
+	private MyProdDBHelper mOpenHelper;
+	private static HashMap<String, String>
+	sNotesProjectionMap;
+	private static final UriMatcher sUriMatcher;
+	private static final int MYPRODS= 1;
+	private static final int MYPRODS_ID= 2;
+	static {
+		sUriMatcher= new UriMatcher(UriMatcher.NO_MATCH);
+		sUriMatcher.addURI(MyProdDBCons.AUTHORITY, "myprods", MYPRODS);
+		sUriMatcher.addURI(MyProdDBCons.AUTHORITY, "myprods/#", MYPRODS_ID);
+		sNotesProjectionMap= new HashMap<String, String>();
+		sNotesProjectionMap.put(MyProdDBCons._ID, MyProdDBCons._ID);
+		sNotesProjectionMap.put(MyProdDBCons.PROD_CODE, MyProdDBCons.PROD_CODE);
+		sNotesProjectionMap.put(MyProdDBCons.PROD_NAME, MyProdDBCons.PROD_NAME);
+		}	
+	@Override
+	public int delete(Uri uri, String selection, String[] selectionArgs) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String getType(Uri uri) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Uri insert(Uri uri, ContentValues values) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean onCreate() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Cursor query(Uri uri, String[] projection, String selection,
+			String[] selectionArgs, String sortOrder) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int update(Uri uri, ContentValues values, String selection,
+			String[] selectionArgs) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

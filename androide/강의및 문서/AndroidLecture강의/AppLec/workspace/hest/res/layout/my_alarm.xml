@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:id="@+id/dateAndTime" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<Button android:text="날짜선택" android:id="@+id/btn_date"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	<Button android:text="시간선택" android:id="@+id/btn_time"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

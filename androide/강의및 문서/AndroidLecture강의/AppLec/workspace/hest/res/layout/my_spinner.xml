@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<TextView android:id="@+id/tv_sp" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="[You Choose]" />
+	<Spinner android:id="@+id/spinner1" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:drawSelectorOnTop="true"
+		android:prompt="@string/app_name" />
+</LinearLayout>

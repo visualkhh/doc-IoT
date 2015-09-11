@@ -1,0 +1,25 @@
+package hest.co.kr;
+
+import android.app.Activity;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+
+public class MyProdDBManager extends Activity {
+	private MyProdDBHelper openHelper;
+	private SQLiteDatabase sdb;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.my_prod_db_manager);
+		if (checkDBCount()==0) initMyProdDB();		
+	}
+}
+
+
+
+
+
+
+
+

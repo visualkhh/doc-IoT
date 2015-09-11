@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		>
+	<Button android:id="@+id/notify"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" 
+			android:layout_weight="1"
+			android:text="클릭하면 5초후에 알림 메시지가 전달됩니다"
+			/>
+	<Button android:id="@+id/cancel"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" 
+			android:layout_weight="1"
+			android:text="알림 메시지를 중단합니다"
+			/>
+</LinearLayout>

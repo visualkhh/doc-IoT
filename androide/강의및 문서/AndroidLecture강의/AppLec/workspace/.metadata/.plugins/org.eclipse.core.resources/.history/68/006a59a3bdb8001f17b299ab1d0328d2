@@ -1,0 +1,88 @@
+package hest.co.kr;
+
+import java.util.HashMap;
+
+import android.content.ContentProvider;
+import android.content.ContentValues;
+import android.content.UriMatcher;
+import android.database.Cursor;
+import android.net.Uri;
+
+public class MyProdContentProvider extends ContentProvider {
+	private MyProdDBHelper mOpenHelper;
+	private static HashMap<String, String> sNotesProjectionMap;
+	private static final UriMatcher sUriMatcher;
+	private static final int MYPRODS = 1;
+	private static final int MYPRODS_ID = 2;
+	static {
+		sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
+		sUriMatcher.addURI(MyProdDBCons.AUTHORITY, "myprods", MYPRODS);
+		sUriMatcher.addURI(MyProdDBCons.AUTHORITY, "myprods/#", MYPRODS_ID);
+		sNotesProjectionMap = new HashMap<String, String>();
+		sNotesProjectionMap.put(MyProdDBCons._ID, MyProdDBCons._ID);
+		sNotesProjectionMap.put(MyProdDBCons.PROD_CODE, MyProdDBCons.PROD_CODE);
+		sNotesProjectionMap.put(MyProdDBCons.PROD_NAME, MyProdDBCons.PROD_NAME);
+	}
+
+	@Override
+	public int delete(Uri uri, String selection, String[] selectionArgs) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String getType(Uri uri) {
+		switch (sUriMatcher.match(uri)) {
+		case MYPRODS:
+			return MyProdDBCons.CONTENT_TYPE;
+		case MYPRODS_ID:
+			return MyProdDBCons.CONTENT_ITEM_TYPE;
+		default:
+			throw new IllegalArgumentException("Unknown URI " + uri);
+		}
+	}
+
+	@Override
+	public Uri insert(Uri uri, ContentValues values) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean onCreate() {
+		mOpenHelper = new MyProdDBHelper(getContext(), null, null, 0);
+		return false;
+	}
+
+	@Override
+	public Cursor query(Uri uri, String[] projection, String selection,
+			String[] selectionArgs, String sortOrder) {
+		String[] selectionArgs, String sortOrder) {
+			SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
+			qb.setTables(MyProdDBCons.TABLE_NAME);
+			switch (sUriMatcher.match(uri)) {
+			case MYPRODS:
+			qb.setProjectionMap(sNotesProjectionMap);
+			break;
+			case MYPRODS_ID:
+			qb.setProjectionMap(sNotesProjectionMap);
+			qb.appendWhere(MyProdDBCons._ID+ "=" + uri.getPathSegments().get(1));
+			break;
+			default:
+			throw new IllegalArgumentException("Unknown URI " + uri);
+			}
+			String order_by = MyProdDBCons.PROD_NAME;
+			SQLiteDatabase db = mOpenHelper.getReadableDatabase();
+			Cursor c = qb.query(db, projection, selection, selectionArgs, null, null, order_by);
+			c.setNotificationUri(getContext().getContentResolver(), uri);
+			return c;
+	}
+
+	@Override
+	public int update(Uri uri, ContentValues values, String selection,
+			String[] selectionArgs) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<Button
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="위쪽 버튼"
+    android:layout_weight="1"
+    />
+<EditText
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="가운데 에디트"
+    android:layout_weight="3"
+    />
+<Button
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="아래쪽 버튼"
+    android:layout_weight="1"
+    />
+</LinearLayout>

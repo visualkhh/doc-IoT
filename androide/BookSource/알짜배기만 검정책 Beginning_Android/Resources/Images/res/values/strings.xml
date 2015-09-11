@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">19장, ImagesDemo</string>
+	<string name="btn_name">이름:</string>
+    <string name="funky_format">내 이름은 &lt;b&gt;%1$s&lt;/b&gt;</string>
+</resources>

@@ -1,0 +1,45 @@
+package hest.co.kr;
+
+import android.app.Activity;
+import android.graphics.drawable.AnimationDrawable;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class MyFrameAni extends Activity {
+	AnimationDrawable mframeAnimation;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.my_frame_ani);
+		final Button onButton = (Button) findViewById(R.id.ButtonStart);
+		final Button offButton = (Button) findViewById(R.id.ButtonStop);
+		onButton.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				startAnimation();
+			}
+		});
+		offButton.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				stopAnimation();
+			}
+		});
+	}
+	private void stopAnimation() {
+		mframeAnimation.stop();
+		mframeAnimation.setVisible(false, false);
+	}
+	private void startAnimation() {
+		ImageView img = (ImageView)findViewById(R.id.ImageView_Juggle);
+	}
+}
+
+
+
+
+
+
+
+

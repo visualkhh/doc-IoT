@@ -1,0 +1,57 @@
+package hest.co.kr;
+
+import java.util.List;
+
+import android.app.Activity;
+import android.app.ActivityManager;
+import android.app.ActivityManager.RunningServiceInfo;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class MyHandlerServiceApp extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.my_handler_demo);
+		Button btn_start = (Button) findViewById(R.id.btn_start);
+		Button btn_stop = (Button) findViewById(R.id.btn_stop);		
+		btn_start.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				
+				ActivityManager am 
+				= (ActivityManager)getApplicationContext().getSystemService(ACTIVITY_SERVICE);
+				List<RunningServiceInfo> serviceList 
+				= am.getRunningServices(Integer.MAX_VALUE);
+				
+				
+				
+				Intent intent = getIntent();
+				if(intent.getAction().equals("MyHandlerService")) {
+					Toast.makeText(getApplicationContext(), "Service 이미 시작", 
+							Toast.LENGTH_SHORT).show();			
+					
+				} else {
+					startService(new Intent("MyHandlerService"));
+					Toast.makeText(getApplicationContext(), "Service 처음 시작", 
+							Toast.LENGTH_SHORT).show();				
+				}
+			}
+		});
+		btn_stop.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				stopService(new Intent("MyHandlerService"));
+				Toast.makeText(getApplicationContext(), "Service 종료", 
+						Toast.LENGTH_SHORT).show();				
+			}
+		});
+	}
+}
+
+
+
+

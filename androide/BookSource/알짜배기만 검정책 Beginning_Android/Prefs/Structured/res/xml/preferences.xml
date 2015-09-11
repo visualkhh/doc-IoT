@@ -1,0 +1,29 @@
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Simple Preferences">
+		<CheckBoxPreference
+			android:key="@string/checkbox"
+			android:title="체크박스 환경설정"
+			android:summary="체크 상태를 변경합니다"
+		/>
+		<RingtonePreference
+			android:key="@string/ringtone"
+			android:title="벨소리 환경설정"
+			android:showDefault="true"
+			android:showSilent="true"
+			android:summary="벨소리를 선택합니다"
+		/>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="상세 화면">
+		<PreferenceScreen
+			android:key="detail"
+			android:title="상세 화면"
+			android:summary="별도 페이지에 상세 설정이 있습니다">
+			<CheckBoxPreference
+				android:key="@string/checkbox2"
+				android:title="상세 체크박스"
+				android:summary="체크 상태를 변경합니다"
+			/>
+		</PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen>

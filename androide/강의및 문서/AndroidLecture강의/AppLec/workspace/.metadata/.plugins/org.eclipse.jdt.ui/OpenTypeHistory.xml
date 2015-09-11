@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeInfoHistroy>
+<typeInfo handle="=hest/C:\/android\/android-sdk-windows\/platforms\/android-8\/android.jar&lt;android.app(Activity.class[Activity" modifiers="33" timestamp="1282967426953"/>
+<typeInfo handle="=hest/C:\/android\/android-sdk-windows\/platforms\/android-8\/android.jar&lt;android.preference(PreferenceActivity.class[PreferenceActivity" modifiers="1057" timestamp="1282967426953"/>
+<typeInfo handle="=hest/C:\/android\/android-sdk-windows\/platforms\/android-8\/android.jar&lt;android.app(ListActivity.class[ListActivity" modifiers="33" timestamp="1282967426953"/>
+<typeInfo handle="=hest/C:\/android\/android-sdk-windows\/platforms\/android-8\/android.jar&lt;android.provider(BaseColumns.class[BaseColumns" modifiers="1537" timestamp="1282967426953"/>
+<typeInfo handle="=hest/C:\/android\/android-sdk-windows\/platforms\/android-8\/android.jar&lt;android.database.sqlite(SQLiteOpenHelper.class[SQLiteOpenHelper" modifiers="1057" timestamp="1282967426953"/>
+<typeInfo handle="=hest/C:\/android\/android-sdk-windows\/platforms\/android-8\/android.jar&lt;android.content(ContentProvider.class[ContentProvider" modifiers="1057" timestamp="1282967426953"/>
+<typeInfo handle="=hest/C:\/android\/android-sdk-windows\/platforms\/android-8\/android.jar&lt;android.app(Service.class[Service" modifiers="1057" timestamp="1282967426953"/>
+<typeInfo handle="=okgosu_map/C:\/android\/android-sdk-windows\/platforms\/android-8\/android.jar&lt;android.location(LocationListener.class[LocationListener" modifiers="1537" timestamp="1282967426953"/>
+<typeInfo handle="=okgosu_map/C:\/android\/android-sdk-windows\/add-ons\/addon_google_apis_google_inc_8\/libs\/maps.jar&lt;com.google.android.maps(MapActivity.class[MapActivity" modifiers="1057" timestamp="1282967624828"/>
+<typeInfo handle="=hest/C:\/android\/android-sdk-windows\/platforms\/android-8\/android.jar&lt;android.content(BroadcastReceiver.class[BroadcastReceiver" modifiers="1057" timestamp="1282967426953"/>
+</typeInfoHistroy>

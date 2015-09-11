@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:id="@+id/tv1" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="This is a TextView Style test!"
+		android:typeface="sans" android:textColor="#FF0000"
+		android:background="#FFFF00" android:textSize="20sp"
+		android:layout_gravity="left"></TextView>
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="horizontal" android:layout_height="wrap_content">
+		<CheckBox android:text="bold" android:textStyle="bold"
+			android:id="@+id/CheckBox01" android:layout_weight="1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+		<CheckBox android:text="italic" android:textStyle="italic"
+			android:id="@+id/CheckBox02" android:layout_weight="1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+	</LinearLayout>
+	<View android:background="#CCCCCC" android:layout_width="fill_parent"
+		android:layout_height="2sp"></View>
+	<RadioGroup android:id="@+id/rdg" android:layout_width="wrap_content"
+		android:orientation="horizontal" android:layout_height="wrap_content">
+		<RadioButton android:text="sans" android:id="@+id/rb1"
+			android:checked="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></RadioButton>
+		<RadioButton android:text="serif" android:id="@+id/rb2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+		<RadioButton android:text="monospace" android:id="@+id/rb3"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+	</RadioGroup>
+</LinearLayout>
+	
