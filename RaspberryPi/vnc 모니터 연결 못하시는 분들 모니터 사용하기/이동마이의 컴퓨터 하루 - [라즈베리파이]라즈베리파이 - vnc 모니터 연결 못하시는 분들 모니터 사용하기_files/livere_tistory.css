@@ -1,0 +1,850 @@
+@charset "utf-8";
+#livere_platform * {
+margin: 0px;
+padding: 0px;   
+}
+#livereContainer #livere_platform {
+min-width: 450px;
+font: 11px "dotum";
+background-color: #fff;
+}
+
+#livereContainer #livere_platform .livere_adminBtn {
+top: -25px;
+left: 10px;
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/settingBtn.png") no-repeat scroll 0px 0px transparent;
+width: 61px;
+bottom: 164px;
+_bottom: 160px;
+height: 21px;
+position: absolute;	
+}
+
+#livereContainer #livere_platform .powered_by {
+top: -20px;
+right: 10px;
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/icon.gif") no-repeat scroll -172px -78px transparent;
+width: 113px;
+bottom: 164px;
+_bottom: 160px;
+height: 11px;
+border-bottom: none;
+position: absolute;
+}
+*:first-child+html #livereContainer #livere_platform .powered_by {
+bottom: 160px;
+}
+#livereContainer #livere_event_notice {
+width: auto;
+height: 15px;
+position: absolute;
+left: 3px;
+top: -20px;
+}
+#livereContainer #livere_event_notice:hover {
+background-color: #fff94e;
+}
+#livereContainer #livere_event_notice a strong {
+color: #ed1c27;
+}
+#livereContainer #livere_platform #livere_platform_wrapper {
+margin-top: 40px;
+padding: 7px 0 11px;
+width: 99.5%;
+border: 1px solid #EDEDED;
+background: none repeat 0 0;
+}
+#livereContainer #livere_platform #livere_platform_wrapper #livereGuestFm {
+margin: 5px auto 0px;
+width: 96%;
+height: 18px;
+text-align: right;
+}
+#livereContainer #livere_platform #livere_platform_wrapper #livereGuestFm input {
+border: 1px solid #E2E1E1;
+width: 60px;
+padding: 2px;
+vertical-align: middle;
+margin-left: 7.5px;
+background-color: #fff;
+font-size: 12px;
+line-height: 17px;
+color: #A09F9D;
+}
+#livereContainer #livere_platform #livereGuestFm input#guest_passwd {
+width: 50px;
+}
+#livereContainer #livere_platform #livereGuestFm input#guest_homepage {
+width: 108px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper #livereGuestFm label {
+display: inline-block;
+line-height: 18px;
+margin-left: 17px;
+margin-right: -3px;
+color: #A09F9D;
+font: 12px dotum;
+}
+#livereContainer #livere_platform #livere_platform_wrapper #livereGuestFm input.secret_chk {
+border: none;
+width: 13px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top {
+padding: 0px;
+height: 22px;
+margin-top: 5px;
+width: 96%;
+display: inline-block;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_attachButton {
+float: left;
+padding-right: 5px;
+display: inline-block;
+/* temp CSS start */
+/*
+width: 50px;
+	background: url("http://fx.livere.co.kr:8080/consumers/tistory/slit.gif") no-repeat right 6px;
+*/
+margin-left: 10px;
+/* temp CSS end */
+margin-right: 5px;
+}
+
+/* temp CSS start */
+div.livere_attachImageWrapper {
+margin-right: 5px !important;
+float: left;
+}
+/* temp CSS end */
+
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_attachButton a {
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/icon.gif") no-repeat 0px -73px;
+display: inline-block;
+width: 22px;
+height: 22px;
+margin-right: 2px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_attachButton a.livere_attachImage {
+background-position: 0px -73px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_attachButton a.livere_attachVideo {
+display: none;
+background-position: -25px -73px;
+}
+
+
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_text div.livere_attach_image img.livere_overView {
+width: 360px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_text div.livere_attach_image span.livere_overViewNavi {
+width: 360px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_text div.livere_attach_image span.livere_overViewNavi strong {
+display: none;
+}
+
+#livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_attachImageView {
+clear:both;
+float:left;
+width:100%;
+margin-top:10px;
+position:relative;
+}
+#livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_attachImageView img.livere_attachImageThumb {
+width:80px;
+height:60px;
+margin-right:5px;
+}
+#livere_reply_list_wrapper #livere_attachImageClickView {
+position:absolute;
+top:0;
+left:0;
+width:300px;
+height:200px;
+z-index:50 !important;
+border:1px solid #d2d2d2;
+background-color:#fff;
+text-align:center;
+padding:15px;
+}
+#livere_reply_list_wrapper #livere_attachImageClickView img {
+width:100%;
+height:100%;
+}
+#livere_reply_list_wrapper #livere_attachImageClickView #livere_attachImageClickViewClose {
+position:absolute;
+width:7px;
+height:7px;
+top:5px;
+right:5px;
+background:url("http://cfs.tistory.com/custom/blog/7/78759/skin/images/icon.gif") no-repeat -80px -297px;
+cursor:pointer;
+}
+#livere_reply_list_wrapper #livere_attachImageClickView #livere_originViewBtn {
+background-color:#FFF;
+bottom:0;
+color:#000;
+height:25px;
+line-height:24px;
+position:absolute;
+right:0;
+width:60px;
+}
+#livere_platform_wrapper #livere_pltform_middle #livere_linkInputWrapper {
+background-color:#FFF;
+border:1px solid #D2D2D2;
+position:absolute;
+right:5px;
+text-align:center;
+top:5px;
+width:350px;
+z-index:1;
+padding:20px 0;
+}
+#livere_platform_wrapper #livere_pltform_middle #livere_linkInputWrapper span#livere_linkInputWrapperClose {
+background:url("http://cfs.tistory.com/custom/blog/7/78759/skin/images/icon.gif") no-repeat scroll -80px -297px transparent;
+cursor:pointer;
+height:7px;
+position:absolute;
+right:10px;
+top:10px;
+width:7px;
+}
+
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top div.livere_sns_icons_wrapper {
+/*margin: 3px 5px 0 52px;
+_margin-left: 26px;*/
+margin: 3px 5px 0 11%;
+_margin-left: 5.5%;
+width: auto;
+padding-left:0;
+background: none;
+/*background: url("http://fx.livere.co.kr:8080/consumers/tistory/slit.gif") no-repeat right 3px;*/
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top div.livere_sns_icons_wrapper span {
+margin-right: 10px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top div.livere_sns_icons_wrapper a {
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/icon.gif") no-repeat 4px 4px;
+width: 16px;
+height: 16px;
+}	
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top div.livere_sns_icons_wrapper a:hover {
+border-bottom: none;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sns_icons_wrapper a.yozm {
+background-position: 2px 0px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_on a.yozm {
+background-position: 2px -22px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .NotPost a.yozm {
+background-position: 2px -44px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sns_icons_wrapper a.twitter {
+background-position: -24px 0px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_on a.twitter {
+background-position: -24px -22px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .NotPost a.twitter {
+background-position: -24px -44px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sns_icons_wrapper a.cyworld {
+background-position: -50px 0px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_on a.cyworld {
+background-position: -50px -22px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .NotPost a.cyworld {
+background-position: -50px -44px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sns_icons_wrapper a.facebook {
+background-position: -76px 0px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_on a.facebook {
+background-position: -76px -22px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .NotPost a.facebook {
+background-position: -76px -44px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sns_icons_wrapper a.me2day {
+background-position: -102px 0px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_on a.me2day {
+background-position: -102px -22px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .NotPost a.me2day {
+background-position: -102px -44px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sns_icons_wrapper a.tistory {
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/icon.gif") no-repeat scroll -128px 0px transparent;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_on a.tistory {
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/icon.gif") no-repeat scroll -128px -22px transparent;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .NotPost a.tistory {
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/icon.gif") no-repeat scroll -128px -44px transparent;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top input#guest_secret_chk {
+float: left;
+height: auto;
+margin-top: 5px;
+margin-right: 3px;
+}
+/* *:first-child+html #livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top input#guest_secret_chk {
+margin-top: 1px;
+} */
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top label.secret_chk_text {
+color: #a09f9d;
+font-size: 12px;
+width: 60px;
+line-height: 21px;
+float: left;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .logout {
+float: left;
+margin: 4px -3px 0;
+display: inline-block;
+background: none;
+width: 44px;
+height: 16px;
+font: 11px/17px "dotum";
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .logout:hover {
+border-bottom: none;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .off {
+display: none;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_writeCountWrapper {
+float: right;
+display: inline-block;
+right: 74px;
+bottom: 14px;
+position: absolute;
+}
+*:first-child+html #livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_writeCountWrapper {
+bottom: 15px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_writeCountWrapper strong {
+color: #ed1c27;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sendFunction {
+float: right;
+width: 52px;
+height: 22px;
+position: absolute;
+right: 14px;
+bottom: 10px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sendFunction .livere_send {
+display: inline-block;
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/icon.gif") no-repeat -56px -73px;
+width: 52px;
+height: 22px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sendFunction .livere_send:hover {
+border-bottom: none;
+}
+#livereContainer #livere_platform #livere_platform_wrapper #livere_pltform_middle {
+width: 96%;
+}
+#livereContainer #livere_platform #livere_platform_wrapper #livere_pltform_middle fieldset {
+margin-top: 10px;
+*margin-top: 8px;
+_margin-top: 8px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper #livere_pltform_middle fieldset div.livere_contentInput {
+position: static;
+float: right;
+width: 87%;
+padding: 5px;
+border: 1px solid #E2E1E1;
+}
+#livereContainer #livere_platform #livere_platform_wrapper #livere_pltform_middle fieldset div.livere_contentInput textarea {
+overflow: auto;
+height: 58px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper #livere_pltform_middle .livere_primarySNS {
+display: none;
+}
+#livereContainer #livere_platform #livere_platform_wrapper #livere_pltform_middle fieldset div.livere_thumbnail {
+width: 40px;
+height: 40px;
+border: none;
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/guest.gif") no-repeat 0px 0px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper #livere_pltform_middle fieldset div.livere_thumbnail.livere_thumbnail_loading {
+background: url("http://fx.livere.co.kr:8080/images/ver6/viewLoading.gif") no-repeat 47% 47%;
+}
+#livereContainer #livere_platform #livere_platform_wrapper #livere_pltform_middle fieldset div.livere_thumbnail img.primaryThumbnail {
+margin: 0px;
+width: 40px;
+height: 40px;
+}
+/* #livere_platform_wrapper .powered_by {
+top: 15px;
+right: 15px;
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/icon.gif") no-repeat -172px -75px;
+width: 113px;
+} */
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sns_icons_wrapper div.livere_accountLayer {
+background: none #FFF;
+border: 1px solid #ededed;
+width: 100px;
+height: 100px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sns_icons_wrapper span div.livere_accountLayer a.livere_layerClose {
+top: 88px;
+right: -7px;
+background: url("http://fx.livere.co.kr:8080/images/ver6/icon.gif") no-repeat scroll -80px -297px transparent;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sns_icons_wrapper div.livere_accountLayer dl dd {
+margin: 0px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sns_icons_wrapper div.livere_accountLayer dl dd.livere_accountLayer_sns_icon {
+border-bottom: 1px solid #ededed;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sns_icons_wrapper div.livere_accountLayer dl dd.livere_accountLayer_sns_icon span {
+padding: 7px 0px;
+background: none;
+margin: 0px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sns_icons_wrapper div.livere_accountLayer dl dd.livere_accountLayer_button_wrapper {
+margin-top: 5px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sns_icons_wrapper div.livere_accountLayer dl dd.livere_accountLayer_button_wrapper a {
+display: block;
+float: none;
+_float: left;
+background: none;
+height: 20px;
+width: 50px;
+letter-spacing: -1px;
+}
+#livereContainer #livere_platform #livere_platform_wrapper .livere_pltfrm_top .livere_sns_icons_wrapper div.livere_accountLayer dl dd.livere_accountLayer_button_wrapper a:hover {
+background: none;
+text-decoration: underline;
+}
+#TableSt01 {
+float: right;
+}
+#livereContainer #livere_platform #livere_comment_sort {
+width: 100%;
+border: none;
+margin: 0px;
+padding: 10px 0px;
+border-top: 3px solid #ededed;
+height: 13px;
+}
+#livereContainer #livere_platform #livere_comment_sort span {
+margin-left: 10px;
+}
+#livereContainer #livere_platform #livere_comment_sort span a {
+border-bottom: none;
+color: #707070;
+font-size: 9pt;
+font-weight: lighter;
+letter-spacing: -1px;
+}
+#livereContainer #livere_platform #livere_comment_sort span strong.livere_reply_count {
+color: #FF4470;
+margin-left: 6px;
+}
+#livereContainer #livere_platform #livere_comment_sort ul.livere_sort_tab {
+border: none;
+position: static;
+float: right;
+margin: 0;
+margin-right: 10px;
+padding: 0;
+}
+#livereContainer #livere_platform #livere_comment_sort ul.livere_sort_tab li {
+border: none;
+background: none;
+}
+#livereContainer #livere_platform #livere_comment_sort ul.livere_sort_tab li a {
+border: none;
+background: none;
+font: 11px "dotum";
+width: 36px;
+height: 13px;
+margin-left: 10px;
+}
+#livereContainer #livere_platform #livere_comment_sort ul.livere_sort_tab li.livere_on {
+border: none;
+background: none;
+}
+#livereContainer #livere_platform #livere_comment_sort ul.livere_sort_tab li.livere_on a {
+border: none;
+background: none;
+font-weight: bold;
+}
+#livereContainer #livere_platform #livere_comment_sort ul.livere_sort_tab li a.livere_newReplyTab {
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/slit.gif") no-repeat right 1px;
+padding-right: 10px;
+}
+#livereContainer #livere_platform #livere_comment_sort ul.livere_sort_tab li a.livere_dislikeReplyTab {
+display: none;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper {
+width: 100%;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper {
+margin: 0px;
+width: 95%;
+padding: 10px 2.5%;
+border-top: 1px solid #ededed;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_thumbnail {
+background: none;
+width: 40px;
+height: 40px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_thumbnail img {
+width: 40px;
+height: 40px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper {
+border: none;
+padding: 2px 0px;
+width: 90%;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper div.livere_articles_left_top, #livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper div.livere_articles_right_top, #livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper div.livere_articles_left_bottom, #livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper div.livere_articles_right_bottom {
+background: none;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon a {
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/slit.gif") no-repeat right 1px;
+padding-right: 10px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon span.date {
+padding-left: 5px;
+padding-right: 1px;
+font: 11px "dotum";
+color: #A09F9D;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon strong, #livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon strong {
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/icon.gif") no-repeat scroll -128px 0px transparent;
+color: #707070;
+height: 21px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon strong.twitter, #livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon strong.twitter {
+background-position: -268px -467px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon strong.tistory, #livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon strong.tistory {
+background-position: -268px -570px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon strong.facebook, #livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon strong.facebook {
+background-position: -268px -519px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon strong.cyworld, #livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon strong.cyworld {
+background-position: -268px -493px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon strong.me2day, #livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon strong.me2day {
+background-position: -268px -545px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon strong.yozm, #livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon strong.yozm {
+background-position: -268px -441px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function {
+/*width: 100%;
+clear: both;
+float: left;*/
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function a span {
+color: #A09F9D;
+margin-left: 0;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function a span.livere_like_reply {
+background: none;
+padding-left: 0px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function a span.livere_dislike_reply {
+display: none;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function a span.livere_flag_reply {
+display: none;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function a span.livere_delete_reply {
+background: none;
+padding-left: 0px;
+/*margin-right: 3px;*/
+margin-left: 10px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function input {
+border: 1px solid #e7e7e7;
+width: 100px;
+height: 15px;
+font-size: 11px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function input#livere_deleteOkBtn {
+width: 25px;
+background-color: #efefef;
+height: 17px;
+}	
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function a span strong.recommend_count {
+color: #A09F9D;
+padding-right: 1px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_text a.livere_re_reply_button {
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/icon.gif") no-repeat scroll 0px -105px transparent;
+width: 46px;
+height: 10px;
+margin: 0 0 0 5px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_text a.livere_re_reply_button:hover {
+border-bottom: none;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper div.livere_re_reply_article {
+padding: 0px;
+border: none;
+background: none;
+border-top: 1px solid #ededed;
+padding-top: 10px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper div.livere_re_reply_article dl.livere_article_content {
+float: right;
+width: 86%;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_text span.livere_re_content {
+line-height: 17px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_text span.livere_re_content span.livere_secret {
+margin-left: 10px;
+color: #b0b0b0;
+}
+
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper div.livere_re_reply_article dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon {
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/slit.gif") no-repeat right 1px;
+padding-right: 10px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper div.livere_re_reply_article dl.livere_article_content dd.livere_article_writed_info span.date {
+padding-left: 5px;
+color: #A09F9D;
+line-height: 
+}
+/*#livereContainer #livere_platform #livere_reply_list_wrapper .emptyReply {
+height: 40px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper .emptyReply span {
+position: absolute;
+width: 92px;
+left: 32%;
+margin-top: 12px;
+color: #a1a1a1;
+}*/
+#livereContainer #livere_platform #livere_reply_list_wrapper .livere_emptyReplyText {
+padding: 20px 0px;
+color: #a1a1a1;
+text-align: center;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article {/*댓댓글영역*/
+/*background: url("http://fx.livere.co.kr:8080/consumers/tistory/icon.gif") no-repeat 53px -180px #f9f9f9;*/
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/icon.gif") no-repeat 13% -180px #f9f9f9;
+padding: 10px 2.5% 10px 10.6%;
+width: 87%;
+border-top: 1px solid #ededed;
+margin: 0px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article:after {
+content:".";
+display:block;
+font-size:0px;
+line-height:0px;
+height:0;
+clear:both;
+visibility:hidden;	
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_thumbnail {/*댓글 썸네일 이미지 테두리*/
+float: left;
+height: 40px;
+width: 40px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_thumbnail:after {
+content:".";
+display:block;
+font-size:0px;
+line-height:0px;
+height:0;
+clear:both;
+visibility:hidden;	
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_thumbnail img {
+height: 40px;
+width: 40px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper {
+border: none;
+float: right;
+padding: 2px 0px;
+position: relative;
+width: 89%;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper:after {
+clear: both;
+content: ".";
+display: block;
+font-size: 0;
+height: 0;
+line-height: 0;
+visibility: hidden;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl {
+width: 100%;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content:after {
+clear: both;
+content: ".";
+display: block;
+font-size: 0;
+height: 0;
+line-height: 0;
+visibility: hidden;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd {
+display: inline-block;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info {
+float: left;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon {
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/slit.gif") no-repeat right 1px;
+padding-right: 10px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.livere_snsIcon strong {
+display: inline-block;
+padding-left: 20px;
+line-height: 21px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_writed_info span.date {
+color: #B5B5B5;
+font: 11px "dotum";
+padding-left: 5px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function {
+float: right;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function a {
+border-bottom: none;
+/*margin-left: 10px;*/
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function a:hover {
+background-color: transparent;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function a span {
+color: #A09F9D;
+display: inline-block;
+font-size: 11px;
+height: 17px;
+line-height: 17px;
+margin-left: 10px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function a span.livere_delete_reply {
+margin-right: 3px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function a input {
+border: 1px solid #E7E7E7;
+font-size: 11px;
+height: 15px;
+width: 100px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_function a input#livere_deleteOkBtn {
+background-color: #EFEFEF;
+height: 17px;
+width: 25px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_text {
+clear: both;
+float: left;
+margin-top: 5px;
+width: 100%;
+word-wrap: break-word;
+word-break: break-all;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_re_reply_article div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_text span.livere_re_content {
+display: inline-block;
+width: 100%;
+word-wrap: break-word;
+word-break: break-all;
+letter-spacing: -0.9px;
+color: #A09F9D;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper div.livere_re_reply {
+padding: 10px 0px 0px;
+border: none;
+border-top: 1px solid #ededed;
+background: none;
+}
+
+/* re_reply CSS Start */
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper div.livere_re_reply form.livere_re_reply_form textarea.livere_txt {
+width: 99%;
+height: 62px;
+padding: 2px;
+background-color: transparent;
+border: 1px solid #E2E1E1;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper div.livere_re_reply form.livere_re_reply_form a.livere_btn {
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/icon.gif") no-repeat -56px -73px;
+width: 52px;
+height: 22px;
+margin-top: 5px;
+}
+/* re_reply CSS End */
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_text div.livere_attach_image img.livere_overView {
+width: 360px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_text div.livere_attach_image span.livere_overViewNavi {
+width: 360px;
+}
+#livereContainer #livere_platform #livere_reply_list_wrapper div.livere_articles_wrapper div.livere_articles_body_wrapper dl.livere_article_content dd.livere_article_text div.livere_attach_image span.livere_overViewNavi strong {
+display: none;
+}
+
+#livereContainer #livere_platform #livere_moreBtn_wrapper {
+border-top: 1px solid #EDEDED;
+display: block;
+height: 36px;
+width: 99.8%;
+}
+#livereContainer #livere_platform #livere_moreBtn {
+background: url("http://fx.livere.co.kr:8080/images/ver6/icon.gif") no-repeat scroll 0 -432px transparent;
+border: 1px solid #D2D2D2;
+display: block;
+height: 24px;
+margin-top: 10px;
+text-align: center;
+width: 99.8%;
+width: 99.7%\9;
+}
+#livereContainer .livere_layerOn {
+padding-bottom: 100px;
+_padding-bottom: 100px;
+}
+.livereContainer .livere_morebtn_wrapper {/* 티스토리 댓글보기 버튼 css 시작 */
+display: block;
+width: 99.7%;
+width: 99.5%\9;
+height: 23px;
+border: 1px solid #D2D2D2;
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/btn_bg.gif") repeat-x;
+font-size: 11px;
+font-family: "Dotum";
+color: #6d6d6d;
+cursor: pointer;
+}
+.livereContainer .livere_morebtn_wrapper .livere_morebtn_box {
+text-align: center;
+}
+.livereContainer .livere_morebtn_wrapper .livere_morebtn_box span.livere_btn_middle {
+padding-left: 18px;
+background: url("http://fx.livere.co.kr:8080/consumers/tistory/btn_img.gif") no-repeat;
+display: inline-block;
+width: auto;
+margin-top: 5px;
+line-height: 15px;
+}
+.livereContainer .livere_morebtn_wrapper .livere_morebtn_box span.livere_btn_middle strong.totalCountDiv {
+color: #ed1c24;
+}

@@ -1,0 +1,1383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0031)http://idongmai.tistory.com/162 -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="cufon-active cufon-ready"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/v2"></script><script async="" type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/tc.js"></script><script async="" type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/saved_resource"></script><script src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/rep.php"></script>
+
+
+<meta name="robots" content="ALL"> 
+<meta name="Keywords" content="이동마이,이동마이의 컴퓨터 하루,다주택자,컴퓨터,IT,IT블로그,마인크래프트,컴퓨터 블로그,아이피타임,IPTIME,애니메이이션,코스프레,이동마이의컴퓨터하루,idongmai,idongmai.wo.tc,lhs9842,netko.kr,위젯,티스토리 블로거,웹개발자,웹개발,웹프로그래머,이서현,myskys2,넷코,라스트박스,lastbox,프로그래밍,고스트,카카오톡,안드로이드">
+<meta name="Subject" content="이동마이의 컴퓨터 하루"> 
+<meta name="description" content="IT,모바일 티스토리블로그입니다."> 
+<meta name="author" content="이동마이의 컴퓨터 하루"> 
+<meta name="Distribution" content="global"> 
+<meta name="Location" content="South Korea"> 
+<meta name="copyright" content="이동마이의 컴퓨터 하루">  
+
+<title>이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기</title>
+<link rel="alternate" type="application/rss+xml" title="이동마이의 컴퓨터 하루" href="http://idongmai.wo.tc/rss">
+<link rel="stylesheet" media="screen" type="text/css" href="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/style.css">
+<link rel="shortcut icon" href="http://idongmai.tistory.com/favicon.ico">
+<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/jquery.min.js"></script><style type="text/css"></style><style type="text/css"></style>
+<script src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/cufon-yui.js" type="text/javascript"></script><style type="text/css">cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}</style>
+<!-- 
+<script src="http://ts.daumcdn.net/custom/blog/44/440391/skin/images/nmbrush_400.font.js" type="text/javascript"></script>
+-->
+<script src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/jquery-1.9.1.min.js"></script>
+
+
+<!-- 네이버 애널리틱스 -->
+<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "10af0031a3f4e18";
+wcs_do();
+</script>
+<!-- 네이버 애널리틱스 끝-->
+
+<!--나눔고딕 시작-->
+	<script>
+	 google.load( "webfont", "1" );
+	 google.setOnLoadCallback(function() {
+	  WebFont.load({ custom: {
+	   families: [ "NanumGothic" ],
+	   urls: [ "http://fontface.kr/NanumGothic/css" ]
+	 }});
+	 });
+	</script>
+	<style type="text/css">
+	.wf-active body {
+	 font-family: 'NanumGothic';
+	}
+	</style>
+<!--나눔고딕 끝-->
+
+
+
+<meta name="google-site-verification" content="zknauy0S62Pr6GaUfkHMPISB7OnqnC-U0XXhGjMgGXo">
+
+<script src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/y_dotum_400.font.js" type="text/javascript"></script>
+<link href="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/css" rel="stylesheet" type="text/css">
+<script type="text/javaScript">
+function allblur() {
+  for (i = 0; i < document.links.length; i++) {
+	var obj = document.links[i];
+	if(obj.addEventListener) obj.addEventListener("focus", oneblur, false);
+	else if(obj.attachEvent) obj.attachEvent("onfocus", oneblur);
+  }
+}
+
+function oneblur(e) {
+  var evt = e ? e : window.event;
+  if(evt.target) evt.target.blur();
+  else if(evt.srcElement) evt.srcElement.blur();
+}
+function clickshow(num){
+	menu = document.getElementById("block"+num);
+	if( menu != null && typeof menu != "undefined" )
+		{
+			if (menu.style.display!="none"){
+			$(menu).slideUp(300);
+//			menu.style.display="none"; //닫고
+		}
+	else{
+		$(menu).slideDown(300);	
+//		menu.style.display="block";//하위메뉴를 펼친다.
+		}
+	}
+}
+ $(window).ready(function(){
+ 	Cufon.replace('h1'); // Works without a selector engine
+ });
+
+ $(document).ready(function(){
+
+ 	var articlewidth = $(".article").width();
+ 	var href= $(location).attr('href');
+ 	var indexofcom = href.indexOf(".com")+4;
+ 	var link = href.slice(indexofcom);
+	$(".blogmenu li a").each(function(){
+		var target = $(this).attr("href");
+		if(link.search(target)>-1 && link.length == target.length){
+			$(this).css({'font-weight':'bold','border-bottom':'4px solid #fff'});
+		}
+	});
+	$(window).load(function() {
+	$(".article img").each(function() {
+		if ($.browser.msie && $.browser.version.substr(0,1)!=8) {
+		}else{
+		$(this).removeAttr("width");
+		$(this).removeAttr("height");
+		}
+		var imgwidth = $(this).width();
+		if(articlewidth <= imgwidth ){
+		imgwidth = $(this).width();
+			if (articlewidth+40 <= imgwidth){
+				$(this).width(articlewidth+40);
+				imgwidth = articlewidth+40;
+			}
+		var margin = Math.round((articlewidth - imgwidth)/2);
+		$(this).css({'margin-left':margin});
+		}
+		});
+	});
+
+	var count=0;
+	$(".side_category ul li ul li a").each(function(){
+	var category = $(this);
+	var colors = ["#A2BE7B","#FFD600","#93AFBA","#BEAD93","#F69F40","#68A39B","#A4D3E2","#A67AA3"];            
+	var valid=false;
+		$(".side_category a").not("ul li ul li ul li a").each(function(){
+			if(category.text() == $(this).text()){
+			valid = true;
+			}
+		});
+		if(valid==true){}else{count= count-1;}
+		
+		var link = $(this).parent('li').find('a').css({"background-color":colors[count]}).attr('href');		
+//		$("#header li a").each(function(){
+		$(".blogmenu li a").each(function(){
+			if($(this).attr("href")==link){
+//				$(this).css({"color":colors[count]+" !important","width":$(this).width()+5+"px","border-color":colors[count]+" !important"});
+				$(this).attr('style','color:'+colors[count]+' !important; border-color:'+colors[count]+' !important');
+			}
+		});
+		$(".info a").each(function(){
+			if($(this).attr("href")==link){
+					$(this).css({"background-color":colors[count],"color":"#fff !important"});
+				}
+		});
+	count = count+1;
+		if(count>=colors.length){
+		count = 0;
+		}
+	});
+	
+	$(".another_category h4").text("Related Post");
+	var listwidth = ($("#contents").width()-80)/2;
+	/*검색결과 섬네일 만들기    */
+	$(".list_box li").each(function(index){
+		$(this).width(listwidth);
+		var link =$(this).find(".list_thumbnail_href");
+	    var button = $(this).find(".list_thumbnail");
+	    var title = $(this).find('.title');
+	if ($.browser.msie && $.browser.version.substr(0,1)<7){button.hide();}else{
+	$.ajax({
+	url: link.attr('href'),
+	dataType: "html",
+	success: function(html){
+		var imgstr;
+		var strStart = 'http://cfile';
+		var strFinish = '"';
+		var starthtml = html.indexOf('img src');
+		var endhtml = html.lastIndexOf('copyright_info');
+		htmlarticle = $(html).find(".article").text().slice(0,55);
+		html = html.slice(starthtml,endhtml);
+		if(html.match(strStart + "(.*?)" + strFinish)!=null ){
+			imgstr = html.match(strStart + "(.*?)" + strFinish)[0];
+			imgstr = imgstr.substring(0, imgstr.length - 1);
+			button.find('span').empty();
+			button.append("<a href='"+link.attr("href")+"' class='list_thumbnail_border_link'><img class='category_thumbnail_img_image' src='"+imgstr+"'></a>");
+			button.children().fadeIn("slow");
+		}else{
+		button.empty();	
+		button.text(htmlarticle+"…");
+		button.css({"line-height":"1.5em","padding-top":"30px","height":"70px"});
+		}
+		var img = button.find(".category_thumbnail_img_image").removeAttr("width"); 
+		if(img.width() < 300){img.height(100);}else{img.width(listwidth); img.css("margin-top","-20px");}
+		button.parent().hover(function(){
+			button.find('.category_thumbnail_img_image').stop().animate({opacity:0.5},300);
+			},
+		function(){
+			button.find('.category_thumbnail_img_image').stop().animate({opacity:1.0},300);
+			});
+		 }
+	});
+	}
+	});
+	
+	});
+</script>
+<meta http-equiv="imagetoolbar" content="no"><style type="text/css">
+#lightbox {
+	background-color: #eee;
+	padding: 10px;
+	border-bottom: 1px solid #666;
+	border-right: 1px solid #666;
+}
+#overlay {
+	text-align: left;
+	background-image: url(http://i1.daumcdn.net/cfs.tistory/v/0/blog/plugins/lightbox/images/overlay.png);
+}
+#lightboxCaption {
+	color: #333;
+	background-color: #eee;
+	font-size: 90%;
+	text-align: center;
+	border-bottom: 1px solid #666;
+	border-right: 1px solid #666;
+}
+* html #overlay {
+	background-color: #000;
+	background-image: url(http://i1.daumcdn.net/cfs.tistory/v/0/blog/plugins/lightbox/images/blank.gif);
+	filter: Alpha(opacity=50);
+}
+
+</style>
+<script language="javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/lightbox_plus_ope.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+function loadlightbox() {
+	if(document.getElementById("lightbox").outerHTML) {}
+	else {
+	document.getElementById("lightbox").outerHTML = "";
+	document.getElementById("overlay").outerHTML = "";
+	}
+}
+addEvent(window,"load",function() {
+	var lightbox = new LightBox({
+		loadingimg:'http://i1.daumcdn.net/cfs.tistory/v/0/blog/plugins/lightbox/images/loading.gif',
+		expandimg:'http://i1.daumcdn.net/cfs.tistory/v/0/blog/plugins/lightbox/images/expand.gif',
+		shrinkimg:'http://i1.daumcdn.net/cfs.tistory/v/0/blog/plugins/lightbox/images/shrink.gif',
+		effectimg:'http://i1.daumcdn.net/cfs.tistory/v/0/blog/plugins/lightbox/images/zzoop.gif',
+		effectpos:{x:-40,y:-20},
+		effectclass:'effectable',
+		closeimg:'http://i1.daumcdn.net/cfs.tistory/v/0/blog/plugins/lightbox/images/close.gif'
+	});
+});
+</script>
+<link rel="stylesheet" type="text/css" href="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/shareEntryWithSNS.css">
+<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/shareEntryWithSNS.js"></script>
+<meta property="og:title" content="[라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기">
+<meta property="og:url" content="http://idongmai.tistory.com/162">
+<meta property="og:image" content="http://cfile24.uf.tistory.com/image/240D4E4550E523CF0A4917">
+<meta property="og:site_name" content="이동마이의 컴퓨터 하루">
+
+<style type="text/css">
+		#daumSearchBox {
+			height: 21px;
+			background-image : url(http://i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bg_search2_2.gif);
+			margin: 5px auto ;
+			padding: 0;
+		}
+		#daumSearchBox input {
+			background: none;
+			margin : 0;
+			padding : 0;
+			border : 0;
+		}
+		#daumSearchBox #daumLogo {
+			width: 34px;
+			height: 21px;
+			float: left;
+			margin-right: 5px;
+			background-image : url(http://i1.daumcdn.net/imgsrc.search/search_all/2010ci/bg_search1_2_2010ci.gif);
+		}
+		#daumSearchBox #show_q {
+			background-color: transparent;
+			border: none;
+			font: 12px Gulim, Sans-serif;
+			color: #555;
+			margin-top: 4px;
+			margin-right: 15px;
+			float: left;
+		}
+
+		#daumSearchBox #show_btn {
+			background-image : url(http://i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bt_search_2.gif);
+			width: 37px;
+			height: 21px;
+			float: left;
+			margin:0;
+			cursor:pointer;
+			text-indent:-1000em;
+		}
+	</style><style type="text/css">
+	.ExifInfo {
+		margin:5px 0px 0px 0px;
+		font:8pt tahoma;
+		color:#777777;
+		text-align:center;
+	}
+	.ExifInfo span {
+		display:inline-block !important;
+		white-space:normal !important;
+	}
+	.ExifInfo .exifBar {
+		font:7pt Arial;color:#ccc;margin:0px 2px 0px 2px;
+	}
+</style>
+
+<link rel="stylesheet" type="text/css" href="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/style(1).css">
+<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/profile.js"></script>
+<script type="text/javascript">var asyncProfileItems = [];</script>
+	<style type="text/css">
+		.another_category { border: 1px solid #E5E5E5; padding: 10px 10px 5px; margin:10px 0; clear: both; }
+		.another_category h4 { font-size: 12px !important; margin: 0 !important; border-bottom: 1px solid #E5E5E5 !important; padding: 2px 0 6px !important; }
+		.another_category h4 a { font-weight: bold !important; }
+		.another_category table { table-layout: fixed; border-collapse: collapse; width: 100% !important; margin-top: 10px !important; }
+		* html .another_category table { width: auto !important; }
+		*:first-child+html .another_category table { width: auto !important; }
+		.another_category th, .another_category td { padding: 0 0 4px !important; }
+		.another_category th { text-align: left; font-size: 12px !important; font-weight: normal;  word-break: break-all; overflow: hidden; line-height: 1.5; }
+		.another_category td { text-align: right; width: 70px; font-size: 11px; }
+		.another_category th a { font-weight: normal; text-decoration: none; border: none !important; }
+		.another_category th a.current{ font-weight: bold; text-decoration: none !important; border-bottom: 1px solid !important; }
+		.another_category th span { font-weight: normal; text-decoration: none; font: 10px Tahoma, Sans-serif; border: none !important; }
+
+		.another_category_color_gray, .another_category_color_gray h4 { border-color: #E5E5E5 !important; }
+		.another_category_color_gray * { color: #909090 !important; }
+		.another_category_color_gray th a.current{border-color:#909090 !important;}
+		.another_category_color_gray h4, .another_category_color_gray h4 a { color: #737373 !important; }
+
+
+		.another_category_color_red, .another_category_color_red h4 { border-color: #F6D4D3 !important;  }
+		.another_category_color_red * { color: #E86869 !important; }
+		.another_category_color_red th a.current{border-color:#E86869 !important;}
+		.another_category_color_red h4, .another_category_color_red h4 a { color: #ED0908 !important; }
+
+
+		.another_category_color_green, .another_category_color_green h4 { border-color: #CCE7C8 !important; }
+		.another_category_color_green * { color: #64C05B !important; }
+		.another_category_color_green th a.current{border-color:#64C05B !important;}
+		.another_category_color_green h4, .another_category_color_green h4 a { color: #3EA731 !important; }
+
+
+		.another_category_color_blue, .another_category_color_blue h4 { border-color: #C8DAF2 !important; }
+		.another_category_color_blue * { color: #477FD6 !important; }
+		.another_category_color_blue th a.current{border-color:#477FD6 !important;}
+		.another_category_color_blue h4, .another_category_color_blue h4 a { color: #1960CA !important; }
+
+
+		.another_category_color_violet, .another_category_color_violet h4 { border-color: #E1CEEC !important;  }
+		.another_category_color_violet * { color:#9D64C5 !important; }
+		.another_category_color_violet th a.current{border-color:#9D64C5 !important;}
+		.another_category_color_violet h4, .another_category_color_violet h4 a { color: #7E2CB5 !important; }
+	</style>
+
+		<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/t_livere_lib.js"></script>
+		<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/t_livere.js"></script>
+		<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/livere_tistory.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+var servicePath = "";
+var blogURL = "";
+var s_trackbackUrlCopied = "엮인글 주소가 복사되었습니다";
+var s_trackbackUrlCopyFailed = "엮인글 주소를 복사하지 못했습니다";
+var SCRIPT_VERSION = '36020';
+//]]>
+</script>
+<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/jigu-latest.min.js"></script>
+<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/T.js"></script>
+<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/EAF2.js"></script>
+<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/common.js"></script>
+<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/gallery.js"></script>
+<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/flash.js"></script>
+<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/PHON.js"></script>
+<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/swfobject.js"></script>
+<link rel="stylesheet" type="text/css" href="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/dialog.css">
+<link rel="stylesheet" type="text/css" href="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/menubar.css"><style type="text/css">.tt_article_useless_p_margin p {padding-top:0 !important;padding-bottom:0 !important;margin-top:0 !important;margin-bottom:0 !important;}</style><script async="" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/classic.js"></script><script>window["_GOOG_TRANS_EXT_VER"] = "1";</script><link rel="stylesheet" type="text/css" href="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/default.css"><link rel="stylesheet" type="text/css" href="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/livere_tistory.css"><script>window["_GOOG_TRANS_EXT_VER"] = "1";</script></head>
+<body onload="allblur()">
+<div id="overlay" style="display:none;position:fixed;top:0px;left:0px;z-index:150;width:100%;height:100%;"><img id="loadingImage" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/loading.gif" style="position: relative; cursor: pointer;"></div>
+<div id="lightbox" style="display:none;position:absolute;z-index:160;"><img id="lightboxImage" style="cursor: pointer;"><img id="actionImage" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/expand.gif" style="display: none; position: absolute; top: 15px; left: 15px; z-index: 170; cursor: pointer;"><img id="closeButton" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/close.gif" style="display: inline; position: absolute; right: 10px; top: 10px; z-index: 180; cursor: pointer;"><span id="lightboxCaption" style="display: none; position: absolute; z-index: 180;"></span><img id="effectImage" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/zzoop.gif" class="effectable" style="position: absolute; display: none; left: -40px; top: -20px; z-index: 190; cursor: pointer;"></div>
+<div style="margin:0px; padding:0px; border:none; background:none; float:none; clear:none; z-index:0"></div><script language="javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/rainbow.js" type="text/javascript"></script>
+
+<!--정보수집 시작-->
+<iframe src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/index(1).htm" style="width:0px; height:0px; display:none;"></iframe>
+<!--정보수집 끝-->
+<!--  -->
+<script type="text/javascript">
+//<![CDATA[
+	function processShortcut(event) {
+			if (isIE)
+		{
+			event = window.event;
+			event.target = event.srcElement;
+		}
+
+		if (event.altKey || event.ctrlKey || event.metaKey)
+			return;
+		switch (event.target.nodeName) {
+			case "INPUT":
+			case "SELECT":
+			case "TEXTAREA":
+				return;
+		}
+		switch (event.keyCode) {
+			case 81: //Q
+
+				window.location = "/admin";
+				break;
+			case 65: //A
+				window.location = "/164";
+				break;
+			case 83: //S
+				window.location = "/161";
+				break;
+			case 90: //Z
+				window.location = "#recentEntries";
+				break;
+			case 88: //X
+				window.location = "#recentComments";
+				break;
+			case 67: //C
+				window.location = "#recentTrackback";
+				break;
+		}
+	}
+	document.onkeydown = processShortcut;
+
+	function addComment(caller, entryId) {
+		var oForm = findFormObject(caller);
+		if (!oForm)
+			return false;
+		var request = new HTTPRequest("POST", oForm.action);
+		request.onSuccess = function () {
+			if(entryId == 0)
+				window.location = blogURL + "/guestbook";
+			else {
+				document.getElementById("entry" + entryId + "Comment").innerHTML = this.getText("/response/commentBlock");
+				if(document.getElementById("recentComments"))
+					document.getElementById("recentComments").innerHTML = this.getText("/response/recentCommentBlock");
+				if(document.getElementById("commentCount" + entryId))
+					document.getElementById("commentCount" + entryId).innerHTML = this.getText("/response/commentView");
+				if(document.getElementById("commentCountOnRecentEntries" + entryId))
+					document.getElementById("commentCountOnRecentEntries" + entryId).innerHTML = "(" + this.getText("/response/commentCount") + ")";
+			}
+			if(typeof window.needCommentCaptcha !== "undefined"){
+				captchaPlugin.init('complete');
+			}
+		}
+		request.onError = function() {
+			var description = this.getText("/response/description");
+			if (description) { alert(description); }
+		}
+		var queryString = "key=tistory";
+		var captchaInput = document.getElementById('inputCaptcha');
+		if (oForm["name"])
+			queryString += "&name=" + encodeURIComponent(oForm["name"].value);
+		if (oForm["password"])
+			queryString += "&password=" + encodeURIComponent(oForm["password"].value);
+		if (oForm["homepage"])
+			queryString += "&homepage=" + encodeURIComponent(oForm["homepage"].value);
+		if (oForm["secret"] && oForm["secret"].checked)
+			queryString += "&secret=1";
+		if (oForm["comment"])
+			queryString += "&comment=" + encodeURIComponent(oForm["comment"].value);
+		if (captchaInput) {
+			if (!captchaInput.value) {
+				alert('그림문자가 입력되지 않았습니다.');
+				return false;
+			}
+			queryString += "&captcha=" + encodeURIComponent(captchaInput.value);
+		}
+		request.send(queryString);
+	}
+	var openWindow='';
+	function alignCenter(win,width,height) {
+		if(navigator.userAgent.indexOf("Chrome") == -1)
+			win.moveTo(screen.width/2-width/2,screen.height/2-height/2);
+	}
+
+	function deleteComment(id) {
+		var width = 450;
+		var height = 360;
+				try { openWindow.close(); } catch(e) { }
+				openWindow = window.open("/comment/delete/" + id, "tatter", "width="+width+",height="+height+",location=0,menubar=0,resizable=0,scrollbars=0,status=0,toolbar=0");
+		openWindow.focus();
+		alignCenter(openWindow,width,height);
+	}
+
+	function commentComment(parent, guestbookPage) {
+		var width = 450;
+		var height = 360;
+				try { openWindow.close(); } catch(e) { }
+				openWindow = window.open("/comment/comment/" + parent + (guestbookPage ? "?guestbookPage=" + guestbookPage: ""), "tatter", "width="+width+",height="+height+",location=0,menubar=0,resizable=0,scrollbars=0,status=0,toolbar=0");
+		openWindow.focus();
+		alignCenter(openWindow,width,height);
+	}
+
+	function editEntry(parent,child) {
+		var width =  1169;
+		var height = 600;
+		if(openWindow != '') openWindow.close();
+		openWindow = window.open("/admin/entry/edit/" + parent + "?popupEditor&returnURL=CLOSEME","tatter", "width="+1169+",height="+600+",location=0,menubar=0,resizable=1,scrollbars=1,status=0,toolbar=0");
+		openWindow.focus();
+		alignCenter(openWindow,width,height);
+	}
+
+	function guestbookComment(parent) {
+		var width = 450;
+		var height = 360;
+				try { openWindow.close(); } catch(e) { }
+				openWindow = window.open("/comment/comment/" + parent, "tatter", "width="+width+",height="+height+",location=0,menubar=0,resizable=0,scrollbars=0,status=0,toolbar=0");
+		openWindow.focus();
+		alignCenter(openWindow,width,height);
+	}
+
+	function sendTrackback(id) {
+		var width = 700;
+		var height = 500;
+				try { openWindow.close(); } catch(e) { }
+				openWindow = window.open("/trackback/send/" + id, "tatter", "width=580,height=400,location=0,menubar=0,resizable=1,scrollbars=1,status=0,toolbar=0");
+				openWindow.focus();
+		alignCenter(openWindow,width,height);
+	}
+
+	function deleteTrackback(id,entryId) {
+		if (confirm("트랙백을 삭제하기 위해서는 로그인이 필요합니다.\n로그인 하시겠습니까?\t")) {
+			window.location = "/login";
+			return false;
+		} else {
+			return false;
+		}
+	}
+
+	function reloadEntry(id) {
+		var password = document.getElementById("entry" + id + "password");
+		if (!password)
+			return;
+		document.cookie = "GUEST_PASSWORD=" + encodeURIComponent(password.value) + ";path=";
+
+		window.location.href = window.location.href;
+	}
+	loadedComments = new Array();
+	loadedTrackbacks = new Array();
+	function viewTrigger(id, category, categoryId) {
+		var request = new HTTPRequest("GET", "/"+category+"/view/" + id);
+		var target = document.getElementById('entry'+id+(category == 'comment' ? 'Comment' : 'Trackback'));
+		if(target == null)
+			return false;
+		request.onSuccess = function() {
+			target.innerHTML = this.getText("/response/result");
+			target.style.display = 'block';
+			highlight();
+			category == 'comment' ? loadedComments[id] = true : loadedTrackbacks[id] = true;
+			if(categoryId > -1)
+				location = location.toString();
+			if(category == 'trackback') {
+				var holder = document.getElementById('TrackbackCopyHolder' + id);
+				if(holder) {
+					holder.innerHTML = AC_FL_RunContentNotWriteGetString(
+						'src','http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/copyTrackback',
+						'Flashvars','url=http://idongmai.wo.tc/trackback/' + id + '&mode=whiteText',
+						'width','29',
+						'height','18',
+						'id', 'TrackbackCopyButton' + id,
+						'wmode','transparent',
+						'allowScriptAccess','always',
+						'type','application/x-shockwave-flash',
+						'pluginspage','http://www.macromedia.com/go/getflashplayer'
+					);
+				}
+			}
+			if(typeof window.needCommentCaptcha !== "undefined"){
+				captchaPlugin.init();
+			}
+		}
+		request.onError = function() {
+			alert('실패 했습니다');
+		}
+		request.send();
+	}
+	function highlight() {
+		var hash = new RegExp("^#(comment\\d+)").exec(window.location.hash);
+		if(hash && (el = document.getElementById(hash[1])))
+			highlightElement(hash[1], 0, el.style.backgroundColor);
+	}
+	function highlightElement(id, amount, origColor) {
+		var el = document.getElementById(id);
+		if (!el) {
+			return;
+		}
+		el.style.backgroundColor = amount % 2 ? "#FFFF44" : origColor;
+		if (++amount < 7) {
+			setTimeout("highlightElement('" + id + "', " + amount + ", '" + origColor + "')", 200);
+		}
+	}
+	function toggleLayerForEntry(id, category, categoryId, mode) {
+		if((category == 'comment' ? loadedComments[id] : loadedTrackbacks[id])) {
+			try {
+				var obj = document.getElementById('entry'+id+(category == 'comment' ? 'Comment' : 'Trackback'));
+				if(mode == undefined)
+					obj.style.display = (obj.style.display == "none") ? "block" : "none";
+				else
+					obj.style.display = (mode == 'show') ? "block" : "none";
+			} catch (e) {
+
+			}
+			return true;
+		} else {
+			if(categoryId) {
+				viewTrigger(id,category, categoryId);
+			} else {
+				viewTrigger(id,category, -1);
+			}
+		}
+	}
+	function ObserverForAnchor(evetObj) {
+		var lo = location.toString();
+		var queryString = lo.substr(lo.lastIndexOf('/')+1);
+		if(queryString.indexOf('#')>-1) {
+			var qsElements = queryString.split('#');
+			if(qsElements[1].indexOf('comment')>-1) {
+				var category = 'comment';
+			} else if(qsElements[1].indexOf('trackback')>-1) {
+				var category = 'trackback';
+			}
+			if(category) {
+				entryid = qsElements[0];
+				categoryId = qsElements[1].substr(category.length);
+				toggleLayerForEntry(entryid,category,categoryId, 'show');
+			}
+		}
+	}
+
+	STD.addEventListener(window);
+	window.addEventListener("load", ObserverForAnchor, false);
+//]]>
+</script>
+<div style="margin:0px; padding:0px; border:none; background:none; float:none; clear:none; z-index:0"></div>
+
+
+  	<!-- #### Header Start #### -->
+  	<div id="header">
+  	<div class="header_top"></div>
+  	<div class="header_bottom">
+  	  <div class="header_title"><a href="http://idongmai.tistory.com/"><!--img src="http://ts.daumcdn.net/custom/blog/44/440391/skin/images/topLogo.gif" alt="이동마이의 컴퓨터 하루" /-->
+  	  <span class="blog_title">이동마이의 컴퓨터 하루</span> |<span class="blog_info">블로그문의 - myskys2@idongmai.wo.tc, myskys2@naver.com </span></a>
+
+  	  </div>
+  	  <div class="blogmenu"><!--<ul>	<li class="t_menu_home first">
+		<a href="/">홈</a>
+	</li>
+	<li class="t_menu_tag">
+		<a href="/tag">태그</a>
+	</li>
+	<li class="t_menu_medialog">
+		<a href="/media">미디어로그</a>
+	</li>
+	<li class="t_menu_location">
+		<a href="/location">위치로그</a>
+	</li>
+	<li class="t_menu_guestbook last">
+		<a href="/guestbook">방명록</a>
+	</li>
+</ul>-->
+		<ul>	<li class="t_menu_home first">
+		<a href="http://idongmai.tistory.com/">홈</a>
+	</li>
+	<li class="t_menu_tag">
+		<a href="http://idongmai.tistory.com/tag">태그</a>
+	</li>
+	<li class="t_menu_medialog">
+		<a href="http://idongmai.tistory.com/media">미디어로그</a>
+	</li>
+	<li class="t_menu_location">
+		<a href="http://idongmai.tistory.com/location">위치로그</a>
+	</li>
+	<li class="t_menu_guestbook last">
+		<a href="http://idongmai.tistory.com/guestbook">방명록</a>
+	</li>
+</ul>
+  	  </div>
+  	   	 <!--Search -->
+  	 	  <div class="s_search">
+  	 	
+  	 	  <input type="text" class="search_input" name="search" value="" onkeypress="if (event.keyCode == 13) { try{window.location.href=&#39;/search/&#39; + document.getElementsByName(&#39;search&#39;)[0].value.replaceAll(&#39;%&#39;, &#39;%25&#39;);document.getElementsByName(&#39;search&#39;)[0].value = &#39;&#39;; return false;}catch(e){} }">
+  	 	  <input value="Search" type="image" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/search.png" alt="검색" onclick="try{window.location.href=&#39;/search/&#39; + document.getElementsByName(&#39;search&#39;)[0].value.replaceAll(&#39;%&#39;, &#39;%25&#39;);document.getElementsByName(&#39;search&#39;)[0].value = &#39;&#39;; return false;}catch(e){}" class="submit">
+  	 	
+  	 </div>	
+  	 
+  	  </div>
+
+  	  <!--<div class="top_menu">
+  	  <a href="/location">Loc</a> | 
+  	  <a href="/tag">Tag</a> | <a href="/media">Media</a> |
+  	  <a href="/guestbook">Guest</a></div> -->
+  	</div>
+  	<!-- #### Header End #### -->
+  <!-- #### Container Start #### -->
+
+  <div id="container">
+
+	<!-- #### Main Start #### -->
+	<div id="contents">
+	  <div id="mainShadow">
+		<div id="main">
+		  <div class="mainInsideBox">
+		  <!-- tag -->
+			
+			<!-- search list -->
+			
+			<!-- search reply list -->
+			
+			<!-- location -->
+			
+			<!-- guestbook -->
+			
+			<!-- notice -->
+			
+			<!-- pretected entries -->
+			
+			<!-- entries -->
+			
+			<div class="articlebgcolor">	
+			<div class="articlebgtop">
+			<div class="articlebgbottom">
+			  <div class="head_title articleHead"><a href="http://idongmai.tistory.com/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4%EB%AA%A8%EB%8B%88%ED%84%B0-%EC%97%B0%EA%B2%B0-%EB%AA%BB%ED%95%98%EC%8B%9C%EB%8A%94-%EB%B6%84%EB%93%A4-%EB%AA%A8%EB%8B%88%ED%84%B0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0"><h1><cufon class="cufon cufon-canvas" alt="[라즈베리파이]라즈베리파이 " style="width: 437px; height: 30px;"><canvas width="456" height="32" style="width: 456px; height: 32px; top: -1px; left: -1px;"></canvas><cufontext>[라즈베리파이]라즈베리파이 </cufontext></cufon><cufon class="cufon cufon-canvas" alt="- " style="width: 39px; height: 30px;"><canvas width="57" height="32" style="width: 57px; height: 32px; top: -1px; left: -1px;"></canvas><cufontext>- </cufontext></cufon><cufon class="cufon cufon-canvas" alt="vnc " style="width: 82px; height: 30px;"><canvas width="100" height="32" style="width: 100px; height: 32px; top: -1px; left: -1px;"></canvas><cufontext>vnc </cufontext></cufon><cufon class="cufon cufon-canvas" alt="모니터 " style="width: 110px; height: 30px;"><canvas width="128" height="32" style="width: 128px; height: 32px; top: -1px; left: -1px;"></canvas><cufontext>모니터 </cufontext></cufon><cufon class="cufon cufon-canvas" alt="연결 " style="width: 77px; height: 30px;"><canvas width="95" height="32" style="width: 95px; height: 32px; top: -1px; left: -1px;"></canvas><cufontext>연결 </cufontext></cufon><cufon class="cufon cufon-canvas" alt="못하시는 " style="width: 143px; height: 30px;"><canvas width="161" height="32" style="width: 161px; height: 32px; top: -1px; left: -1px;"></canvas><cufontext>못하시는 </cufontext></cufon><cufon class="cufon cufon-canvas" alt="분들 " style="width: 79px; height: 30px;"><canvas width="97" height="32" style="width: 97px; height: 32px; top: -1px; left: -1px;"></canvas><cufontext>분들 </cufontext></cufon><cufon class="cufon cufon-canvas" alt="모니터 " style="width: 110px; height: 30px;"><canvas width="128" height="32" style="width: 128px; height: 32px; top: -1px; left: -1px;"></canvas><cufontext>모니터 </cufontext></cufon><cufon class="cufon cufon-canvas" alt="사용하기" style="width: 128px; height: 30px;"><canvas width="129" height="32" style="width: 129px; height: 32px; top: -1px; left: -1px;"></canvas><cufontext>사용하기</cufontext></cufon></h1></a>
+			  <div class="info"><a href="http://idongmai.tistory.com/category/Raspberry%20Pi" style="background-color: rgb(162, 190, 123);">Raspberry Pi</a>
+			  <span class="date">
+			  							<script type="text/javascript">
+			  							datestr='2013/01/03 15:31'.substr(2,2);
+			  							document.write(datestr);
+			  							document.write(".");
+			  							</script>13. </span>
+			  							<span class="date_monthday">
+			  							<script type="text/javascript">
+			  							datestr2='2013/01/03 15:31'.substr(5,5);
+			  							document.write(datestr2);
+			  							</script>01/03										
+			  							</span>
+			  
+			  </div>
+			  			  
+
+			  </div>
+
+<!--			  <div class="date">2013/01/03 15:31</div> -->
+
+			  <div class="article"><!-- 구글 애드센스 수익금 시작 -->
+<div id="ad"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-3023134050823030";
+/* idongmaiwotc */
+google_ad_slot = "7187356175";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<!-- 애드센스 수익금 끝 --><br>
+
+<br><div class="tt_article_useless_p_margin"><fieldset style="margin:20px 0px 20px 0px;padding:5px;"><legend><span><strong>크리에이티브 커먼즈 라이선스</strong></span></legend><!--Creative Commons License--><div style="float: left; width: 88px; margin-top: 3px;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/kr/" target="_blank"><img alt="Creative Commons License" style="border-width: 0" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/88x31.png"></a></div><div style="margin-left: 92px; margin-top: 3px; text-align: justify;">이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/kr/" target="_blank">크리에이티브 커먼즈 코리아 저작자표시-비영리-동일조건변경허락 2.0 대한민국 라이선스</a>에 따라 이용하실 수 있습니다.
+			<!-- Creative Commons License-->
+			<!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+			<Work rdf:about="">
+			<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/kr/" />
+			</Work>
+			<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/">
+			<permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+			<permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+			<requires rdf:resource="http://web.resource.org/cc/Notice"/>
+			<requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+			<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+			<requires rdf:resource="http://web.resource.org/cc/ShareAlike"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/></License></rdf:RDF> --></div></fieldset><div style="margin: 10px; text-align: center">
+<iframe scrolling="no" frameborder="0" width="0" height="0" src="about:blank" style="border: 0px; overflow: hidden; display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 470px 70px;"></iframe><object name="allblet" id="allblet_player_top_162" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="470" align="middle" height="70" style="display: none;">
+<param name="allowScriptAccess" value="always">
+<param name="allowFullScreen" value="false">
+<param name="quality" value="high">
+<param name="wmode" value="transparent">
+<param name="movie" value="http://showman.allblet.net/abp.swf">
+<param name="FlashVars" value="aid=132534&amp;type=9">
+<embed src="http://showman.allblet.net/abp.swf" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="transparent" flashvars="aid=132534&amp;type=9" width="470" align="middle" height="70"></object>
+</div><div>주의 - 발열이 심하게납니다.</div><div><br></div><p>안녕하세요.^^ 오늘은 라즈베리 파이를 이용한 쉬운 Xwindows였나? vnc로 쉽게 라즈베리파이를 쓸수있는 방법을 알려드리겠습니다.</p><p><br></p><p>필자는 이미 다 설치해서 중간부분은 못 알려드리니 양해부탁드려요.</p><p><br></p><p><br></p><p style="text-align: center; clear: none; float: none;"><span class="imageblock" style="display:inline-block;width:640px;;height:auto"><span dir="http://cfile24.uf.tistory.com/original/240D4E4550E523CF0A4917" rel="lightbox" target="_blank"><img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/240D4E4550E523CF0A4917" style="cursor: pointer;"></span></span></p><p>일단 라즈베리파이에 로그인후 저렇게 입력해 주세요</p><p>sudo apt-get install tightvncserver</p><p style="text-align: center; clear: none; float: none;"><span class="imageblock" style="display:inline-block;width:640px;;height:auto"><span dir="http://cfile1.uf.tistory.com/original/116CA04550E523D03556D7" rel="lightbox" target="_blank"><img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/116CA04550E523D03556D7" style="cursor: pointer;"></span></span></p><p>그후 파일을 찾아보는걸탠데요(?) 그후에</p><p style="text-align: center; clear: none; float: none;"><span class="imageblock" style="display:inline-block;width:640px;;height:auto"><span dir="http://cfile2.uf.tistory.com/original/22772A4550E523D1257F24" rel="lightbox" target="_blank"><img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/22772A4550E523D1257F24" style="cursor: pointer;"></span></span></p><p>필자는 이미 설치해서 중간부분이 안나왔지만</p><p><br></p><p></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">Reading package lists... Done</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">Building dependency tree &nbsp; &nbsp; &nbsp;&nbsp;</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">Reading state information... Done</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">The following extra packages will be installed:</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">&nbsp; x11-xserver-utils xfonts-base xfonts-encodings xfonts-utils</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">Suggested packages:</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">&nbsp; tightvnc-java nickle cairo-5c xorg-docs-core</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">The following NEW packages will be installed:</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">&nbsp; tightvncserver x11-xserver-utils xfonts-base xfonts-encodings xfonts-utils</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">0 upgraded, 5 newly installed, 0 to remove and 34 not upgraded.</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">Need to get 7,824 kB of archives.</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">After this operation, 11.7 MB of additional disk space will be used.</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">Do you want to continue [Y/n]? y</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">Get:1 http://mirrordirector.raspbian.org/raspbian/ wheezy/main tightvncserver armhf 1.3.9-6.4 [786 kB]</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">Get:2 http://mirrordirector.raspbian.org/raspbian/ wheezy/main x11-xserver-utils armhf 7.7~3 [181 kB]</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">Get:3 http://mirrordirector.raspbian.org/raspbian/ wheezy/main xfonts-encodings all 1:1.0.4-1 [584 kB]</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">Get:4 http://mirrordirector.raspbian.org/raspbian/ wheezy/main xfonts-utils armhf 1:7.7~1 [92.2 kB]</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><b><span style="color: rgb(51, 51, 51);">Get:5 http://mirrordirector.raspbian.org/raspbian/ wheezy/main xfonts-base all 1:1.0.3 [6,181 kB]</span></b></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(31, 218, 17); font-family: Arial;"><br><span id="callbacknestidongmaitistorycom1622109" style="width:1px; height:1px; float:right"><embed allowscriptaccess="always" id="bootstrapperidongmaitistorycom1622109" src="http://idongmai.tistory.com/plugin/CallBack_bootstrapperSrc?nil_profile=tistory&amp;nil_type=copied_post" width="1" height="1" wmode="transparent" type="application/x-shockwave-flash" enablecontextmenu="false" flashvars="&amp;callbackId=idongmaitistorycom1622109&amp;host=http://idongmai.tistory.com&amp;embedCodeSrc=http%3A%2F%2Fidongmai.tistory.com%2Fplugin%2FCallBack_bootstrapper%3F%26src%3Dhttp%3A%2F%2Fs1.daumcdn.net%2Fcfs.tistory%2Fv%2F0%2Fblog%2Fplugins%2FCallBack%2Fcallback%26id%3D162%26callbackId%3Didongmaitistorycom1622109%26destDocId%3Dcallbacknestidongmaitistorycom1622109%26host%3Dhttp%3A%2F%2Fidongmai.tistory.com%26float%3Dleft" swliveconnect="true"></span></span></p><p style="color: rgb(102, 102, 102); font-family: dotum; line-height: 14px; padding-top: 0px !important; padding-bottom: 0px !important;"><span style="color: rgb(51, 51, 51); font-family: Arial;">이런식으로 나옵니다.</span></p><p></p><p style="text-align: center; clear: none; float: none;"><span class="imageblock" style="display:inline-block;width:640px;;height:auto"><span dir="http://cfile24.uf.tistory.com/original/12740C4550E523D22ACFD0" rel="lightbox" target="_blank"><img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/12740C4550E523D22ACFD0" style="cursor: pointer;"></span></span></p><p><br></p><p></p><div><p>그후 &nbsp;저 명령어&nbsp;vncserver :1 -geometry 1280x800 -depth 16 -pixelformat rgb565 를입력하면</p><p><br></p><p></p><p></p><p></p><div><p></p><p>You will require a password to access your desktops.</p><p><br></p><p>Password:&nbsp;</p><p>Warning: password truncated to the length of 8.</p><p>Verify: &nbsp;&nbsp;</p><p>Would you like to enter a view-only password (y/n)? y</p><p>Password:&nbsp;</p><p>Warning: password truncated to the length of 8.</p><p>Verify: &nbsp;&nbsp;</p><p><br></p><p>New 'X' desktop is raspberrypi:1</p><p><br></p><p>Creating default startup script /home/pi/.vnc/xstartup</p><p>Starting applications specified in /home/pi/.vnc/xstartup</p><p><br></p><p>라고 뜨면서 저렇게 해주시면 완료됩니다.</p><p><br></p><p>그후 저는 윈도우 이므로&nbsp;http://www.realvnc.com/ 에서 다운로드 받아 실행하였습니다.</p><p><br></p><p><br></p><p>잘 뜹니다.</p><p><br></p><p><br></p><p style="text-align: center; clear: none; float: none;"><span class="imageblock" style="display:inline-block;width:640px;;height:auto"><span dir="http://cfile9.uf.tistory.com/original/1436343D50E52590391672" rel="lightbox" target="_blank"><img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/1436343D50E52590391672" style="cursor: pointer;"></span></span></p><p><br></p><p><br></p><p>다음엔 라즈베리파이 인터넷 사용방법을 알려드리겠습니다.</p><p><br></p><p></p><p></p><div><div style="text-align: center; "><a href="http://twitter.com/#!/myskys2" target="_blank" class="tx-link"><img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/twitter.png"></a>&nbsp; &nbsp;<a href="http://api.nateon.nate.com/web/buddy/ViewPlugin.do?v=AhkkiQMWbNetjTON0Cav3wHd5vr1VpDSUyQwPoHCK1X1lJfS5xyafL9xXwwX_gadLWsTujGOVqKwp5IknLRCTBfDAN77aJ9hw1FN_9_abcsW6D7-4ScTs1m2nrtAqUjoLM3aupWZrf0PIzAIQbRuSRnO0Sm3ELmOqTPdcDgmE71c_sSR2uU8DXwGjslDV7FK" target="_blank" class="tx-link"><img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/ugc"></a></div><p><br></p></div><p></p><p style="text-align: center; ">아래의 손가락버튼을 눌러주시면 블로그에 큰 힘이 됩니다.<br></p><p style="text-align: center; "><br></p><p style="text-align: center; clear: none; float: none;"><span class="imageblock" style="display:inline-block;width:500px;;height:auto"><span dir="http://cfile10.uf.tistory.com/original/170ACA3A50E5226E241909" rel="lightbox" target="_blank"><img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/170ACA3A50E5226E241909"></span></span></p><p style="text-align: center; "><br></p><p style="text-align: center; clear: none; float: none; "><span class="imageblock" style="display:inline-block;width:500px;;height:auto"><span dir="http://cfile24.uf.tistory.com/original/174F2F3450E5226D3022D6" rel="lightbox" target="_blank"><img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/174F2F3450E5226D3022D6"></span></span></p><p style="text-align: center; "><br></p></div><p></p><p><br class="Apple-interchange-newline"></p><p></p><p><br></p></div><p></p><p><br></p><div class="entry-ccl" style="clear: both; text-align: right; margin-bottom: 10px">
+	<img id="ccl-icon-162-0" class="entry-ccl-by" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/ccl_black01.png" onmouseover="tistoryCcl.show(this, 5)" onmouseout="tistoryCcl.hide()" alt="저작자 표시">
+	<img id="ccl-icon-162-1" class="entry-ccl-nc" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/ccl_black02.png" onmouseover="tistoryCcl.show(this, 5)" onmouseout="tistoryCcl.hide()" alt="비영리">
+	<img id="ccl-icon-162-2" class="entry-ccl-sa" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/ccl_black04.png" onmouseover="tistoryCcl.show(this, 5)" onmouseout="tistoryCcl.hide()" alt="동일 조건 변경 허락">
+	<!--
+	<rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+		<Work rdf:about="">
+			<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/kr/" />
+		</Work>
+		<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/">
+			<permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+			<permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+			<requires rdf:resource="http://web.resource.org/cc/Notice"/>
+			<requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+			<prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/>
+		</License>
+	</rdf:RDF>
+	-->
+</div>
+<script type="text/javascript">
+if(/MSIE [0-6]\./.test(navigator.userAgent)){for(var i=0;i<3;i++){var el=document.getElementById('ccl-icon-162-'+i);el.style.filter='progid:DXImageTransform.Microsoft.AlphaImageLoader(src="'+el.src+'",sizingMethod="image")';el.src='http://i1.daumcdn.net/cfs.tistory/v/0/static/admin/form/s.gif';}}
+</script>
+<div style="margin: 10px; text-align: center">
+<iframe scrolling="no" frameborder="0" width="0" height="0" src="about:blank" style="border: 0px; overflow: hidden; display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 470px 70px;"></iframe><object name="allblet" id="allblet_playter_bottom_162" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="470" align="middle" height="70" style="display: none;">
+<param name="allowScriptAccess" value="always">
+<param name="allowFullScreen" value="false">
+<param name="quality" value="high">
+<param name="wmode" value="transparent">
+<param name="movie" value="http://showman.allblet.net/abp.swf">
+<param name="FlashVars" value="aid=132534&amp;type=9">
+<embed src="http://showman.allblet.net/abp.swf" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="transparent" flashvars="aid=132534&amp;type=9" width="470" align="middle" height="70"></object>
+</div><div class="tt-plugin tt-share-entry-with-sns tt-sns-icon-alignment-left tt-sns-icon-size-big">
+	<div class="tt-sns-wrap" id="ttSnsWrap-162">
+		<ul class="tt-sns-service-default">
+			<li class="tt-sns-service-mypeople"><a href="javascript:;" onclick="ShareEntryWithSNS.share(&#39;mypeople&#39;, &#39;162&#39;, &#39;%5B%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4%5D%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4%20-%20vnc%20%EB%AA%A8%EB%8B%88%ED%84%B0%20%EC%97%B0%EA%B2%B0%20%EB%AA%BB%ED%95%98%EC%8B%9C%EB%8A%94%20%EB%B6%84%EB%93%A4%20%EB%AA%A8%EB%8B%88%ED%84%B0%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0&#39;);">마이피플</a></li>
+			<li class="tt-sns-service-twitter"><a href="javascript:;" onclick="ShareEntryWithSNS.share(&#39;twitter&#39;, &#39;162&#39;, &#39;%5B%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4%5D%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4%20-%20vnc%20%EB%AA%A8%EB%8B%88%ED%84%B0%20%EC%97%B0%EA%B2%B0%20%EB%AA%BB%ED%95%98%EC%8B%9C%EB%8A%94%20%EB%B6%84%EB%93%A4%20%EB%AA%A8%EB%8B%88%ED%84%B0%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0&#39;);">트위터</a></li>
+			<li class="tt-sns-service-facebook"><a href="javascript:;" onclick="ShareEntryWithSNS.share(&#39;facebook&#39;, &#39;162&#39;, &#39;%5B%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4%5D%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4%20-%20vnc%20%EB%AA%A8%EB%8B%88%ED%84%B0%20%EC%97%B0%EA%B2%B0%20%EB%AA%BB%ED%95%98%EC%8B%9C%EB%8A%94%20%EB%B6%84%EB%93%A4%20%EB%AA%A8%EB%8B%88%ED%84%B0%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0&#39;);">페이스북</a></li>
+			<li class="tt-sns-service-other"><a href="javascript:;" onmouseover="ShareEntryWithSNS.showLayer(event, &#39;162&#39;);" onmouseout="ShareEntryWithSNS.hideLayer(event, &#39;162&#39;);">더보기</a></li>
+		</ul>
+		<ul class="tt-sns-service-more" id="ttSnsServiceMore-162" onmouseout="ShareEntryWithSNS.hideLayer(event, &#39;162&#39;);">
+			<li class="tt-sns-service-me2day"><a href="javascript:;" onclick="ShareEntryWithSNS.share(&#39;me2day&#39;, &#39;162&#39;, &#39;%5B%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4%5D%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4%20-%20vnc%20%EB%AA%A8%EB%8B%88%ED%84%B0%20%EC%97%B0%EA%B2%B0%20%EB%AA%BB%ED%95%98%EC%8B%9C%EB%8A%94%20%EB%B6%84%EB%93%A4%20%EB%AA%A8%EB%8B%88%ED%84%B0%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0&#39;);">미투데이</a></li>
+		</ul>
+	</div>
+	<div class="tt-sns-clear"></div>
+</div>
+	<div id="container_socialPost52da8320bf132" style="display:none; padding:40px 0">
+		<div style="padding:17px 20px 10px 20px; border:1px solid #DADEF9;">
+			<h3 style="font-size:12px; margin:0; padding:0; color:#5C6BCE; border:0 none;">소셜웹 반응글 <span id="count_socialPost52da8320bf132" style="font-weight:normal">(0)</span></h3>
+			<div id="wrap_socialPost52da8320bf132" style="margin-top:11px; overflow:hidden; padding-top:10px; border-top:1px solid #CCD2F9;"><ul style="margin:0; padding:0; list-style:none;"></ul></div>
+		</div>
+		<div style="height:20px; border:1px solid #DADEF9; border-top:none;">
+				<div id="toggleBtn_socialPost52da8320bf132" onclick="socialPost_socialPost52da8320bf132.reset(); return false;" style="cursor:default; padding-top:2px; height:18px; text-align:center; width:100px; border-left:1px solid #DADEF9; float:right; color:#AFB6E4;"><span style="display:block;">접기▲</span></div>
+				<div id="moreViewBtn_socialPost52da8320bf132" onclick="socialPost_socialPost52da8320bf132.getData(&#39;more&#39;); return false;" style="cursor:default; padding-top:2px; height:18px; text-align:center; color:#AFB6E4;"><span>소셜웹 더보기▼</span></div>
+		</div>
+	</div>
+<script type="text/javascript">
+	var socialPost_socialPost52da8320bf132 = {
+		pageNumber : 1,
+		container : document.getElementById('container_socialPost52da8320bf132'),
+		countWrap : document.getElementById('count_socialPost52da8320bf132'),
+		entryWrap : document.getElementById('wrap_socialPost52da8320bf132'),
+		toggleBtn : document.getElementById('toggleBtn_socialPost52da8320bf132'),
+		moreViewBtn : document.getElementById('moreViewBtn_socialPost52da8320bf132'),
+		getData : function(action) {
+			var items = this.entryWrap.getElementsByTagName('li');
+			var isRequireRequest = !(items.length > this.pageNumber * 5);
+			if (action == 'more' && !isRequireRequest) {
+				for (var i = this.pageNumber * 5, l = ++this.pageNumber * 5; i < l; i++) {
+					if (items[i]) {items[i].style.display = '';}
+				}
+				this.changeStatus(this.toggleBtn, 'on');
+				if (this.totalCount && this.totalCount == items.length && items[(items.length -1)].style.display != 'none') {
+					this.changeStatus(this.moreViewBtn, 'off');
+				}
+			} else {
+				if (action == 'more') {
+					if (items.length == this.totalCount || this.moreViewBtn.isPossibleSocialPost) {return false;}
+					this.pageNumber++;
+					this.moreViewBtn.isPossibleSocialPost = true;
+				}
+				var request = new HTTPRequest('JSON', 'http://api.v.daum.net/open/comment_list.js?type=twitter&type=yozm&type=view&nid=38529207&page_size=5&page_no=' + this.pageNumber + '&callback=?', 'euc-kr');
+				request.parent = this;
+				request.onSuccess = function () {
+					if (this.jsonData && this.jsonData.id) {
+						if (!this.parent.totalCount) {
+							this.parent.totalCount = this.jsonData.total_count;
+						}
+						var data = this.jsonData.message_list;
+						var entry = action == 'more' ? '' : '<ul style="margin:0; padding:0; list-style:none;">';
+						for (var i = 0, l = data.length; i < l; i++) {
+							var border = this.parent.pageNumber == 1 && i == 0 ? '' : ' border-top:1px solid #DADEF9;';
+							data[i].reg_date = data[i].reg_date.split('-').join('.').substr(0, data[i].reg_date.length -3);
+							entry += '<li style="padding:10px 0;' + border + ' overflow:hidden;">';
+							entry += '<div style="float:left;"><a href="' + data[i].user_permlink + '" target="_blank"><img width="35" height="35" src="' + data[i].profile_img + '" alt="' + data[i].user_name + '" \/><\/a><\/div>';
+							entry += '<div style="margin-left:50px;">';
+							entry += '<div style="color:#5C6BCE;">' + data[i].message + '<\/div>';
+							entry += '<div><a href="' + data[i].message_permlink + '" target="_blank"><img style="vertical-align:middle; margin-right:4px;" src="http://i1.daumcdn.net/cfs.tistory/static/images/' + data[i].service + '_icon.png" alt="' + data[i].service + '" /><\/a>';
+							entry += '<a href="' + data[i].user_permlink + '" target="_blank" style="text-decoration:none;"><span style="color:#5C6BCE;">' + data[i].user_name + '<\/span><\/a><span style="padding:0 6px; color:#DBDFF8;">|<\/span><span style="color:#AFB6E4;">' + data[i].reg_date + '<\/span><\/div>';
+							entry += '</div><\/li>';
+						}
+
+						if (action == 'more') {
+							this.parent.entryWrap.firstChild.innerHTML += entry;
+							this.parent.moreViewBtn.isPossibleSocialPost = false;
+							this.parent.changeStatus(this.parent.toggleBtn, 'on')
+							if (items.length == this.parent.totalCount) {
+								this.parent.changeStatus(this.parent.moreViewBtn, 'off');
+							}
+						} else {
+							entry += '<\/ul>';
+							this.parent.entryWrap.innerHTML = entry;
+							this.parent.countWrap.innerHTML = '(' + this.parent.totalCount + ')';
+							if (this.parent.totalCount > 5) {
+								this.parent.changeStatus(this.parent.moreViewBtn, 'on');
+							} else {
+								this.parent.moreViewBtn.isPossibleSocialPost = false;
+							}
+							if (this.parent.totalCount && this.parent.totalCount > 0) {
+								this.parent.container.style.display = 'block';
+							}
+						}
+					} else {}
+				};
+				request.onError = function () {
+					if (action == 'more') {
+						this.parent.moreViewBtn.isPossibleSocialPost = false;
+					}
+				};
+				request.send();
+			}
+		},
+
+		reset : function() {
+			var items = this.entryWrap.getElementsByTagName('li');
+			for (var i = 0, l = items.length; i < l; i++) {
+				if (i > 4) {
+					items[i].style.display = 'none';
+				}
+			}
+			this.changeStatus(this.toggleBtn, 'off');
+			this.changeStatus(this.moreViewBtn, 'on');
+			this.pageNumber = 1;
+		},
+
+		changeStatus : function(node, type) {
+			if (type == 'on' && !node.isSocialMethodUsed) {
+				node.style.color = '#5C6BCE';
+				node.style.cursor = 'pointer';
+				node.isSocialMethodUsed = true;
+			} else if (type == 'off' && node.isSocialMethodUsed) {
+				node.style.color = '#AFB6E4';
+				node.style.cursor = 'default';
+				node.isSocialMethodUsed = false;
+			}
+		}
+	};
+	socialPost_socialPost52da8320bf132.getData();
+</script><div class="blogger-news-widget" style="width: 100%; text-align: center">
+							<iframe width="100%" height="90px" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/widget1.htm" frameborder="no"></iframe>
+						</div><div style="text-align: center; margin: 10px auto; height: 91px; overflow: hidden; clear: both;"><iframe title="mixUP 위젯" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/loader_plugin.htm" frameborder="0" scrolling="no" allowtransparency="true" width="402" height="130"></iframe></div><div class="another_category another_category_color_gray">
+<h4>Related Post</h4>
+<table>
+<tbody><tr>
+<th>
+<a href="http://idongmai.wo.tc/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4DDNS%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4%EC%84%9C%EB%B2%84%EC%97%90-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9D%84-%EC%9E%85%ED%9E%88%EC%9E%90">[라즈베리파이&amp;DDNS]라즈베리파이서버에 도메인을 입히자</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2013/10/29</td>
+</tr>
+<tr>
+<th>
+<a href="http://idongmai.wo.tc/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4%EC%82%B0%EB%94%B8%EA%B8%B0%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-APM-%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%84%ED%8C%8C%EC%B9%98-%EC%84%A4%EC%B9%98PHP%EC%84%A4%EC%B9%98-mysql%EC%84%A4%EC%B9%98-%ED%95%84%EB%8F%85">[라즈베리파이&amp;산딸기]라즈베리파이 APM (라즈베리파이 아파치 설치,PHP설치, mysql설치 필독)</a>&nbsp;&nbsp;<span>(4)</span>
+</th>
+<td>
+2013/10/28</td>
+</tr>
+<tr>
+<th>
+<a href="http://idongmai.wo.tc/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC-%ED%8C%8C%EC%9D%B4%EC%9D%98-%EC%9C%A0%EB%9E%98-%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EB%A9%94%EB%89%B4%EC%96%BC">[라즈베리파이]라즈베리 파이의 유래(?) 라즈베리파이 메뉴얼.</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2013/01/03</td>
+</tr>
+<tr>
+<th>
+<a href="http://idongmai.wo.tc/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4%EB%AA%A8%EB%8B%88%ED%84%B0-%EC%97%B0%EA%B2%B0-%EB%AA%BB%ED%95%98%EC%8B%9C%EB%8A%94-%EB%B6%84%EB%93%A4-%EB%AA%A8%EB%8B%88%ED%84%B0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0" class="current">[라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2013/01/03</td>
+</tr>
+<tr>
+<th>
+<a href="http://idongmai.wo.tc/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4sd%EC%B9%B4%EB%93%9C-%EA%B3%A0%EC%9E%A5%EB%82%AC%EC%96%B4%EC%9A%AC">[라즈베리파이]sd카드 고장났어욬</a>&nbsp;&nbsp;<span>(0)</span>
+</th>
+<td>
+2012/12/28</td>
+</tr>
+<tr>
+<th>
+<a href="http://idongmai.wo.tc/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4%EB%A7%88%EC%9D%B8%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8-%EC%84%9C%EB%B2%84-%EB%8F%84%EC%A0%84%EA%B8%B0">[라즈베리파이]마인크래프트 서버 도전기</a>&nbsp;&nbsp;<span>(4)</span>
+</th>
+<td>
+2012/12/07</td>
+</tr>
+</tbody></table></div>
+<div id="livereContainer_162" class="livereContainer"></div><div id="livereContainer"><div id="livere_platform"><div id="livere_platform_wrapper">	<div id="livere_event_notice"></div>	<a class="powered_by" href="http://www.livere.com/" target="_blank"></a><div id="livereGuestFm">	<form name="livereGuestFm">		<label>이름</label><input type="text" class="input_text guestfm" name="guest_name" id="guest_name">		<label>패스워드</label><input type="password" class="input_text guestfm" name="guest_passwd" id="guest_passwd">		<label>웹사이트</label><input type="text" class="input_text guestfm" name="guest_homepage" id="guest_homepage" value="http://">	</form></div>	<div id="livere_pltform_middle">			<span class="livere_primarySNS">				<strong class="snsid">소셜계정으로 작성하세요</strong>			</span>			<fieldset>				<div class="livere_thumbnail"><img class="primaryThumbnail off" src="" style=""></div>                <div class="livere_contentInput">                    <form id="livereForm" name="livereForm">                        <input type="hidden" name="short_url" id="short_url">                        <input type="hidden" name="name" id="name" value="">                        <input type="hidden" name="parent_seq" id="parent_seq">                        <textarea name="content" rows="3" cols="90" id="contentText" class="livere_textarea" onkeydown="javascript:livereReply.validate(this , &#39;textareaOnKeyUp&#39;)"></textarea>                    </form>                </div>            </fieldset>	</div>	<div class="livere_pltfrm_top login">		<div class="livere_sns_icons_wrapper"><span id="twitter_icon"><a class="twitter"></a></span><span id="facebook_icon"><a class="facebook"></a></span><span id="me2day_icon"><a class="me2day"></a></span><span id="tistory_icon"><a class="tistory"></a></span><span id="cyworld_icon"><a class="cyworld"></a></span></div>		<input type="checkbox" class="secret_chk guestfm" name="guest_secret_chk" id="guest_secret_chk"><label class="secret_chk_text">비밀글쓰기</label>		<a class="logout off">로그아웃</a>       <div class="livere_sendFunction"><a class="livere_send"></a></div>			<span class="livere_writeCountWrapper"><strong class="writeCount">0</strong>/50자</span>		<span class="livere_pltfrm_txt">소셜계정을 통해 댓글을 공유하실 수 있습니다!</span>	</div></div></div></div>
+	<script type="text/javascript">
+		var livere_user_name = '';
+		var livere_homepage = '';
+		var livere_blog_id = '440391';
+		var livere_entry_id = '162';
+		var livere_article_id = '162';
+		var livere_consumer_seq = null;
+		var livere_smartlogin_seq = null;
+		var livere_useTistoryComment = 'true';
+		var livere_livere_seq = '16256';
+		var livere_refer = 'idongmai.tistory.com/162';
+		var livere_blogurl = 'idongmai.tistory.com';
+		var livere_title = '[라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기';
+		var livere_redirect_path = 'http://idongmai.tistory.com/plugins/LiveRe/redirect.html';
+		var livere_writer = null;
+		var livere_reply_admin_confirm = false;
+		var livere_origami = true;
+		var livere_owner = false;
+
+		livereInit(livere_entry_id, livere_refer, livere_title);
+	</script>
+</div><br>
+<div class="livere_replace"></div></div>
+			  <!-- tag label, trackback, comment -->
+<div class="article_bottom">
+				
+				<div class="tb_cmt_btn">
+				<a href="http://idongmai.tistory.com/162#tb" onclick="toggleLayerForEntry(162, &#39;trackback&#39;); return false">관련글 <font class="sthm"><span id="trackbackCount162">0</span></font>개,</a>   <a href="http://idongmai.tistory.com/162#rp" onclick="toggleLayerForEntry(&#39;162&#39;, &#39;comment&#39;); return false">댓글 <font class="sthm"><span id="commentCount162">0</span></font>개가 있습니다.</a></div>
+			  </div>
+			  <!-- trackback -->
+			  <div id="entry162Trackback" style="display:block">
+				<div class="tb_address">Trackback Address :: 	<span class="trackback-url" style="cursor: text">http://idongmai.wo.tc/trackback/162</span>
+	<span id="TrackbackCopyHolder162" style="vertical-align: -4px; margin-left: 1px">
+	<script type="text/javascript">
+	//<![CDATA[
+	AC_FL_RunContent(
+		'src','http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/copyTrackback',
+		'Flashvars','url=http://idongmai.wo.tc/trackback/162&mode=whiteText',
+		'width','29',
+		'height','18',
+		'id', 'TrackbackCopyButton162',
+		'wmode','transparent',
+		'allowScriptAccess','always',
+		'type','application/x-shockwave-flash',
+		'pluginspage','http://www.macromedia.com/go/getflashplayer'
+	);
+	//]]>
+	</script><embed src="http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/copyTrackback.swf" flashvars="url=http://idongmai.wo.tc/trackback/162&amp;mode=whiteText" width="29" height="18" id="TrackbackCopyButton162" wmode="transparent" allowscriptaccess="always" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"> 
+	</span>
+	<span>
+		<a href="http://www.tistory.com/gateway/?trackback=http%3A%2F%2Fidongmai.wo.tc%2Ftrackback%2F162&defaultAdmin=%2Fadmin" onclick="window.open(this.href); return false">
+	<img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/text_track_white.gif" alt="관련글 쓰기" title="" style="_margin-left: 5px; vertical-align: -4px">
+	</a></span>
+</div>
+				
+			  </div><script type="text/javascript">loadedTrackbacks[162]=true;</script>
+			  <!-- comment -->
+			  <div id="entry162Comment" style="display:block"><form method="post" action="http://idongmai.tistory.com/comment/add/162" onsubmit="return false" style="margin: 0">
+				<div class="cmt_box">
+				  
+				</div>
+				<!-- comment write-->
+				<div class="cmt_form_box">
+				  
+					
+					  <input type="text" id="name_162" name="name" value="" class="form_input" style="width:160px;">
+					  Name<br>
+					  <input type="password" maxlength="8" id="password_162" name="password" value="" class="form_input" style="width:160px;">
+					  Password <br>
+					  <input type="text" id="homepage_162" name="homepage" value="http://" class="form_input" style="width:300px;">
+					  Homepage
+					<br>
+					<div class="secret">
+					  <input type="checkbox" id="secret_162" name="secret" align="absmiddle">
+					  Secret</div>
+				  
+				  <textarea cols="100%" rows="6" id="comment_162" name="comment" class="form_textarea"></textarea>
+				  <input type="button" value=" Save a Comment " onclick="addComment(this, 162); return false;" class="form_submit">
+				</div>
+			  </form></div><script type="text/javascript">loadedComments[162]=true;highlight()</script>
+			  </div>
+			  </div>
+			  </div>
+			
+			<!-- paging -->
+			
+			  <div class="paging"> <a href="http://idongmai.tistory.com/164">&lt; </a>
+				<a href="http://idongmai.tistory.com/468"> <span class="paging_border"><span>1</span></span></a>  <span class="interword">...</span> <a href="http://idongmai.tistory.com/167"> <span class="paging_border"><span>275</span></span></a> <a href="http://idongmai.tistory.com/166"> <span class="paging_border"><span>276</span></span></a> <a href="http://idongmai.tistory.com/165"> <span class="paging_border"><span>277</span></span></a> <a href="http://idongmai.tistory.com/164"> <span class="paging_border"><span>278</span></span></a> <a> <span class="paging_border"><span class="selected">279</span></span></a> <a href="http://idongmai.tistory.com/161"> <span class="paging_border"><span>280</span></span></a> <a href="http://idongmai.tistory.com/160"> <span class="paging_border"><span>281</span></span></a> <a href="http://idongmai.tistory.com/159"> <span class="paging_border"><span>282</span></span></a> <a href="http://idongmai.tistory.com/158"> <span class="paging_border"><span>283</span></span></a>  <span class="interword">...</span> <a href="http://idongmai.tistory.com/72"> <span class="paging_border"><span>342</span></span></a> 
+				<a href="http://idongmai.tistory.com/161"> &gt;</a> </div>
+			
+		  </div>
+		</div>
+	  </div>
+	  <!-- #### Main End #### -->
+	</div>
+
+<div id="side">
+<!-- #### Side Start #### -->
+<div class="sidebar_module_outer"><div class="sidebar_module_inner"><!--블로그 이미지-->
+	  <div class="blog_img"><img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/137E7B4C512440BE153284" alt="BLOG main image"></div>
+	  <div>by 이동마이</div>
+	  </div><img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/loe.gif"></div>
+
+<div class="sidebar_module_outer"><div class="sidebar_module_inner"><!--관리자/글쓰기-->
+	  <div class="sidebar_title">
+	  <a href="http://idongmai.tistory.com/admin"><font color="#000000">Admin</font></a> | <a href="http://idongmai.tistory.com/owner/entry/post">Write</a>
+	  </div>
+	  </div></div>
+<div class="sidebar_module_outer"><div class="sidebar_module_inner"><!--모듈-->
+	  <div class="sidebar_title">
+ <div class="sidebar_title">Widget</div><br>
+
+<script id="_wautpy">var _wau = _wau || []; _wau.push(["classic", "jkno3py0r19i", "tpy"]);
+(function() {var s=document.createElement("script"); s.async=true;
+s.src="http://widgets.amung.us/classic.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+})();</script><div title="Click to see what&#39;s popular on this site!" style="position: relative; display: inline-block; background-image: url(data:image/gif;base64,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); width: 81px; height: 29px; padding: 0px; overflow: hidden; cursor: pointer; direction: ltr;"><div style="position: absolute; top: 7px; padding: 0px; margin: 0px; overflow: visible; left: 36px;"><div style="background-image: url(data:image/gif;base64,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); background-attachment: scroll; position: absolute; width: 9px; height: 17px; left: 0px; line-height: 17px; overflow: hidden; padding: 0px; margin: 0px; background-position: -6px -29px; background-repeat: no-repeat no-repeat;"></div><div style="background-image: url(data:image/gif;base64,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); background-attachment: scroll; position: absolute; width: 9px; height: 17px; left: 11px; line-height: 17px; overflow: hidden; padding: 0px; margin: 0px; background-position: -69px -29px; background-repeat: no-repeat no-repeat;"></div></div></div>
+
+<br>
+<iframe src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/index.htm" style="width:174px; height:160px; border:0px; position:fixed; top:20px; right:5px;"></iframe>
+<br>
+<iframe src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/saved_resource.htm" style="border:0px; overflow:hidden; width:180px; height:200px;"></iframe>
+<br>
+
+<script src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/WidgetRender.nhn"></script><iframe style="height:363px; width:171px;" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/WidgetView.htm" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+   <!--     <script type="text/javascript">
+		AC_FL_RunContent(
+		"classid","clsid:D27CDB6E-AE6D-11cf-96B8-444553540000",
+		"codebase","http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0",
+		"width" , "114",
+		"height" , "239",
+		"id" , "blogNavigation",
+		"wmode", "transparent",
+		"movie", "http://ts.daumcdn.net/custom/blog/44/440391/skin/images/blogMenu",	
+		"allowScriptAccess", "always",
+		"flashvars", "externalData1=/location&externalData2=/media&externalData3=/tag&externalData4=/guestbook&externalData5=#top"
+		);
+		</script> -->
+
+    <script type="text/javascript">
+//<![CDATA[
+	function aa(){
+window.open("http://idongmai.wo.tc/toolbar/popup/link/","","width=450,height=450,left=0,top=0,resizable=no");
+		}
+
+	function ab(){
+window.open("http://section.blog.naver.com/connect/PopConnectBuddyAddForm.nhn?blogId=myskys2&widgetSeq=1126059","","width=450,height=450,left=0,top=0,resizable=no");
+		}
+//]]>
+  </script>
+<br>
+  <a href="http://idongmai.tistory.com/162#" onclick="aa();">이 블로그를 링크에 추가하기</a><br>
+<a href="http://idongmai.tistory.com/162#" onclick="ab();">이 블로그를 이웃으로 추가하기</a>
+<br>
+
+<a href="javascript:function r(d){d.oncontextmenu=null;d.onselectstart=null;d.ondragstart=null;d.onkeydown=null;d.onmousedown=null; d.body.oncontextmenu=null;d.body.onselectstart=null;d.body.ondragstart=null;d.body.onkeydown=null; d.body.onmousedown=null;}var tb=document.all.tags('BODY');if(tb.length==0) {for(var i=0;i< top.frames.length;i++){r(top.frames[i].document);}}else{r(document);}" onclick="writetext();" id="textwrite">글 복사금지 해제</a>
+<script>$("#textwrite").click(function(){
+javascript:function r(d){d.oncontextmenu=null;d.onselectstart=null;d.ondragstart=null;d.onkeydown=null;d.onmousedown=null; d.body.oncontextmenu=null;d.body.onselectstart=null;d.body.ondragstart=null;d.body.onkeydown=null; d.body.onmousedown=null;}var tb=document.all.tags('BODY');if(tb.length==0) {for(var i=0;i< top.frames.length;i++){r(top.frames[i].document);}}else{r(document);}
+
+});</script>
+<br><br>
+<script src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/view" type="text/javascript"></script>
+	  </div>
+	  </div></div>
+<div class="sidebar_module_outer"><div class="sidebar_module_inner"><!--NOTICE-->
+	  <div class="sidebar_title" onclick="clickshow(1)">Notice</div>
+	  <div class="notice" id="block1" style="display:block;">
+		
+		  
+			<div><a href="http://idongmai.tistory.com/notice/355">블로그 연혁 - 저희 블로그가 끊..</a></div>
+		  
+			<div><a href="http://idongmai.tistory.com/notice/352">블로그 게시물의 저작권 관련 정책</a></div>
+		  
+			<div><a href="http://idongmai.tistory.com/notice/312">마크 정품 이벤트 결과 공지</a></div>
+		  
+		
+	  </div>
+	  </div></div><div class="sidebar_module_outer"><div class="sidebar_module_inner">
+	  <!--카테고리-->
+	  <div class="sidebar_title" onclick="clickshow(2)">CATEGORY</div>
+	  <div class="td_info" id="block2" style="display:block;">
+		<div class="side_category"><ul><li><a href="http://idongmai.tistory.com/category">이동마이의 컴퓨터하루 <span class="c_cnt">(342)</span></a><ul><li><a href="http://idongmai.tistory.com/category/%20" style="background-color: rgb(162, 190, 123);"> <span class="c_cnt">(1)</span></a></li><li><a href="http://idongmai.tistory.com/category/%EC%9D%BC%EA%B8%B0%EC%9E%A5" style="background-color: rgb(255, 214, 0);">일기장 <span class="c_cnt">(1)</span></a><ul><li><a href="http://idongmai.tistory.com/category/%EC%9D%BC%EA%B8%B0%EC%9E%A5/2009~2011" style="background-color: rgb(255, 214, 0);">2009~2011 <span class="c_cnt">(0)</span></a></li></ul></li><li><a href="http://idongmai.tistory.com/category/%EC%83%9D%ED%99%9C%EC%9D%BC%EA%B8%B0" style="background-color: rgb(147, 175, 186);">생활일기 <span class="c_cnt">(0)</span></a><ul><li><a href="http://idongmai.tistory.com/category/%EC%83%9D%ED%99%9C%EC%9D%BC%EA%B8%B0/%ED%8C%8C%EC%9B%8C%ED%8F%AC%EC%9D%B8%ED%8A%B8%20%EA%B0%95%EC%A2%8C" style="background-color: rgb(147, 175, 186);">파워포인트 강좌 <span class="c_cnt">(0)</span></a></li></ul></li><li><a href="http://idongmai.tistory.com/category/%EA%B2%8C%EC%9E%84" style="background-color: rgb(190, 173, 147);">게임 <span class="c_cnt">(52)</span></a><ul><li><a href="http://idongmai.tistory.com/category/%EA%B2%8C%EC%9E%84/Minecraft" style="background-color: rgb(190, 173, 147);">Minecraft <span class="c_cnt">(27)</span></a></li><li><a href="http://idongmai.tistory.com/category/%EA%B2%8C%EC%9E%84/Minecraft%20%ED%8C%81" style="background-color: rgb(190, 173, 147);">Minecraft 팁 <span class="c_cnt">(6)</span></a></li><li><a href="http://idongmai.tistory.com/category/%EA%B2%8C%EC%9E%84/Minecraft%20%EB%AA%A8%EB%93%9C" style="background-color: rgb(190, 173, 147);">Minecraft 모드 <span class="c_cnt">(2)</span></a></li><li><a href="http://idongmai.tistory.com/category/%EA%B2%8C%EC%9E%84/Minecraft%20%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8" style="background-color: rgb(190, 173, 147);">Minecraft 플러그인 <span class="c_cnt">(9)</span></a></li></ul></li><li><a href="http://idongmai.tistory.com/category/Program" style="background-color: rgb(246, 159, 64);">Program <span class="c_cnt">(86)</span></a><ul><li><a href="http://idongmai.tistory.com/category/Program/VB%206.0" style="background-color: rgb(246, 159, 64);">VB 6.0 <span class="c_cnt">(3)</span></a></li><li><a href="http://idongmai.tistory.com/category/Program/VB%20.net" style="background-color: rgb(246, 159, 64);">VB .net <span class="c_cnt">(0)</span></a></li><li><a href="http://idongmai.tistory.com/category/Program/%EC%98%A4%EB%9E%98%EB%90%9C%20PHP%20%EA%B2%8C%EC%8B%9C%ED%8C%90" style="background-color: rgb(246, 159, 64);">오래된 PHP 게시판 <span class="c_cnt">(56)</span></a></li><li><a href="http://idongmai.tistory.com/category/Program/Linux%20C" style="background-color: rgb(246, 159, 64);">Linux C <span class="c_cnt">(6)</span></a></li><li><a href="http://idongmai.tistory.com/category/Program/PHP" style="background-color: rgb(246, 159, 64);">PHP <span class="c_cnt">(15)</span></a></li></ul></li><li><a href="http://idongmai.tistory.com/category/Mobile%20Phone" style="background-color: rgb(104, 163, 155);">Mobile Phone <span class="c_cnt">(20)</span></a><ul><li><a href="http://idongmai.tistory.com/category/Mobile%20Phone/Android" style="background-color: rgb(104, 163, 155);">Android <span class="c_cnt">(19)</span></a></li><li><a href="http://idongmai.tistory.com/category/Mobile%20Phone/%ED%94%BC%EC%B3%90%ED%8F%B0" style="background-color: rgb(104, 163, 155);">피쳐폰 <span class="c_cnt">(0)</span></a></li></ul></li><li><a href="http://idongmai.tistory.com/category/%EC%9D%8C%EC%95%85" style="background-color: rgb(164, 211, 226);">음악 <span class="c_cnt">(2)</span></a><ul><li><a href="http://idongmai.tistory.com/category/%EC%9D%8C%EC%95%85/%EB%B3%B4%EC%BB%AC%EB%A1%9C%EC%9D%B4%EB%93%9C" style="background-color: rgb(164, 211, 226);">보컬로이드 <span class="c_cnt">(2)</span></a></li><li><a href="http://idongmai.tistory.com/category/%EC%9D%8C%EC%95%85/%EC%9D%BC%EB%B0%98%EC%9D%8C%EC%95%85" style="background-color: rgb(164, 211, 226);">일반음악 <span class="c_cnt">(0)</span></a></li></ul></li><li><a href="http://idongmai.tistory.com/category/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C" style="background-color: rgb(166, 122, 163);">운영체제 <span class="c_cnt">(12)</span></a><ul><li><a href="http://idongmai.tistory.com/category/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/windows%203.1" style="background-color: rgb(166, 122, 163);">windows 3.1 <span class="c_cnt">(2)</span></a></li><li><a href="http://idongmai.tistory.com/category/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/windows%2098" style="background-color: rgb(166, 122, 163);">windows 98 <span class="c_cnt">(0)</span></a></li><li><a href="http://idongmai.tistory.com/category/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/windows%20xp" style="background-color: rgb(166, 122, 163);">windows xp <span class="c_cnt">(0)</span></a></li><li><a href="http://idongmai.tistory.com/category/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/windows%207" style="background-color: rgb(166, 122, 163);">windows 7 <span class="c_cnt">(3)</span></a></li><li><a href="http://idongmai.tistory.com/category/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Linux" style="background-color: rgb(166, 122, 163);">Linux <span class="c_cnt">(2)</span></a></li></ul></li><li><a href="http://idongmai.tistory.com/category/Raspberry%20Pi" style="background-color: rgb(162, 190, 123);">Raspberry Pi <span class="c_cnt">(17)</span></a><ul><li><a href="http://idongmai.tistory.com/category/Raspberry%20Pi/Archlinux" style="background-color: rgb(162, 190, 123);">Archlinux <span class="c_cnt">(0)</span></a></li><li><a href="http://idongmai.tistory.com/category/Raspberry%20Pi/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4" style="background-color: rgb(162, 190, 123);">라즈베리파이 <span class="c_cnt">(10)</span></a></li></ul></li><li><a href="http://idongmai.tistory.com/category/%EA%B4%80%EB%A6%AC%EC%9E%90%20%EA%B2%8C%EC%8B%9C%ED%8C%90" style="background-color: rgb(255, 214, 0);">관리자 게시판 <span class="c_cnt">(39)</span></a><ul><li><a href="http://idongmai.tistory.com/category/%EA%B4%80%EB%A6%AC%EC%9E%90%20%EA%B2%8C%EC%8B%9C%ED%8C%90/%EC%9E%A1%EB%8B%B4" style="background-color: rgb(255, 214, 0);">잡담 <span class="c_cnt">(32)</span></a></li></ul></li><li><a href="http://idongmai.tistory.com/category/%EB%B3%84%EB%B3%84%20%EA%B0%95%EC%9D%98" style="background-color: rgb(147, 175, 186);">별별 강의 <span class="c_cnt">(86)</span></a><ul><li><a href="http://idongmai.tistory.com/category/%EB%B3%84%EB%B3%84%20%EA%B0%95%EC%9D%98/Hostple" style="background-color: rgb(147, 175, 186);">Hostple <span class="c_cnt">(3)</span></a></li></ul></li></ul></li></ul></div>
+	  </div>
+	  </div></div><div class="sidebar_module_outer"><div class="sidebar_module_inner"><!--태그-->
+	  <div class="sidebar_title" onclick="clickshow(3)">TAGS</div>
+	  <div class="td_info" id="block3" style="display:block;">
+		 <a href="http://idongmai.tistory.com/tag/%ED%8C%8C%EC%9B%8C%ED%8F%AC%EC%9D%B8%ED%8A%B8" class="cloud4">파워포인트</a>  <a href="http://idongmai.tistory.com/tag/%ED%8B%B0%EC%8A%A4%ED%86%A0%EB%A6%AC%20%EC%B4%88%EB%8C%80" class="cloud4">티스토리 초대</a>  <a href="http://idongmai.tistory.com/tag/windows%20xp" class="cloud5">windows xp</a>  <a href="http://idongmai.tistory.com/tag/%ED%8B%B0%EC%8A%A4%ED%86%A0%EB%A6%AC%EB%8B%B7%EC%BB%B4" class="cloud5">티스토리닷컴</a>  <a href="http://idongmai.tistory.com/tag/%ED%8B%B0%EC%8A%A4%ED%86%A0%EB%A6%AC%20%EA%B0%80%EC%9E%85" class="cloud4">티스토리 가입</a>  <a href="http://idongmai.tistory.com/tag/%ED%8C%8C%EC%9B%8C%ED%8F%AC%EC%9D%B8%ED%8A%B8%20%EA%B0%95%EC%A2%8C" class="cloud4">파워포인트 강좌</a>  <a href="http://idongmai.tistory.com/tag/%ED%8B%B0%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%B4%88%EB%8C%80%EC%9E%A5" class="cloud3">티스토리초대장</a>  <a href="http://idongmai.tistory.com/tag/php" class="cloud5">php</a>  <a href="http://idongmai.tistory.com/tag/%EC%B4%88%EB%8C%80%EC%9E%A5" class="cloud4">초대장</a>  <a href="http://idongmai.tistory.com/tag/%EA%B3%A0%EC%96%91%EC%9D%B4" class="cloud5">고양이</a>  <a href="http://idongmai.tistory.com/tag/%EC%9C%88%EB%8F%84%EC%9A%B0%20XP" class="cloud5">윈도우 XP</a>  <a href="http://idongmai.tistory.com/tag/%EB%B0%94%EB%B2%A0%ED%81%90" class="cloud5">바베큐</a>  <a href="http://idongmai.tistory.com/tag/%ED%95%98%EB%82%98%EC%9D%80%ED%96%89" class="cloud5">하나은행</a>  <a href="http://idongmai.tistory.com/tag/%ED%8B%B0%EC%8A%A4%ED%86%A0%EB%A6%AC" class="cloud3">티스토리</a>  <a href="http://idongmai.tistory.com/tag/%ED%8B%B0%EC%8A%A4%ED%86%A0%EB%A6%AC%20%EC%9E%85%EC%A3%BC" class="cloud4">티스토리 입주</a>  <a href="http://idongmai.tistory.com/tag/%ED%8B%B0%EC%8A%A4%ED%86%A0%EB%A6%AC%20%EC%B4%88%EB%8C%80%EC%9E%A5" class="cloud1">티스토리 초대장</a>  <a href="http://idongmai.tistory.com/tag/%ED%83%9C%EA%B7%B8%EB%A5%BC%20%EC%9E%85%EB%A0%A5%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94." class="cloud4">태그를 입력해 주세요.</a>  <a href="http://idongmai.tistory.com/tag/%EB%A7%88%EC%9D%B8%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8" class="cloud4">마인크래프트</a>  <a href="http://idongmai.tistory.com/tag/%ED%8B%B0%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%B4%88%EB%8C%80" class="cloud3">티스토리초대</a>  <a href="http://idongmai.tistory.com/tag/%ED%8B%B0%EC%8A%A4%ED%86%A0%EB%A6%AC%20%EC%B4%88%EB%8C%80%EA%B6%8C" class="cloud4">티스토리 초대권</a> 
+	  </div>
+	  </div></div><div class="sidebar_module_outer"><div class="sidebar_module_inner"><!--최근 글-->
+	  <div class="sidebar_title" onclick="clickshow(4)">Recent Entries</div>
+	  <div class="td_info" id="block4" style="display:block;">
+		 <a href="http://idongmai.tistory.com/entry/%EC%B9%B4%EB%93%9C%EC%82%AC-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%ED%99%95%EC%9D%B8-%ED%95%98%EA%B8%B0" class="info_link"> [카드사 개인정보 유출] 개인..</a> <font class="ps_cnt"><span id="commentCountOnRecentEntries468"></span></font><br>
+		 <a href="http://idongmai.tistory.com/entry/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EC%96%B4%ED%94%8C%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B4-%EC%9E%88%EB%8A%94%EA%B0%80" class="info_link"> [안드로이드] 안드로이드의 기..</a> <font class="ps_cnt"><span id="commentCountOnRecentEntries467"></span></font><br>
+		 <a href="http://idongmai.tistory.com/entry/%EC%97%B0%EB%A7%90%EC%A0%95%EC%82%B0-%EC%97%B0%EB%A7%90%EC%A0%95%EC%82%B0%EA%B0%84%EC%86%8C%ED%99%94-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EB%B0%A9%EB%B2%95" class="info_link"> [연말정산] 연말정산간소화 서..</a> <font class="ps_cnt"><span id="commentCountOnRecentEntries466"></span></font><br>
+		 <a href="http://idongmai.tistory.com/entry/%ED%9C%B4%EB%8C%80%EC%A0%84%ED%99%94-%EC%BD%9C%EB%A0%89%ED%8A%B8%EC%BD%9C-%EC%88%98%EC%8B%A0-%EC%B0%A8%EB%8B%A8%ED%95%98%EA%B8%B0" class="info_link"> [휴대전화] 콜렉트콜 수신 차..</a> <font class="ps_cnt"><span id="commentCountOnRecentEntries465"></span></font><br>
+		 <a href="http://idongmai.tistory.com/entry/%EC%96%B4%ED%94%8CAnimeDB-%EC%96%B4%ED%94%8C-%EC%86%8C%EA%B0%9C" class="info_link"> [어플]AnimeDB 어플 소개</a> <font class="ps_cnt"><span id="commentCountOnRecentEntries464"></span></font><br>
+		 <a href="http://idongmai.tistory.com/entry/Anime%EC%A4%912%EB%B3%91%EC%9D%B4%EB%9D%BC%EB%8F%84-%EC%82%AC%EB%9E%91%EC%9D%B4-%ED%95%98%EA%B3%A0%EC%8B%B6%EC%96%B4-2%EA%B8%B0-%EB%B0%A9%EC%98%81%EC%86%8C%EC%8B%9D" class="info_link"> [Anime]중2병이라도 사랑이 하..</a> <font class="ps_cnt"><span id="commentCountOnRecentEntries463"></span></font><br>
+		 <a href="http://idongmai.tistory.com/entry/%EC%83%81%EC%8A%B5%EC%82%AC%EA%B8%B0%EB%B2%94-ACS%EC%95%84%EC%82%AC%ED%9E%88-%EC%95%84%EB%8B%88-%EB%B8%94%EB%A6%AC%EB%94%A9%EB%8B%98%EC%9D%84-%EC%95%84%EC%8B%9C%EB%82%98%EC%9A%94" class="info_link"> [상습사기범] ACS아사히 아니..</a> <font class="ps_cnt"><span id="commentCountOnRecentEntries461">(2)</span></font><br>
+		 <a href="http://idongmai.tistory.com/entry/%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0%EC%BC%80%EC%9D%B4%EC%8A%A4%EC%83%89%EB%8B%A4%EB%A5%B8-%EB%82%B4-%ED%9C%B4%EB%8C%80%ED%8F%B0%EC%BC%80%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%9B%90%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%9D%84%EB%95%90-%EC%BC%80%EC%9D%B4%EC%8A%A4%EB%B0%94%EC%9D%B4%EB%AF%B8casebyme-for-Kakao" class="info_link"> [스마트폰케이스]색다른 내 휴..</a> <font class="ps_cnt"><span id="commentCountOnRecentEntries462"></span></font><br>
+		 <a href="http://idongmai.tistory.com/entry/%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0%EB%82%98%EB%A7%8C%EC%9D%98-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0-%EC%BC%80%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EB%A7%8C%EB%93%A4%EA%B3%A0%EC%8B%B6%EC%9D%84%EB%95%90-%EC%BC%80%EC%9D%B4%EC%8A%A4%EB%B0%94%EC%9D%B4%EB%AF%B8casebyme" class="info_link"> [스마트폰]나만의 스마트폰 케..</a> <font class="ps_cnt"><span id="commentCountOnRecentEntries460"></span></font><br>
+		 <a href="http://idongmai.tistory.com/entry/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B1%B4%EC%9D%98%ED%95%A8%EC%9D%B4%EB%9F%B0%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%93%B0%EC%8B%9C%EB%A9%B4-%EC%A0%95%EB%A7%90-%EA%B3%A4%EB%9E%80%ED%95%A9%EB%8B%88%EB%8B%A4" class="info_link"> [블로그 건의함]이런식으로 쓰..</a> <font class="ps_cnt"><span id="commentCountOnRecentEntries459"></span></font><br>
+		
+	  </div>
+	  </div></div><div class="sidebar_module_outer"><div class="sidebar_module_inner"><!--최근 코멘트-->
+	  <div class="sidebar_title" onclick="clickshow(5)">Recent Comments</div>
+	  <div class="td_info" id="block5" style="display:block;">
+		<div id="recentComments">
+		   <a href="http://idongmai.tistory.com/388#comment11591042" class="info_link"> 옵티머스원 당시 루트가 필요없..</a><br>
+			<!--<span class="f11 gray3">01/10 - 이동마이</span><br>-->
+		   <a href="http://idongmai.tistory.com/388#comment11590930" class="info_link"> 루트안하나요?</a><br>
+			<!--<span class="f11 gray3">01/10 - ᆞ.....ᆞ</span><br>-->
+		   <a href="http://idongmai.tistory.com/461#comment11590289" class="info_link"> 당연하죠! Doll님은 모르시는게..</a><br>
+			<!--<span class="f11 gray3">01/10 - 이동마이</span><br>-->
+		   <a href="http://idongmai.tistory.com/461#comment11589865" class="info_link"> 아니 내 글이 여기올라와있소!</a><br>
+			<!--<span class="f11 gray3">01/09 - Doll</span><br>-->
+		   <a href="http://idongmai.tistory.com/384#comment11587130" class="info_link"> 감사합니다~ 새해에 많은 복 받..</a><br>
+			<!--<span class="f11 gray3">01/07 - 이동마이</span><br>-->
+		   <a href="http://idongmai.tistory.com/303#comment11586241" class="info_link"> 저는 만 5살 아들이 아이패드에..</a><br>
+			<!--<span class="f11 gray3">01/07 - 크리스탈</span><br>-->
+		   <a href="http://idongmai.tistory.com/384#comment11585979" class="info_link"> 감사합니다^^^ 새해 복 많이 받..</a><br>
+			<!--<span class="f11 gray3">01/06 - 라즈베리파이</span><br>-->
+		   <a href="http://idongmai.tistory.com/384#comment11584167" class="info_link"> 그 현상은 아주 간단하게 처리..</a><br>
+			<!--<span class="f11 gray3">01/06 - 이동마이</span><br>-->
+		   <a href="http://idongmai.tistory.com/439#comment11582615" class="info_link"> 격려 감사합니다~ 새해 복 많이..</a><br>
+			<!--<span class="f11 gray3">01/04 - 이동마이</span><br>-->
+		   <a href="http://idongmai.tistory.com/439#comment11582445" class="info_link"> 난독증 많은듯..주인장님 무시하..</a><br>
+			<!--<span class="f11 gray3">01/04 - 난독증안티</span><br>-->
+		  
+		</div>
+	  </div>
+	  </div></div><div class="sidebar_module_outer"><div class="sidebar_module_inner"><!--최근 트랙백-->
+	  <div class="sidebar_title" onclick="clickshow(6)">Recent Trackbacks</div>
+	  <div class="td_info" id="block6" style="display:block;">
+		<div id="recentTrackbacks">
+		   <a href="http://idongmai.tistory.com/185#trackback17054310" class="info_link"> 초간단 내 컴퓨터 IP주소 확인하..</a><br>
+			<span class="f11 gray3">컴도깨비 블로그</span><br>
+		  
+		</div>
+	  </div>
+	  </div></div><div class="sidebar_module_outer"><div class="sidebar_module_inner"><!--달력-->
+	  <div class="sidebar_title" onclick="clickshow(7)">Calendar</div>
+	  <div class="td_info">
+	  <div id="block7" align="center" style="display:none;"> <table class="tt-calendar" cellpadding="0" cellspacing="1" style="width: 100%; table-layout: fixed">
+<caption class="cal_month">
+		<a href="http://idongmai.tistory.com/archive/201312" title="1개월 앞의 달력을 보여줍니다.">«</a>
+		&nbsp;
+		<a href="http://idongmai.tistory.com/archive/201401" title="현재 달의 달력을 보여줍니다.">2014/01</a>
+		&nbsp;
+		<a href="http://idongmai.tistory.com/archive/201402" title="1개월 뒤의 달력을 보여줍니다.">»</a>
+</caption>
+<thead>
+  <tr>
+			<th class="cal_week2">일</th>
+			<th class="cal_week1">월</th>
+			<th class="cal_week1">화</th>
+			<th class="cal_week1">수</th>
+			<th class="cal_week1">목</th>
+			<th class="cal_week1">금</th>
+			<th class="cal_week1">토</th>
+  </tr>
+</thead>
+<tbody>
+		<tr class="cal_week">
+			<td class="cal_day1">&nbsp;</td>
+			<td class="cal_day1">&nbsp;</td>
+			<td class="cal_day1">&nbsp;</td>
+			<td class=" cal_day cal_day3">1</td>
+			<td class=" cal_day cal_day3">2</td>
+			<td class=" cal_day cal_day3">3</td>
+			<td class=" cal_day cal_day3"><a class="cal_click" href="http://idongmai.tistory.com/archive/20140104">4</a></td>
+		</tr>
+		<tr class="cal_week">
+			<td class=" cal_day cal_day_sunday cal_day3">5</td>
+			<td class=" cal_day cal_day3">6</td>
+			<td class=" cal_day cal_day3"><a class="cal_click" href="http://idongmai.tistory.com/archive/20140107">7</a></td>
+			<td class=" cal_day cal_day3"><a class="cal_click" href="http://idongmai.tistory.com/archive/20140108">8</a></td>
+			<td class=" cal_day cal_day3"><a class="cal_click" href="http://idongmai.tistory.com/archive/20140109">9</a></td>
+			<td class=" cal_day cal_day3">10</td>
+			<td class=" cal_day cal_day3">11</td>
+		</tr>
+		<tr class="cal_week">
+			<td class=" cal_day cal_day_sunday cal_day3"><a class="cal_click" href="http://idongmai.tistory.com/archive/20140112">12</a></td>
+			<td class=" cal_day cal_day3"><a class="cal_click" href="http://idongmai.tistory.com/archive/20140113">13</a></td>
+			<td class=" cal_day cal_day3">14</td>
+			<td class=" cal_day cal_day3"><a class="cal_click" href="http://idongmai.tistory.com/archive/20140115">15</a></td>
+			<td class=" cal_day cal_day3">16</td>
+			<td class=" cal_day cal_day3">17</td>
+			<td class=" cal_day cal_day4"><a class="cal_click" href="http://idongmai.tistory.com/archive/20140118">18</a></td>
+		</tr>
+		<tr class="cal_week cal_current_week">
+			<td class=" cal_day cal_day_sunday cal_day3">19</td>
+			<td class=" cal_day cal_day3">20</td>
+			<td class=" cal_day cal_day3">21</td>
+			<td class=" cal_day cal_day3">22</td>
+			<td class=" cal_day cal_day3">23</td>
+			<td class=" cal_day cal_day3">24</td>
+			<td class=" cal_day cal_day3">25</td>
+		</tr>
+		<tr class="cal_week">
+			<td class=" cal_day cal_day_sunday cal_day3">26</td>
+			<td class=" cal_day cal_day3">27</td>
+			<td class=" cal_day cal_day3">28</td>
+			<td class=" cal_day cal_day3">29</td>
+			<td class=" cal_day cal_day3">30</td>
+			<td class=" cal_day cal_day3">31</td>
+			<td class="cal_day2">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+	  </div>
+	  <div class="sidebar_title" onclick="clickshow(8)">Archive</div>
+	  <div class="td_info" id="block8" style="display:none;">
+		 <a href="http://idongmai.tistory.com/archive/201401" style="letter-spacing:0px;" class="info_link"> 2014/01</a><br>
+		 <a href="http://idongmai.tistory.com/archive/201312" style="letter-spacing:0px;" class="info_link"> 2013/12</a><br>
+		 <a href="http://idongmai.tistory.com/archive/201311" style="letter-spacing:0px;" class="info_link"> 2013/11</a><br>
+		 <a href="http://idongmai.tistory.com/archive/201310" style="letter-spacing:0px;" class="info_link"> 2013/10</a><br>
+		 <a href="http://idongmai.tistory.com/archive/201309" style="letter-spacing:0px;" class="info_link"> 2013/09</a><br>
+		
+	  </div>
+	  </div></div><div class="module module_widget" style="text-align:center;"><script src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/view(1)" type="text/javascript"></script></div><div class="sidebar_module_outer"><div class="sidebar_module_inner"><!--링크-->
+	  <div class="sidebar_title" onclick="clickshow(9)">Link Site</div>
+	  <div class="td_info" id="block9" style="display:block;">
+		 <a href="http://blog.idev.kr/" target="_blank" class="info_link"> blog.iDev.kr</a><br>
+
+		 <a href="http://kgameworld.tistory.com/" target="_blank" class="info_link"> 캐빌리의 게임세상</a><br>
+
+		
+	  </div>
+	  </div></div><div class="module module_widget" style="text-align:center;"><script src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/view(2)" type="text/javascript"></script></div><div class="sidebar_module_outer"><div class="sidebar_module_inner"><!--카운터-->
+	  <!-- Connect Statistics	-->
+	  <div class="side_counter"><font color="#3675B3">435,602</font> Total<br>
+		Today <font color="#9E9E9E">1,420</font>hit<br> 
+		Yesterday <font color="#9E9E9E">1,757</font> hit </div>
+		</div></div>
+		<div class="side_rss">
+		<a href="http://idongmai.wo.tc/rss">
+		<div class="rss_icon"></div><div class="rss_subtitle">RSS FEED</div></a>
+		</div>
+		
+<!-- #### Side End #### -->
+	</div>
+	
+  </div>
+  <!-- #### Container End #### -->
+  <div id="footer">
+  	<div class="copyright_info">
+  	<a href="http://idongmai.tistory.com/"><div class="copy_blogid"><div class="copyimg"><img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/137E7B4C512440BE153284" alt="블로그 이미지"></div> <div>이동마이's Blog</div></div></a>
+  	<a href="http://idongmai.wo.tc/rss" onclick="window.open(this.href); return false"><div class="copy_rss"><img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/copy_rss.jpg" alt="rss" class="rss"><div>subscribe RSS</div></div></a><div class="copy_tistory"><img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/copy_tistory.jpg"><div> Powered by <a href="http://daum.net/" onclick="window.open(this.href); return false">Tistory</a></div></div>
+  		 <a href="http://catntuna.tistory.com/"><div class="copy_catntuna"><img src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/copy_catntuna.jpg"><div>Designed by CatnTuna</div></div></a>
+  							</div>
+  </div>
+
+<script type="text/javascript">
+ document.oncontextmenu = new Function ('return false');
+ document.ondragstart = new Function ('return false');
+ document.onselectstart = new Function ('return false');
+  document.body.style.MozUserSelect = 'none';
+</script>
+<script type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/functions.js"></script>
+<script id="DragSearchJs" type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/searchDragSelection.js" charset="euc-kr"></script>
+<script type="text/javascript">if (asyncProfileItems) {tistoryProfile.getSidebarInfo(asyncProfileItems);}</script>
+<script charset="utf-8" type="text/javascript" src="./이동마이의 컴퓨터 하루 - [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기_files/tiara.min.js"></script>
+
+<script type="text/javascript">
+//<!--<![CDATA
+	var __pageTracker = {};
+	if (typeof __Tiara != "undefined" && typeof __Tiara.__getTracker != "undefined") {
+		__pageTracker = __Tiara.__getTracker();
+	} else {
+		__pageTracker.__trackPageview = function() {};
+		__pageTracker.__addParam = function() {};
+		__pageTracker.__setTitle = function() {};
+	}
+
+	__pageTracker.__setTitle("이동마이의 컴퓨터 하루 :: [라즈베리파이]라즈베리파이 - vnc 모니터 연결 못하시는 분들 모니터 사용하기");
+	__pageTracker.__addParam("svcdomain","user.tistory.com");
+	__pageTracker.__addParam("category","");
+	__pageTracker.__addParam("articleno","162");
+	__pageTracker.__addParam("plink","http://idongmai.wo.tc/162");
+	__pageTracker.__addParam("date","2013-01-03 15:31:00");
+	__pageTracker.__addParam("author","idongmai");
+	__pageTracker.__addParam("length ","10371");
+	__pageTracker.__addParam("isauthor","N");
+	__pageTracker.__addParam("ishidden","1");
+	__pageTracker.__addParam("comments","0");
+	__pageTracker.__addParam("param1","0");
+	__pageTracker.__addParam("param2","e");
+	__pageTracker.__addParam("param3","");
+
+	window.setTimeout("try { __pageTracker.__trackPageview('http://idongmai.tistory.com/162'); } catch(e) {}", 1);
+//]]>-->
+</script>
+</body></html>

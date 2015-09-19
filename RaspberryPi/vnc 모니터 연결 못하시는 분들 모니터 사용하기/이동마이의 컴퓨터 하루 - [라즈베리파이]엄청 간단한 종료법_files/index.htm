@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://api.netko.kr/blog/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>블로그 관리자에게 문의메일 보내기</title>
+		<style>
+			body{margin:0px;}
+			#per{display:none;}
+			body:hover #per{display:inline; text-align:right; opacity:0.8; position:fixed; left:110px;}
+			#header{text-align:center; width:170px; border:1px solid #5CD65C; 
+			background-color:#AEEAAE; font-family:'나눔고딕','맑은고딕','돋움','sans-serif';}
+			.hr{border-bottom:1px solid gray;}
+			#title{text-align:center;}
+			textarea{font-size:13px;}
+			#send{width:164px; height:100px; margin:0px auto;}
+			.form{text-align:center;}
+				/* UI Object */
+		a.btn_big{display:inline-block;padding-right:4px;background:url(http://static.naver.com/groupware/2010/bg_btn_default.gif) no-repeat 100% 0;font-family:'나눔고딕',nanumgothic,'돋움',dotum;font-size:12px;color:#333;line-height:26px;word-spacing:-1px;text-decoration:none !important;white-space:nowrap}
+		a.btn_big span,a.btn_big strong{display:block;padding:0 8px 1px 12px;background:url(http://static.naver.com/groupware/2010/bg_btn_default.gif) no-repeat}
+		a.btn_sml{display:inline-block;padding-right:4px;background:url(http://static.naver.com/groupware/2010/bg_btn_default.gif) no-repeat 100% -27px;font-family:'나눔고딕',nanumgothic,'돋움',dotum;font-size:12px;color:#333;line-height:21px;letter-spacing:-1px;word-spacing:-1px;text-decoration:none !important;white-space:nowrap}
+		a.btn_sml span,a.btn_sml strong{display:block;padding:0 4px 1px 8px;background:url(http://static.naver.com/groupware/2010/bg_btn_default.gif) no-repeat 0 -27px}
+		/* //UI Object */
+		fieldset { padding: 0; margin: 0; border: 0;}
+		legend { display: block;  font-size: 13px; line-height: 20px; color: #333333;}
+		</style>
+		<script src="jquery.js"></script><style type="text/css"></style><style type="text/css"></style>
+	</head>
+	<body style="">
+		<div id="header">
+			<div id="per"><a class="btn_big" id="per_b"><span>퍼가기</span></a></div>
+			<div style="clear:both;"></div>
+			<div class="title" style="font-weight:bold; text-align:center;"><fieldset><legend>블로그에 건의합니다.</legend></fieldset></div>
+			<div class="form">
+				<textarea id="send"></textarea><br>
+				<a class="btn_big" id="send_button"><strong>결과전송</strong></a>
+			</div>
+		</div>
+		<script>
+		$("#send_button").click(function(){
+			$.ajax({
+			   type: "POST" 
+			   , url: "send.php"
+			   , dataType: "text"
+			  , data: "send="+$("#send").val()
+			 , success: function (data){ if (data=="success"){alert("문의해주셔서 감사합니다." );}else{alert("결과 전송 실패..!");}}
+			, error: function(err) { alert('error : ' + err.status); }  //에러 처리 핸들러
+			});
+		});
+		$("#per_b").click(function(){
+			alert("아직 지원하지 않는 기능");
+		});
+		</script>
+	
+</body></html>

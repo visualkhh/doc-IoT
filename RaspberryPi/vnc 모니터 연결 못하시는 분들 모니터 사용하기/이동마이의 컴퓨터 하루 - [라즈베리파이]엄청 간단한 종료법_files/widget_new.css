@@ -1,0 +1,42 @@
+@charset "euc-kr";
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,iframe,p,button,input{margin:0;padding:0;}
+body,h1,h2,h3,h4,input,select,button{font:12px '돋움',Dotum,Arial,AppleGothic,sans-serif;color:#6e6e6e;}
+img,fieldset,button,iframe{border:0 none;}
+li{list-style:none;}
+img{vertical-align:top;}
+label,button{cursor:pointer;}
+a{color:#6e6e6e;text-decoration:none;}
+a:hover,a:active,a:focus{color:#38aac5;text-decoration:underline;}
+.blind,legend{display:block;overflow:hidden;visibility:hidden;position:absolute;top:-1000em;left:0;}
+:root legend{margin-top:-1px;font-size:0;line-height:0;}
+/* widget */
+#type_400x89 {position:relative;width:400px;height:89px;border:1px solid #d7d7d7;}
+.logo {position:absolute;top:64px;left:15px;}
+.logo a {display:block;width:37px;height:12px;text-indent:-9999em;background:url(http://image.mixsh.com/static/images/widget/set_mixup.gif) 0 -305px no-repeat;}
+.mixup {position:absolute;top:8px;left:8px;width:51px;height:30px;padding-top:20px;background:url(http://image.mixsh.com/static/images/widget/set_mixup.gif) no-repeat;text-align:center;cursor:pointer;}
+.mixup:hover {background-position:0 -50px;}
+.mixup span {display:inline-block;height:14px;background:url(http://image.mixsh.com/static/images/widget/set_mixup.gif) no-repeat;}
+.mixup .no0 {width:8px;background-position:0 -110px;}
+.mixup .no1 {width:8px;background-position:0 -129px;}
+.mixup .no2 {width:9px;background-position:0 -148px;}
+.mixup .no3 {width:10px;background-position:0 -167px;}
+.mixup .no4 {width:9px;background-position:0 -186px;}
+.mixup .no5 {width:9px;background-position:0 -205px;}
+.mixup .no6 {width:9px;background-position:0 -224px;}
+.mixup .no7 {width:9px;background-position:0 -243px;}
+.mixup .no8 {width:8px;background-position:0 -262px;}
+.mixup .no9 {width:9px;background-position:0 -281px;}
+.mixup em {display:block;overflow:hidden;visibility:hidden;position:absolute;top:-1000em;left:0;}
+.layer_mixup {position:absolute;top:18px;left:54px;width:141px;height:27px;text-indent:-9999em;background:url(http://image.mixsh.com/static/images/widget/set_mixup.gif) 0 -345px no-repeat;z-index:10;}
+.title {overflow:hidden;height:14px;width:320px;margin-bottom:12px;padding:18px 0 0 71px;}
+.title h2 {display:inline;color:#333;font-weight:bold;letter-spacing:-1px;}
+.title .view {display:inline;font-size:11px;color:#8b8b8b;}
+.hotList {width:320px;height:36px;padding:8px 9px 0 71px;border-top:1px solid #d7d7d7;background:#f6f6f6;}
+.hotList li {overflow:hidden;height:13px;margin-bottom:4px;font-size:11px;}
+.hotList li .up {display:inline-block;width:39px;padding-left:8px;background:url(http://image.mixsh.com/static/images/widget/set_mixup.gif) 0 -326px no-repeat;font-weight:bold;color:#38aac5;}
+/* inspect */
+.logo2 {position:absolute;top:9px;right:9px;}
+.logo2 a {display:block;width:37px;height:12px;text-indent:-9999em;background:url(http://image.mixsh.com/static/images/widget/set_mixup.gif) -47px -305px no-repeat;}
+.inspectTit {height:26px;padding-top:18px;color:#333;text-align:center;font-weight:bold;}
+.inspectTxt {height:29px;padding-top:15px;border-top:1px solid #d7d7d7;background:#f6f6f6;font-size:11px;text-align:center;}

@@ -1,0 +1,1200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0031)http://jswlinux.tistory.com/141 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<link rel="alternate" type="application/rss+xml" title="Seowon Jung, from Hawaii" href="http://jswlinux.tistory.com/rss">
+<link rel="stylesheet" media="screen" type="text/css" href="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/style.css">
+<link rel="shortcut icon" href="http://jswlinux.tistory.com/favicon.ico">
+<title>Seowon Jung, from Hawaii :: 라즈베리파이에서 vnc 띄우기</title>
+<meta http-equiv="imagetoolbar" content="no"><meta property="og:title" content="라즈베리파이에서 vnc 띄우기">
+<meta property="og:url" content="http://jswlinux.tistory.com/141">
+<meta property="og:site_name" content="Seowon Jung, from Hawaii">
+
+<link rel="stylesheet" type="text/css" href="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/style(1).css">
+<script type="text/javascript" src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/profile.js"></script><style type="text/css"></style><style type="text/css"></style>
+<script type="text/javascript">var asyncProfileItems = [];</script>
+<script type="text/javascript">
+//<![CDATA[
+var servicePath = "";
+var blogURL = "";
+var s_trackbackUrlCopied = "엮인글 주소가 복사되었습니다";
+var s_trackbackUrlCopyFailed = "엮인글 주소를 복사하지 못했습니다";
+var SCRIPT_VERSION = '36020';
+//]]>
+</script>
+<script type="text/javascript" src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/jigu-latest.min.js"></script>
+<script type="text/javascript" src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/T.js"></script>
+<script type="text/javascript" src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/EAF2.js"></script>
+<script type="text/javascript" src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/common.js"></script>
+<script type="text/javascript" src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/gallery.js"></script>
+<script type="text/javascript" src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/flash.js"></script>
+<script type="text/javascript" src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/PHON.js"></script>
+<script type="text/javascript" src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/swfobject.js"></script>
+<link rel="stylesheet" type="text/css" href="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/dialog.css">
+<link rel="stylesheet" type="text/css" href="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/menubar.css"><style type="text/css">.tt_article_useless_p_margin p {padding-top:0 !important;padding-bottom:0 !important;margin-top:0 !important;margin-bottom:0 !important;}</style><script>window["_GOOG_TRANS_EXT_VER"] = "1";</script></head>
+
+<body>
+
+	<div id="wrap">
+		<div id="tistorytoolbarid" style="position:absolute;height:20px;top:4px;right:0px;background-color:transparent;background-image:none;z-index:11;">
+	<div class="tistorytoolbar tt_menubar_login">
+		<div class="tt_menubar_blackBar">
+			<div id="ttMenubarInnerWrap" class="tt_menubar_inner">
+				<div class="tt_menubar_bg_toolbar"></div>
+				<h2 style="display:none;">티스토리 툴바</h2>
+				<div class="tt_menubar_mainmenu"><a class="tt_menubar_link_tit tt_menubar_link_tit_daum tt_menubar_link_tit_eng" href="http://www.daum.net/?nil_ref=tistory" target="_blank">Daum</a></div>
+				<div class="tt_menubar_bg_bar"></div>
+				<div class="tt_menubar_mainmenu"><a class="tt_menubar_link_tit tt_menubar_link_tit_eng" href="http://www.tistory.com/">Tistory</a></div>
+				<div class="tt_menubar_bg_bar"></div>
+				<div class="tt_menubar_logout"><a class="tt_menubar_link_tit" href="http://jswlinux.tistory.com/login/">로그인</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+	function processShortcut(event) {
+			if (isIE)
+		{
+			event = window.event;
+			event.target = event.srcElement;
+		}
+
+		if (event.altKey || event.ctrlKey || event.metaKey)
+			return;
+		switch (event.target.nodeName) {
+			case "INPUT":
+			case "SELECT":
+			case "TEXTAREA":
+				return;
+		}
+		switch (event.keyCode) {
+			case 81: //Q
+
+				window.location = "/admin";
+				break;
+			case 65: //A
+				window.location = "/143";
+				break;
+			case 83: //S
+				window.location = "/140";
+				break;
+			case 90: //Z
+				window.location = "#recentEntries";
+				break;
+			case 88: //X
+				window.location = "#recentComments";
+				break;
+			case 67: //C
+				window.location = "#recentTrackback";
+				break;
+		}
+	}
+	document.onkeydown = processShortcut;
+
+	function addComment(caller, entryId) {
+		var oForm = findFormObject(caller);
+		if (!oForm)
+			return false;
+		var request = new HTTPRequest("POST", oForm.action);
+		request.onSuccess = function () {
+			if(entryId == 0)
+				window.location = blogURL + "/guestbook";
+			else {
+				document.getElementById("entry" + entryId + "Comment").innerHTML = this.getText("/response/commentBlock");
+				if(document.getElementById("recentComments"))
+					document.getElementById("recentComments").innerHTML = this.getText("/response/recentCommentBlock");
+				if(document.getElementById("commentCount" + entryId))
+					document.getElementById("commentCount" + entryId).innerHTML = this.getText("/response/commentView");
+				if(document.getElementById("commentCountOnRecentEntries" + entryId))
+					document.getElementById("commentCountOnRecentEntries" + entryId).innerHTML = "(" + this.getText("/response/commentCount") + ")";
+			}
+			if(typeof window.needCommentCaptcha !== "undefined"){
+				captchaPlugin.init('complete');
+			}
+		}
+		request.onError = function() {
+			var description = this.getText("/response/description");
+			if (description) { alert(description); }
+		}
+		var queryString = "key=tistory";
+		var captchaInput = document.getElementById('inputCaptcha');
+		if (oForm["name"])
+			queryString += "&name=" + encodeURIComponent(oForm["name"].value);
+		if (oForm["password"])
+			queryString += "&password=" + encodeURIComponent(oForm["password"].value);
+		if (oForm["homepage"])
+			queryString += "&homepage=" + encodeURIComponent(oForm["homepage"].value);
+		if (oForm["secret"] && oForm["secret"].checked)
+			queryString += "&secret=1";
+		if (oForm["comment"])
+			queryString += "&comment=" + encodeURIComponent(oForm["comment"].value);
+		if (captchaInput) {
+			if (!captchaInput.value) {
+				alert('그림문자가 입력되지 않았습니다.');
+				return false;
+			}
+			queryString += "&captcha=" + encodeURIComponent(captchaInput.value);
+		}
+		request.send(queryString);
+	}
+	function commentRequireLogin() {
+		if(confirm("'Seowon Jung, from Hawaii' 블로그에 댓글을 남기시려면 티스토리에 로그인하셔야 합니다. \n 지금 로그인하시겠습니까?")) {
+			window.location = "http://jswlinux.tistory.com/login?requestURI=http%3A%2F%2Fjswlinux.tistory.com%2F141";
+		} else {
+			window.focus();
+		}
+	}
+	function commentObserverForAuth(evetObj) {
+		var reex = /name|password|homepage|secret|comment/;
+		if (isIE)
+			var	name = evetObj.srcElement.name
+		else
+			var	name = evetObj.target.name
+		if(reex.test(name) && !(new RegExp("^entry\\d+password$").test(name))) {
+			commentRequireLogin();
+		}
+	}
+
+	STD.addEventListener(document);
+	document.addEventListener("click", commentObserverForAuth, false);
+	var openWindow='';
+	function alignCenter(win,width,height) {
+		if(navigator.userAgent.indexOf("Chrome") == -1)
+			win.moveTo(screen.width/2-width/2,screen.height/2-height/2);
+	}
+
+	function deleteComment(id) {
+		var width = 450;
+		var height = 360;
+				try { openWindow.close(); } catch(e) { }
+				openWindow = window.open("/comment/delete/" + id, "tatter", "width="+width+",height="+height+",location=0,menubar=0,resizable=0,scrollbars=0,status=0,toolbar=0");
+		openWindow.focus();
+		alignCenter(openWindow,width,height);
+	}
+
+	function commentComment(parent, guestbookPage) {
+		var width = 450;
+		var height = 360;
+				try { openWindow.close(); } catch(e) { }
+				openWindow = window.open("/comment/comment/" + parent + (guestbookPage ? "?guestbookPage=" + guestbookPage: ""), "tatter", "width="+width+",height="+height+",location=0,menubar=0,resizable=0,scrollbars=0,status=0,toolbar=0");
+		openWindow.focus();
+		alignCenter(openWindow,width,height);
+	}
+
+	function editEntry(parent,child) {
+		var width =  1169;
+		var height = 600;
+		if(openWindow != '') openWindow.close();
+		openWindow = window.open("/admin/entry/edit/" + parent + "?popupEditor&returnURL=CLOSEME","tatter", "width="+1169+",height="+600+",location=0,menubar=0,resizable=1,scrollbars=1,status=0,toolbar=0");
+		openWindow.focus();
+		alignCenter(openWindow,width,height);
+	}
+
+	function guestbookComment(parent) {
+		var width = 450;
+		var height = 360;
+				try { openWindow.close(); } catch(e) { }
+				openWindow = window.open("/comment/comment/" + parent, "tatter", "width="+width+",height="+height+",location=0,menubar=0,resizable=0,scrollbars=0,status=0,toolbar=0");
+		openWindow.focus();
+		alignCenter(openWindow,width,height);
+	}
+
+	function sendTrackback(id) {
+		var width = 700;
+		var height = 500;
+				try { openWindow.close(); } catch(e) { }
+				openWindow = window.open("/trackback/send/" + id, "tatter", "width=580,height=400,location=0,menubar=0,resizable=1,scrollbars=1,status=0,toolbar=0");
+				openWindow.focus();
+		alignCenter(openWindow,width,height);
+	}
+
+	function deleteTrackback(id,entryId) {
+		if (confirm("트랙백을 삭제하기 위해서는 로그인이 필요합니다.\n로그인 하시겠습니까?\t")) {
+			window.location = "/login";
+			return false;
+		} else {
+			return false;
+		}
+	}
+
+	function reloadEntry(id) {
+		var password = document.getElementById("entry" + id + "password");
+		if (!password)
+			return;
+		document.cookie = "GUEST_PASSWORD=" + encodeURIComponent(password.value) + ";path=";
+
+		window.location.href = window.location.href;
+	}
+	loadedComments = new Array();
+	loadedTrackbacks = new Array();
+	function viewTrigger(id, category, categoryId) {
+		var request = new HTTPRequest("GET", "/"+category+"/view/" + id);
+		var target = document.getElementById('entry'+id+(category == 'comment' ? 'Comment' : 'Trackback'));
+		if(target == null)
+			return false;
+		request.onSuccess = function() {
+			target.innerHTML = this.getText("/response/result");
+			target.style.display = 'block';
+			highlight();
+			category == 'comment' ? loadedComments[id] = true : loadedTrackbacks[id] = true;
+			if(categoryId > -1)
+				location = location.toString();
+			if(category == 'trackback') {
+				var holder = document.getElementById('TrackbackCopyHolder' + id);
+				if(holder) {
+					holder.innerHTML = AC_FL_RunContentNotWriteGetString(
+						'src','http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/copyTrackback',
+						'Flashvars','url=http://jswlinux.tistory.com/trackback/' + id + '&mode=whiteButton',
+						'width','29',
+						'height','18',
+						'id', 'TrackbackCopyButton' + id,
+						'wmode','transparent',
+						'allowScriptAccess','always',
+						'type','application/x-shockwave-flash',
+						'pluginspage','http://www.macromedia.com/go/getflashplayer'
+					);
+				}
+			}
+			if(typeof window.needCommentCaptcha !== "undefined"){
+				captchaPlugin.init();
+			}
+		}
+		request.onError = function() {
+			alert('실패 했습니다');
+		}
+		request.send();
+	}
+	function highlight() {
+		var hash = new RegExp("^#(comment\\d+)").exec(window.location.hash);
+		if(hash && (el = document.getElementById(hash[1])))
+			highlightElement(hash[1], 0, el.style.backgroundColor);
+	}
+	function highlightElement(id, amount, origColor) {
+		var el = document.getElementById(id);
+		if (!el) {
+			return;
+		}
+		el.style.backgroundColor = amount % 2 ? "#FFFF44" : origColor;
+		if (++amount < 7) {
+			setTimeout("highlightElement('" + id + "', " + amount + ", '" + origColor + "')", 200);
+		}
+	}
+	function toggleLayerForEntry(id, category, categoryId, mode) {
+		if((category == 'comment' ? loadedComments[id] : loadedTrackbacks[id])) {
+			try {
+				var obj = document.getElementById('entry'+id+(category == 'comment' ? 'Comment' : 'Trackback'));
+				if(mode == undefined)
+					obj.style.display = (obj.style.display == "none") ? "block" : "none";
+				else
+					obj.style.display = (mode == 'show') ? "block" : "none";
+			} catch (e) {
+
+			}
+			return true;
+		} else {
+			if(categoryId) {
+				viewTrigger(id,category, categoryId);
+			} else {
+				viewTrigger(id,category, -1);
+			}
+		}
+	}
+	function ObserverForAnchor(evetObj) {
+		var lo = location.toString();
+		var queryString = lo.substr(lo.lastIndexOf('/')+1);
+		if(queryString.indexOf('#')>-1) {
+			var qsElements = queryString.split('#');
+			if(qsElements[1].indexOf('comment')>-1) {
+				var category = 'comment';
+			} else if(qsElements[1].indexOf('trackback')>-1) {
+				var category = 'trackback';
+			}
+			if(category) {
+				entryid = qsElements[0];
+				categoryId = qsElements[1].substr(category.length);
+				toggleLayerForEntry(entryid,category,categoryId, 'show');
+			}
+		}
+	}
+
+	STD.addEventListener(window);
+	window.addEventListener("load", ObserverForAnchor, false);
+//]]>
+</script>
+<div style="margin:0px; padding:0px; border:none; background:none; float:none; clear:none; z-index:0"></div>
+
+			<div class="header_bg">
+				<div id="header">
+					<img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/spacer.gif" alt="블로그 이미지" class="blog_img">
+					<h1 class="blog_title"><a href="http://jswlinux.tistory.com/">Seowon Jung, from Hawaii</a></h1>
+					<p class="blog_description">Seowon Jung의 잡동사니 보관소</p>
+					<div class="blogger">by jswlinux</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="sidebar1">
+				<div class="sidebar_inside">
+					<div class="sidebar">
+						<ul id="header_menu">
+							<li class="tag"><a href="http://jswlinux.tistory.com/tag">Tag</a></li>
+							<li class="media"><a href="http://jswlinux.tistory.com/media">Media Log</a></li>
+							<li class="location"><a href="http://jswlinux.tistory.com/location">Location Log</a></li>
+							<li class="guest"><a href="http://jswlinux.tistory.com/guestbook">Guest Book</a></li>
+							<li class="admin"><a href="http://jswlinux.tistory.com/admin">Admin</a></li>
+							<li class="write"><a href="http://jswlinux.tistory.com/admin/entry/post">Write</a></li>
+						</ul>
+						
+							<!-- 카테고리 모듈 -->
+								<div class="module">
+									<h3 class="title_category">Article Category</h3>
+									<div class="contents"><script type="text/javascript">
+//<![CDATA[
+	var expanded = false;
+	function expandTree() {
+		expandFolder(395451, true);
+	}
+
+	function expandFolder(category, expand) {
+		var oLevel1 = document.getElementById("category_" + category);
+		var oImg = oLevel1.getElementsByTagName("img")[0];
+		switch (expand) {
+			case true:
+				oImg.src = "http://i1.daumcdn.net/cfs.tistory/v/0/blog/image/tree/base/tab_opened.gif";
+				showLayer("category_" + category + "_children");
+				return true;
+			case false:
+				oImg.src = "http://i1.daumcdn.net/cfs.tistory/v/0/blog/image/tree/base/tab_closed.gif";
+				hideLayer("category_" + category + "_children");
+				return true;
+		}
+		return false;
+	}
+
+	function toggleFolder(category) {
+		var oLevel1 = document.getElementById("category_" + category);
+		var oImg = oLevel1.getElementsByTagName("img")[0];
+		switch (oImg.src.substr(oImg.src.length - 10, 6)) {
+			case "isleaf":
+				return true;
+			case "closed":
+				oImg.src = "http://i1.daumcdn.net/cfs.tistory/v/0/blog/image/tree/base/tab_opened.gif";
+				tt_showLayer("category_" + category + "_children");
+				expanded = true;
+				return true;
+			case "opened":
+				oImg.src = "http://i1.daumcdn.net/cfs.tistory/v/0/blog/image/tree/base/tab_closed.gif";
+				tt_hideLayer("category_" + category + "_children");
+				expanded = false;
+				return true;
+		}
+		return false;
+	}
+	var selectedNode = 0;
+	function selectNode(category) {
+
+		try {
+			var root = document.getElementById('treeComponent');
+			var prevSelectedNode= root.getAttribute('currentselectednode');
+			var oLevel = document.getElementById("category_" + selectedNode);
+			var oChild = oLevel.getElementsByTagName("table")[0];
+
+			oChild.style.color = "#b9b7b0";
+			oChild.style.backgroundColor = ""
+			root.setAttribute('currentselectednode',category);
+			document.getElementById('text_'+selectedNode).style.color="#b9b7b0";
+
+			var oLevel = document.getElementById("category_" + category);
+			var oChild = oLevel.getElementsByTagName("table")[0];
+			oChild.style.color = "#b9b7b0";
+			oChild.style.backgroundColor = ""
+			document.getElementById('text_'+category).style.color="#b9b7b0";
+
+			selectedNode = category;
+		} catch(e) {
+		}
+	}
+
+	function setTreeStyle(skin) {
+		try {
+			treeNodes = document.getElementsByName("treeNode");
+			for(var i=0; i<treeNodes.length; i++) {
+				if( ('category_'+selectedNode) == (treeNodes[i].getAttribute('id').value) ) {
+					var oLevel = document.getElementById('category_'+i);
+					var oChild = oLevel.getElementsByTagName("table")[0];
+					oChild.style.color ='#'+skin['activeItemColor'];
+					if (skin['activeItemBgColor'] != '' && skin['activeItemBgColor'] != undefined) {
+						oChild.style.backgroundColor ='#'+skin['activeItemBgColor'];
+					} else {
+						oChild.style.backgroundColor ="";
+					}
+				} else{
+					var oLevel = document.getElementById("category_" + i);
+					var oChild = oLevel.getElementsByTagName("table")[0];
+					oChild.style.color ='#'+skin['colorOnTree'];
+					oChild.style.backgroundColor ='#'+skin['bgColorOnTree'];
+					var oLevel = document.getElementById('text_'+i).style.color='#'+skin['colorOnTree'];
+				}
+			}
+		} catch(e) {
+		}
+	}
+//]]>
+</script>
+		<table id="treeComponent" cellpadding="0" cellspacing="0" style="width: 100%;"><tbody><tr>
+	<td>
+		<table id="category_0" cellpadding="0" cellspacing="0"><tbody><tr>
+			<td class="ib" style="font-size: 1px"><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/tab_top.gif" width="16" onclick="expandTree()" alt=""></td>
+			<td valign="top" style="font-size:9pt; padding-left:3px">
+				<table onclick="" id="imp0" cellpadding="0" cellspacing="0" style=""><tbody><tr>
+										<td class="branch3" onclick="window.location.href=&#39;/category&#39;"><div id="text_0" style=" color: #b9b7b0;">분류 전체보기 <span class="c_cnt">(145)</span></div></td>
+				</tr></tbody></table>
+			</td>
+		</tr></tbody></table>
+
+		<table id="category_291031" cellpadding="0" cellspacing="0"><tbody><tr>
+			<td class="ib" style="width:39px; font-size: 1px; background-image: url(&#39;http://i1.daumcdn.net/cfs.tistory/v/0/blog/image/tree/base/navi_back_noactive.gif"><a class="click" onclick="toggleFolder(&#39;291031&#39;)"><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/tab_isleaf.gif" width="39" alt=""></a></td>
+			<td>
+				<table cellpadding="0" cellspacing="0" style=""><tbody><tr>
+					<td class="branch3" onclick="window.location.href=&#39;/category/그%20외&#39;"><div id="text_291031" style="color: #b9b7b0;">그 외 <span class="c_cnt">(13)</span></div></td>
+				</tr></tbody></table>
+			</td>
+		</tr></tbody></table>
+		<div id="category_291031_children" style="display:none">
+		</div>
+		<table id="category_395451" cellpadding="0" cellspacing="0"><tbody><tr>
+			<td class="ib" style="width:39px; font-size: 1px; background-image: url(&#39;http://i1.daumcdn.net/cfs.tistory/v/0/blog/image/tree/base/navi_back_noactive.gif"><a class="click" onclick="toggleFolder(&#39;395451&#39;)"><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/tab_closed.gif" width="39" alt=""></a></td>
+			<td>
+				<table cellpadding="0" cellspacing="0" style=""><tbody><tr>
+					<td class="branch3" onclick="window.location.href=&#39;/category/Computer&#39;"><div id="text_395451" style="color: #b9b7b0;">Computer <span class="c_cnt">(97)</span></div></td>
+				</tr></tbody></table>
+			</td>
+		</tr></tbody></table>
+		<div id="category_395451_children" style="display:none">
+				<table id="category_24696" cellpadding="0" cellspacing="0"><tbody><tr>
+				<td style="width:39px; font-size: 1px"><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/navi_back_active.gif" width="17" height="18" alt=""><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/tab_treed.gif" width="22" alt=""></td>
+				<td>
+					<table onclick="window.location.href=&#39;/category/Computer/Macintosh%20/%20매킨토시&#39;" cellpadding="0" cellspacing="0" style=""><tbody><tr>
+					<td class="branch3"><div id="text_24696" style="color: #b9b7b0;">Macintosh / 매킨토시 <span class="c_cnt">(20)</span></div></td>
+					</tr></tbody></table>
+				</td>
+				</tr></tbody></table>
+				<table id="category_173882" cellpadding="0" cellspacing="0"><tbody><tr>
+				<td style="width:39px; font-size: 1px"><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/navi_back_active.gif" width="17" height="18" alt=""><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/tab_treed.gif" width="22" alt=""></td>
+				<td>
+					<table onclick="window.location.href=&#39;/category/Computer/Linux%20/%20리눅스&#39;" cellpadding="0" cellspacing="0" style=""><tbody><tr>
+					<td class="branch3"><div id="text_173882" style="color: #b9b7b0;">Linux / 리눅스 <span class="c_cnt">(21)</span></div></td>
+					</tr></tbody></table>
+				</td>
+				</tr></tbody></table>
+				<table id="category_512263" cellpadding="0" cellspacing="0"><tbody><tr>
+				<td style="width:39px; font-size: 1px"><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/navi_back_active.gif" width="17" height="18" alt=""><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/tab_treed.gif" width="22" alt=""></td>
+				<td>
+					<table onclick="window.location.href=&#39;/category/Computer/Bacula%20/%20백업&#39;" cellpadding="0" cellspacing="0" style=""><tbody><tr>
+					<td class="branch3"><div id="text_512263" style="color: #b9b7b0;">Bacula / 백업 <span class="c_cnt">(8)</span></div></td>
+					</tr></tbody></table>
+				</td>
+				</tr></tbody></table>
+				<table id="category_394808" cellpadding="0" cellspacing="0"><tbody><tr>
+				<td style="width:39px; font-size: 1px"><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/navi_back_active.gif" width="17" height="18" alt=""><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/tab_treed.gif" width="22" alt=""></td>
+				<td>
+					<table onclick="window.location.href=&#39;/category/Computer/Programming&#39;" cellpadding="0" cellspacing="0" style=""><tbody><tr>
+					<td class="branch3"><div id="text_394808" style="color: #b9b7b0;">Programming <span class="c_cnt">(7)</span></div></td>
+					</tr></tbody></table>
+				</td>
+				</tr></tbody></table>
+				<table id="category_395452" cellpadding="0" cellspacing="0"><tbody><tr>
+				<td style="width:39px; font-size: 1px"><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/navi_back_active.gif" width="17" height="18" alt=""><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/tab_treed.gif" width="22" alt=""></td>
+				<td>
+					<table onclick="window.location.href=&#39;/category/Computer/Solaris%20/%20솔라리스&#39;" cellpadding="0" cellspacing="0" style=""><tbody><tr>
+					<td class="branch3"><div id="text_395452" style="color: #b9b7b0;">Solaris / 솔라리스 <span class="c_cnt">(27)</span></div></td>
+					</tr></tbody></table>
+				</td>
+				</tr></tbody></table>
+				<table id="category_496963" cellpadding="0" cellspacing="0"><tbody><tr>
+				<td style="width:39px; font-size: 1px"><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/navi_back_active.gif" width="17" height="18" alt=""><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/tab_treed.gif" width="22" alt=""></td>
+				<td>
+					<table onclick="window.location.href=&#39;/category/Computer/ARM%20/%20라즈베리파이,%20큐비보드&#39;" cellpadding="0" cellspacing="0" style=""><tbody><tr>
+					<td class="branch3"><div id="text_496963" style="color: #b9b7b0;">ARM / 라즈베리파이, 큐비보드 <span class="c_cnt">(2)</span></div></td>
+					</tr></tbody></table>
+				</td>
+				</tr></tbody></table>
+				<table id="category_515888" cellpadding="0" cellspacing="0"><tbody><tr>
+				<td style="width:39px; font-size: 1px"><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/navi_back_active.gif" width="17" height="18" alt=""><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/tab_treed.gif" width="22" alt=""></td>
+				<td>
+					<table onclick="window.location.href=&#39;/category/Computer/Ceph%20/%20블럭스토리지&#39;" cellpadding="0" cellspacing="0" style=""><tbody><tr>
+					<td class="branch3"><div id="text_515888" style="color: #b9b7b0;">Ceph / 블럭스토리지 <span class="c_cnt">(8)</span></div></td>
+					</tr></tbody></table>
+				</td>
+				</tr></tbody></table>
+				<table id="category_516426" cellpadding="0" cellspacing="0"><tbody><tr>
+				<td style="width:39px; font-size: 1px"><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/navi_back_active.gif" width="17" height="18" alt=""><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/tab_treed_end.gif" width="22" alt=""></td>
+				<td>
+					<table onclick="window.location.href=&#39;/category/Computer/Etc%20/%20컴퓨터%20그외&#39;" cellpadding="0" cellspacing="0" style=""><tbody><tr>
+					<td class="branch3"><div id="text_516426" style="color: #b9b7b0;">Etc / 컴퓨터 그외 <span class="c_cnt">(1)</span></div></td>
+					</tr></tbody></table>
+				</td>
+				</tr></tbody></table>
+		</div>
+		<table id="category_26213" cellpadding="0" cellspacing="0"><tbody><tr>
+			<td class="ib" style="width:39px; font-size: 1px; background-image: url(&#39;http://i1.daumcdn.net/cfs.tistory/v/0/blog/image/tree/base/navi_back_noactive.gif"><a class="click" onclick="toggleFolder(&#39;26213&#39;)"><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/tab_isleaf.gif" width="39" alt=""></a></td>
+			<td>
+				<table cellpadding="0" cellspacing="0" style=""><tbody><tr>
+					<td class="branch3" onclick="window.location.href=&#39;/category/게임&#39;"><div id="text_26213" style="color: #b9b7b0;">게임 <span class="c_cnt">(1)</span></div></td>
+				</tr></tbody></table>
+			</td>
+		</tr></tbody></table>
+		<div id="category_26213_children" style="display:none">
+		</div>
+		<table id="category_72413" cellpadding="0" cellspacing="0"><tbody><tr>
+			<td class="ib" style="width:39px; font-size: 1px; background-image: url(&#39;http://i1.daumcdn.net/cfs.tistory/v/0/blog/image/tree/base/navi_back_noactive.gif"><a class="click" onclick="toggleFolder(&#39;72413&#39;)"><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/tab_isleaf.gif" width="39" alt=""></a></td>
+			<td>
+				<table cellpadding="0" cellspacing="0" style=""><tbody><tr>
+					<td class="branch3" onclick="window.location.href=&#39;/category/Essay&#39;"><div id="text_72413" style="color: #b9b7b0;">Essay <span class="c_cnt">(22)</span></div></td>
+				</tr></tbody></table>
+			</td>
+		</tr></tbody></table>
+		<div id="category_72413_children" style="display:none">
+		</div>
+		<table id="category_85978" cellpadding="0" cellspacing="0"><tbody><tr>
+			<td class="ib" style="width:39px; font-size: 1px; background-image: url(&#39;http://i1.daumcdn.net/cfs.tistory/v/0/blog/image/tree/base/navi_back_noactive_end.gif"><a class="click" onclick="toggleFolder(&#39;85978&#39;)"><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/tab_isleaf.gif" width="39" alt=""></a></td>
+			<td>
+				<table cellpadding="0" cellspacing="0" style=""><tbody><tr>
+					<td class="branch3" onclick="window.location.href=&#39;/category/Hawaii&#39;"><div id="text_85978" style="color: #b9b7b0;">Hawaii <span class="c_cnt">(12)</span></div></td>
+				</tr></tbody></table>
+			</td>
+		</tr></tbody></table>
+		<div id="category_85978_children" style="display:none">
+		</div>
+	</td></tr></tbody></table>
+</div>
+								</div>
+							
+							<!-- 공지사항 모듈 -->
+								
+									<div class="module module_notice">
+										<h3 class="title_notice">Notice</h3>
+										<ul class="contents">
+											
+												<li><a href="http://jswlinux.tistory.com/notice/142">주인장에 대해서...</a> </li>
+											
+										</ul>
+									</div>
+								
+							
+							<!-- 최근 포스트 모듈 -->
+								<div class="module">
+									<h3 class="title_article">Recent Article</h3>
+									<ul class="contents">
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/entry/%EC%95%A0%ED%94%8C-%EC%8D%AC%EB%8D%94%EB%B3%BC%ED%8A%B8-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4-2%EB%8C%80-%EA%B5%AC%EC%9E%85"> 애플 썬더볼트 디스플..</a>
+												<span class="count"><span id="commentCountOnRecentEntries171"></span></span>
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/entry/%EB%A3%B8%EB%A9%94%EC%9D%B4%ED%8A%B8%EC%99%80%EC%9D%98-%EC%83%9D%ED%99%9C"> 룸메이트와의 생활</a>
+												<span class="count"><span id="commentCountOnRecentEntries170"></span></span>
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/entry/Mac-OS-X-%EC%99%B8%EC%9E%A5-DVD%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%A1%9C-DVD%ED%94%8C%EB%A0%88%EC%9D%B4%EC%96%B4-%EA%B5%AC%EB%8F%99%ED%95%98%EA%B8%B0"> Mac OS X 외장 DVD드라..</a>
+												<span class="count"><span id="commentCountOnRecentEntries169"></span></span>
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/entry/Mac-OS-X-Mavericks%EC%97%90-iDVD-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0"> Mac OS X Mavericks에..</a>
+												<span class="count"><span id="commentCountOnRecentEntries168"></span></span>
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/entry/Ubuntu-How-to-set-up-2-Graphic-Cards-and-6-monitors"> Ubuntu - How to set u..</a>
+												<span class="count"><span id="commentCountOnRecentEntries167"></span></span>
+											</li>
+										
+									</ul>
+								</div>
+							
+							<!-- 최근 댓글 모듈 -->
+								<div class="module">
+									<h3 class="title_comment">Recent Comment</h3>
+									<ul class="contents">
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/159#comment11512204">안녕하세요.
+
+제가..</a>
+												<!--
+												<div class="source">
+													<span class="author">Brian Jung, jswlinx</span> <span class="date">2013</span>
+												</div>
+												-->
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/128#comment10652881">~ 표시가 계속 붙어서..</a>
+												<!--
+												<div class="source">
+													<span class="author">Brian Jung, jswlinx</span> <span class="date">2013</span>
+												</div>
+												-->
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/128#comment10652677">내폴더 열어서 etc-&gt;sa..</a>
+												<!--
+												<div class="source">
+													<span class="author">안지</span> <span class="date">2013</span>
+												</div>
+												-->
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/128#comment10628654">제 글처럼 프린터 관련..</a>
+												<!--
+												<div class="source">
+													<span class="author">Brian Jung, jswlinx</span> <span class="date">2013</span>
+												</div>
+												-->
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/128#comment10618647">안녕하세요. 저도 블로..</a>
+												<!--
+												<div class="source">
+													<span class="author">안지</span> <span class="date">2013</span>
+												</div>
+												-->
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/124#comment10578397">지나가다가 들릅니다..</a>
+												<!--
+												<div class="source">
+													<span class="author">참복어</span> <span class="date">2013</span>
+												</div>
+												-->
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/138#comment10536698">축하합니다. 글 잘 읽..</a>
+												<!--
+												<div class="source">
+													<span class="author">늦깍이 유학생</span> <span class="date">2013</span>
+												</div>
+												-->
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/124#comment9710428">결국 방에서 엠프로 들..</a>
+												<!--
+												<div class="source">
+													<span class="author">비싸나 싸나</span> <span class="date">2012</span>
+												</div>
+												-->
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/124#comment9710423">펜더를 사는 부자도 있..</a>
+												<!--
+												<div class="source">
+													<span class="author">입문으로</span> <span class="date">2012</span>
+												</div>
+												-->
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/115#comment9678159">뭐 전 개발부터 모든일..</a>
+												<!--
+												<div class="source">
+													<span class="author">시로가네</span> <span class="date">2012</span>
+												</div>
+												-->
+											</li>
+										
+									</ul>
+								</div>
+							
+							<!-- 최근 트랙백 모듈 -->
+								<div class="module">
+									<h3 class="title_trackback">Recent Trackback</h3>
+									<ul class="contents">
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/50#trackback1726944">Puppy Linux 퍼피 리눅..</a>
+												<!--
+												<div class="source">
+													<span class="author">joogunking</span>
+													<span class="date">2010</span>
+												</div>
+												-->
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/39#trackback1683314">웰컴 투 매킨토시 Welc..</a>
+												<!--
+												<div class="source">
+													<span class="author">쉐어클럽 : 모든 파일..</span>
+													<span class="date">2009</span>
+												</div>
+												-->
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/22#trackback1681180">우분투 쓰다가 이런 글..</a>
+												<!--
+												<div class="source">
+													<span class="author">베로베로스씨의 이상난..</span>
+													<span class="date">2009</span>
+												</div>
+												-->
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/24#trackback177651">VMware  보안 취약점</a>
+												<!--
+												<div class="source">
+													<span class="author">뎅꽁이의 보안창고</span>
+													<span class="date">2008</span>
+												</div>
+												-->
+											</li>
+										
+									</ul>
+								</div>
+							
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<div id="content">
+				<!-- 글 검색 결과 -->
+				
+
+				<!-- 댓글 검색 결과 -->
+				
+
+				<!-- 지역 로그 -->
+				
+
+				<!-- 태그 -->
+				
+
+				<!-- 방명록 -->
+				
+
+				<!-- 공지사항 -->
+				
+
+				<!-- 보호글 -->
+				
+
+				<!-- 포스팅 본문 -->
+				
+					<div class="article">
+						<div class="article_head">
+							<h2 class="title"><a href="http://jswlinux.tistory.com/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4%EC%97%90%EC%84%9C-vnc-%EB%9D%84%EC%9A%B0%EA%B8%B0">라즈베리파이에서 vnc 띄우기</a></h2> <span class="separate">|</span>
+							<span class="article_info">
+								<a href="http://jswlinux.tistory.com/category/Computer/ARM%20/%20%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4,%20%ED%81%90%EB%B9%84%EB%B3%B4%EB%93%9C" class="category">Computer/ARM / 라즈베리파이, 큐비보드</a> <span class="date">2013/04/27 00:21</span>
+							</span>
+						</div>
+						<div class="wrap_article_admin">
+							
+							<div class="article_author">
+								Posted by Seowon Jung jswlinux
+							</div>
+						</div>
+						<div class="article_post">
+							<fieldset style="margin:20px 0px 20px 0px;padding:5px;"><legend><span><strong>크리에이티브 커먼즈 라이선스</strong></span></legend><!--Creative Commons License--><div style="float: left; width: 88px; margin-top: 3px;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/kr/" target="_blank"><img alt="Creative Commons License" style="border-width: 0" src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/88x31.png"></a></div><div style="margin-left: 92px; margin-top: 3px; text-align: justify;">이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/kr/" target="_blank">크리에이티브 커먼즈 코리아 저작자표시-비영리-변경금지 2.0 대한민국 라이선스</a>에 따라 이용하실 수 있습니다.
+			<!-- Creative Commons License-->
+			<!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+			<Work rdf:about="">
+			<license rdf:resource="http://creativecommons.org/licenses/by-nc-nd/2.0/kr/" />
+			</Work>
+			<License rdf:about="http://creativecommons.org/licenses/by-nc-nd/">
+			<permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+			<permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+			<requires rdf:resource="http://web.resource.org/cc/Notice"/>
+			<requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/></License></rdf:RDF> --></div></fieldset><span id="callbacknestjswlinuxtistorycom1416152" style="width:1px; height:1px; float:right"><embed allowscriptaccess="always" id="bootstrapperjswlinuxtistorycom1416152" src="http://jswlinux.tistory.com/plugin/CallBack_bootstrapperSrc?nil_profile=tistory&amp;nil_type=copied_post" width="1" height="1" wmode="transparent" type="application/x-shockwave-flash" enablecontextmenu="false" flashvars="&amp;callbackId=jswlinuxtistorycom1416152&amp;host=http://jswlinux.tistory.com&amp;embedCodeSrc=http%3A%2F%2Fjswlinux.tistory.com%2Fplugin%2FCallBack_bootstrapper%3F%26src%3Dhttp%3A%2F%2Fs1.daumcdn.net%2Fcfs.tistory%2Fv%2F0%2Fblog%2Fplugins%2FCallBack%2Fcallback%26id%3D141%26callbackId%3Djswlinuxtistorycom1416152%26destDocId%3Dcallbacknestjswlinuxtistorycom1416152%26host%3Dhttp%3A%2F%2Fjswlinux.tistory.com%26float%3Dleft" swliveconnect="true"></span><p><span style="font-family: &#39;Courier New&#39;; font-size: 12px;">$ sudo apt-get install tightvncserver</span></p>
+<p><span style="font-family: &#39;Courier New&#39;; font-size: 12px;">$&nbsp;vncserver :1 -geometry 1280x800 -depth 16 -pixelformat rgb565</span></p>
+<p>&nbsp;</p>
+<p>클라이언트 측에서 포트번호 5901이나 디스플레이 :1로 접속하면 된다.</p>
+<p>윈도우 사용자라면 무료로 받을 수 있는 vnc클라이언트인 UltraVNC Viewer를 설치해서 VNC Server 주소에 IP 주소를 넣고 :1을 붙이면 되겠다.</p>
+<p>예) &nbsp;192.168.0.20:1</p><div style="text-align:left; padding-top:10px;">
+<iframe src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/like.htm" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:310px; height:65px;" allowtransparency="true"></iframe>
+</div>
+
+						</div>
+
+						
+							<div class="article_tag">
+								<img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/icon_tag.gif" alt="tag" class="tag_img"> <a href="http://jswlinux.tistory.com/tag/Raspberry" rel="tag">Raspberry</a>,
+<a href="http://jswlinux.tistory.com/tag/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC" rel="tag">라즈베리</a>
+							</div>
+						
+
+						<div class="article_guest">
+							<a href="http://jswlinux.tistory.com/141#tb" onclick="alert(&#39;이 글에는 트랙백을 달 수 없습니다\t&#39;); return false"><span id="trackbackCount141">Trackback</span></a> And
+							<a href="http://jswlinux.tistory.com/141#rp" onclick="toggleLayerForEntry(&#39;141&#39;, &#39;comment&#39;); return false"><span id="commentCount141">Comment</span></a>
+						</div>
+
+						<div id="entry141Trackback" style="display:none">
+							<div class="article_action">
+								<div class="article_action_tbadd">
+									<h3><span class="title_tbadd">Trackback</span><span class="address">	<span class="trackback-url" style="cursor: text">http://jswlinux.tistory.com/trackback/141</span>
+	<span id="TrackbackCopyHolder141" style="vertical-align: -4px; margin-left: 1px">
+	<script type="text/javascript">
+	//<![CDATA[
+	AC_FL_RunContent(
+		'src','http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/copyTrackback',
+		'Flashvars','url=http://jswlinux.tistory.com/trackback/141&mode=whiteButton',
+		'width','29',
+		'height','18',
+		'id', 'TrackbackCopyButton141',
+		'wmode','transparent',
+		'allowScriptAccess','always',
+		'type','application/x-shockwave-flash',
+		'pluginspage','http://www.macromedia.com/go/getflashplayer'
+	);
+	//]]>
+	</script><embed src="http://s1.daumcdn.net/cfs.tistory/v/0/blog/script/copyTrackback.swf" flashvars="url=http://jswlinux.tistory.com/trackback/141&amp;mode=whiteButton" width="29" height="18" id="TrackbackCopyButton141" wmode="transparent" allowscriptaccess="always" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"> 
+	</span>
+	<span>
+		<a href="http://www.tistory.com/gateway/?trackback=http%3A%2F%2Fjswlinux.tistory.com%2Ftrackback%2F141&defaultAdmin=%2Fadmin" onclick="window.open(this.href); return false">
+	<img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/btn_track_white.gif" alt="관련글 쓰기" title="" style="_margin-left: 5px; vertical-align: -4px">
+	</a></span>
+</span></h3>
+								</div>
+								
+							</div>
+						</div>
+
+						<div id="entry141Comment" style="display:none"></div>
+					</div>
+				
+
+				<!-- 페이징 -->
+				
+					<div class="paging">
+						<a href="http://jswlinux.tistory.com/143" class=""><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/btn_prev.gif" alt="prev" class="paging_img"></a>
+							
+							<span class="separate">|</span> <a href="http://jswlinux.tistory.com/171"> <span>1</span></a>
+							 <span class="interword">...</span> 
+							<span class="separate">|</span> <a href="http://jswlinux.tistory.com/146"> <span>26</span></a>
+							
+							<span class="separate">|</span> <a href="http://jswlinux.tistory.com/145"> <span>27</span></a>
+							
+							<span class="separate">|</span> <a href="http://jswlinux.tistory.com/144"> <span>28</span></a>
+							
+							<span class="separate">|</span> <a href="http://jswlinux.tistory.com/143"> <span>29</span></a>
+							
+							<span class="separate">|</span> <a> <span class="selected">30</span></a>
+							
+							<span class="separate">|</span> <a href="http://jswlinux.tistory.com/140"> <span>31</span></a>
+							
+							<span class="separate">|</span> <a href="http://jswlinux.tistory.com/139"> <span>32</span></a>
+							
+							<span class="separate">|</span> <a href="http://jswlinux.tistory.com/138"> <span>33</span></a>
+							
+							<span class="separate">|</span> <a href="http://jswlinux.tistory.com/136"> <span>34</span></a>
+							 <span class="interword">...</span> 
+							<span class="separate">|</span> <a href="http://jswlinux.tistory.com/1"> <span>145</span></a>
+							
+						<span class="separate">|</span> <a href="http://jswlinux.tistory.com/140" class=""><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/btn_next.gif" alt="next" class="paging_img"></a>
+					</div>
+				
+			</div>
+
+			<hr>
+
+			<div class="sidebar2">
+				<div class="sidebar_inside">
+					<div class="sidebar">
+						
+							<!-- 태그목록 모듈 -->
+								<div class="module module_tag">
+									<h3 class="title_tag">Tag Cloud</h3>
+									<ul class="contents">
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EB%B8%94%EB%9F%AD%20%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80" class="cloud4"> 블럭 스토리지</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EC%95%84%ED%8C%8C%EC%B9%98" class="cloud4"> 아파치</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%ED%95%98%EC%99%80%EC%9D%B4" class="cloud4"> 하와이</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/essay" class="cloud2"> essay</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/macosx" class="cloud4"> macosx</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/ceph" class="cloud4"> ceph</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EC%A0%A0%ED%88%AC" class="cloud4"> 젠투</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/opensolaris" class="cloud4"> opensolaris</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EB%A7%A4%ED%82%A8%ED%86%A0%EC%8B%9C" class="cloud3"> 매킨토시</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EB%B0%B1%EC%97%85" class="cloud4"> 백업</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EC%86%94%EB%9D%BC%EB%A6%AC%EC%8A%A4" class="cloud1"> 솔라리스</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EC%8E%84%ED%94%84" class="cloud4"> 쎄프</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EC%97%90%EC%84%B8%EC%9D%B4" class="cloud2"> 에세이</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/apache" class="cloud4"> apache</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EC%A0%A0%ED%88%AC%EB%A6%AC%EB%88%85%EC%8A%A4" class="cloud4"> 젠투리눅스</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/php" class="cloud4"> php</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EC%98%A4%ED%94%88%EC%9D%B8%EB%94%94%EC%95%84%EB%82%98" class="cloud2"> 오픈인디아나</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/zfs" class="cloud4"> zfs</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EC%9A%B0%EB%B6%84%ED%88%AC" class="cloud4"> 우분투</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EB%A7%A5%ED%82%A8%ED%86%A0%EC%8B%9C" class="cloud4"> 맥킨토시</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/Solaris" class="cloud2"> Solaris</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/backup" class="cloud4"> backup</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/ubuntu" class="cloud4"> ubuntu</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EB%A7%A5" class="cloud3"> 맥</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EB%B0%94%ED%81%98%EB%9D%BC" class="cloud4"> 바큘라</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EC%98%A4%ED%94%88%EC%8A%A4%ED%83%9D" class="cloud4"> 오픈스택</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/openindiana" class="cloud2"> openindiana</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/Java" class="cloud4"> Java</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EB%B0%94%EC%BF%A8%EB%9D%BC" class="cloud4"> 바쿨라</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8%20%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80" class="cloud4"> 오브젝트 스토리지</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/bacula" class="cloud4"> bacula</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/Object" class="cloud4"> Object</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EC%95%A0%ED%94%8C" class="cloud4"> 애플</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EC%98%A4%ED%94%88%EC%86%94%EB%9D%BC%EB%A6%AC%EC%8A%A4" class="cloud4"> 오픈솔라리스</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/Linux" class="cloud3"> Linux</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EB%A6%AC%EB%88%85%EC%8A%A4" class="cloud4"> 리눅스</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/Hawaii" class="cloud4"> Hawaii</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/%EC%84%B8%ED%94%84" class="cloud4"> 세프</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/Gentoo" class="cloud4"> Gentoo</a></li>
+										
+											<li><a href="http://jswlinux.tistory.com/tag/Mac" class="cloud4"> Mac</a></li>
+										
+									</ul>
+								</div>
+							
+							<!-- 달력 모듈 -->
+								<div class="module module_calendar">
+									<h3 class="title_calendar">Calendar</h3>
+									<div class="contents">
+										<table class="tt-calendar" cellpadding="0" cellspacing="1" style="width: 100%; table-layout: fixed">
+<caption class="cal_month">
+		<a href="http://jswlinux.tistory.com/archive/201312" title="1개월 앞의 달력을 보여줍니다.">«</a>
+		&nbsp;
+		<a href="http://jswlinux.tistory.com/archive/201401" title="현재 달의 달력을 보여줍니다.">2014/01</a>
+		&nbsp;
+		<a href="http://jswlinux.tistory.com/archive/201402" title="1개월 뒤의 달력을 보여줍니다.">»</a>
+</caption>
+<thead>
+  <tr>
+			<th class="cal_week2">일</th>
+			<th class="cal_week1">월</th>
+			<th class="cal_week1">화</th>
+			<th class="cal_week1">수</th>
+			<th class="cal_week1">목</th>
+			<th class="cal_week1">금</th>
+			<th class="cal_week1">토</th>
+  </tr>
+</thead>
+<tbody>
+		<tr class="cal_week">
+			<td class="cal_day1">&nbsp;</td>
+			<td class="cal_day1">&nbsp;</td>
+			<td class="cal_day1">&nbsp;</td>
+			<td class=" cal_day cal_day3">1</td>
+			<td class=" cal_day cal_day3">2</td>
+			<td class=" cal_day cal_day3">3</td>
+			<td class=" cal_day cal_day3">4</td>
+		</tr>
+		<tr class="cal_week">
+			<td class=" cal_day cal_day_sunday cal_day3">5</td>
+			<td class=" cal_day cal_day3">6</td>
+			<td class=" cal_day cal_day3">7</td>
+			<td class=" cal_day cal_day3">8</td>
+			<td class=" cal_day cal_day3">9</td>
+			<td class=" cal_day cal_day3">10</td>
+			<td class=" cal_day cal_day3">11</td>
+		</tr>
+		<tr class="cal_week">
+			<td class=" cal_day cal_day_sunday cal_day3">12</td>
+			<td class=" cal_day cal_day3">13</td>
+			<td class=" cal_day cal_day3"><a class="cal_click" href="http://jswlinux.tistory.com/archive/20140114">14</a></td>
+			<td class=" cal_day cal_day3">15</td>
+			<td class=" cal_day cal_day3">16</td>
+			<td class=" cal_day cal_day3">17</td>
+			<td class=" cal_day cal_day4">18</td>
+		</tr>
+		<tr class="cal_week cal_current_week">
+			<td class=" cal_day cal_day_sunday cal_day3">19</td>
+			<td class=" cal_day cal_day3">20</td>
+			<td class=" cal_day cal_day3">21</td>
+			<td class=" cal_day cal_day3">22</td>
+			<td class=" cal_day cal_day3">23</td>
+			<td class=" cal_day cal_day3">24</td>
+			<td class=" cal_day cal_day3">25</td>
+		</tr>
+		<tr class="cal_week">
+			<td class=" cal_day cal_day_sunday cal_day3">26</td>
+			<td class=" cal_day cal_day3">27</td>
+			<td class=" cal_day cal_day3">28</td>
+			<td class=" cal_day cal_day3">29</td>
+			<td class=" cal_day cal_day3">30</td>
+			<td class=" cal_day cal_day3">31</td>
+			<td class="cal_day2">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+									</div>
+								</div>
+							
+							<!-- 최근 보관함 모듈 -->
+								<div class="module">
+									<h3 class="title_archive">Archive</h3>
+									<ul class="contents">
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/archive/201401">2014/01</a>
+												<span class="count">(1)</span>
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/archive/201312">2013/12</a>
+												<span class="count">(3)</span>
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/archive/201311">2013/11</a>
+												<span class="count">(2)</span>
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/archive/201310">2013/10</a>
+												<span class="count">(6)</span>
+											</li>
+										
+											<li>
+												<a href="http://jswlinux.tistory.com/archive/201309">2013/09</a>
+												<span class="count">(4)</span>
+											</li>
+										
+									</ul>
+								</div>
+							
+							<!-- 링크 모듈 -->
+								<div class="module module_link">
+									<h3 class="title_link">My Link</h3>
+									<ul class="contents">
+										
+									</ul>
+								</div>
+							
+					</div>
+					<div class="clear"></div>
+
+					<hr>
+
+					<div id="footer">
+						<div class="module_search">
+							
+								<input type="text" name="search" value="" onkeypress="if (event.keyCode == 13) { try{window.location.href=&#39;/search/&#39; + document.getElementsByName(&#39;search&#39;)[0].value.replaceAll(&#39;%&#39;, &#39;%25&#39;);document.getElementsByName(&#39;search&#39;)[0].value = &#39;&#39;; return false;}catch(e){} }" class="input_search"><input value="검색" type="image" src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/btn_search.gif" onclick="try{window.location.href=&#39;/search/&#39; + document.getElementsByName(&#39;search&#39;)[0].value.replaceAll(&#39;%&#39;, &#39;%25&#39;);document.getElementsByName(&#39;search&#39;)[0].value = &#39;&#39;; return false;}catch(e){}">
+							
+						</div>
+
+						<div class="module_banner">
+							<a href="http://www.tistory.com/"><img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/banner.gif" alt="tistory" class="banner"></a><br>
+							<a href="http://www.tistory.com/join" class="sign">티스토리 가입하기!</a><br>
+							<img src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/icon_rss.gif" alt="rss" class="rss_img"> <a href="http://jswlinux.tistory.com/rss" onclick="window.open(this.href); return false" class="rss">RSS FEED</a>
+						</div>
+
+						<div class="menu">
+							<a href="http://jswlinux.tistory.com/tag">태그</a> :
+							<a href="http://jswlinux.tistory.com/media">미디어로그</a> :
+							<a href="http://jswlinux.tistory.com/location">지역로그</a> :
+							<a href="http://jswlinux.tistory.com/guestbook">방명록</a> :
+							<a href="http://jswlinux.tistory.com/admin">관리자</a> :
+							<a href="http://jswlinux.tistory.com/admin/entry/post">글쓰기</a>
+						</div>
+
+						<span class="title">Total</span> <span class="hit">99,941</span> :
+						<span class="title">Today</span> <span class="hit">29</span> :
+						<span class="title">Yesterday</span> <span class="hit">112</span> <span class="separate">|</span>
+
+						<span class="copyright">
+							<a href="http://jswlinux.tistory.com/"> jswlinux</a>'s Blog is powered by <a href="http://daum.net/" onclick="window.open(this.href); return false">Daum</a>  / Designed by <a href="http://www.tistory.com/">Tistory</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		
+	</div>
+<script type="text/javascript">
+ document.oncontextmenu = new Function ('return false');
+ document.ondragstart = new Function ('return false');
+ document.onselectstart = new Function ('return false');
+  document.body.style.MozUserSelect = 'none';
+</script>
+<script type="text/javascript" src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/functions.js"></script>
+<script type="text/javascript">if (asyncProfileItems) {tistoryProfile.getSidebarInfo(asyncProfileItems);}</script>
+<script charset="utf-8" type="text/javascript" src="./Seowon Jung, from Hawaii    라즈베리파이에서 vnc 띄우기_files/tiara.min.js"></script>
+
+<script type="text/javascript">
+//<!--<![CDATA
+	var __pageTracker = {};
+	if (typeof __Tiara != "undefined" && typeof __Tiara.__getTracker != "undefined") {
+		__pageTracker = __Tiara.__getTracker();
+	} else {
+		__pageTracker.__trackPageview = function() {};
+		__pageTracker.__addParam = function() {};
+		__pageTracker.__setTitle = function() {};
+	}
+
+	__pageTracker.__setTitle("Seowon Jung, from Hawaii :: 라즈베리파이에서 vnc 띄우기");
+	__pageTracker.__addParam("svcdomain","user.tistory.com");
+	__pageTracker.__addParam("category","");
+	__pageTracker.__addParam("articleno","141");
+	__pageTracker.__addParam("plink","http://jswlinux.tistory.com/141");
+	__pageTracker.__addParam("date","2013-04-27 00:21:47");
+	__pageTracker.__addParam("author","jswlinux");
+	__pageTracker.__addParam("length ","570");
+	__pageTracker.__addParam("isauthor","N");
+	__pageTracker.__addParam("ishidden","1");
+	__pageTracker.__addParam("comments","0");
+	__pageTracker.__addParam("param1","0");
+	__pageTracker.__addParam("param2","e");
+	__pageTracker.__addParam("param3","");
+
+	window.setTimeout("try { __pageTracker.__trackPageview('http://jswlinux.tistory.com/141'); } catch(e) {}", 1);
+//]]>-->
+</script>
+</body></html>

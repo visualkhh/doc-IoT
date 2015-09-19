@@ -1,0 +1,44 @@
+.tt-share-entry-with-sns {clear:both !important;margin:0 !important;padding:10px 0 !important;}
+.tt-share-entry-with-sns div,
+.tt-share-entry-with-sns ul,
+.tt-share-entry-with-sns li {margin:0 !important;padding:0 !important;background-image:none !important;background-color:transparent !important;border:none !important;}
+.tt-share-entry-with-sns ul,
+.tt-share-entry-with-sns li {list-style-type:none !important;list-style-position:initial !important;list-style-image:none !important;}
+.tt-share-entry-with-sns a {display:block !important;overflow:hidden !important;width:100% !important;height:100% !important;text-indent:-9999px !important;}
+.tt-share-entry-with-sns a,
+.tt-share-entry-with-sns a:hover {text-decoration:none !important;cursor:pointer !important;background-image:none !important;background-color:transparent !important;border:none !important;}
+
+.tt-sns-icon-alignment-left .tt-sns-wrap {float:left;}
+.tt-sns-icon-alignment-center .tt-sns-wrap {margin:0 auto !important;}
+.tt-sns-icon-alignment-right .tt-sns-wrap {float:right;}
+
+.tt-share-entry-with-sns .tt-sns-wrap {position:relative;width:266px;height:24px;}
+.tt-share-entry-with-sns .tt-sns-service-default {background:url(http://i1.daumcdn.net/cfs.tistory/static/sns/01_2_n1.png) no-repeat !important;width:266px;height:24px;}
+.tt-share-entry-with-sns .tt-sns-service-default li {float:left;height:24px;}
+.tt-share-entry-with-sns .tt-sns-service-default a {background:none !important;}
+.tt-share-entry-with-sns .tt-sns-service-mypeople {width:75px;}
+.tt-share-entry-with-sns .tt-sns-service-twitter {width:62px;}
+.tt-share-entry-with-sns .tt-sns-service-facebook {width:75px;}
+.tt-share-entry-with-sns .tt-sns-service-other {width:54px;}
+
+.tt-sns-icon-size-small .tt-sns-wrap {width:98px;}
+.tt-sns-icon-size-small .tt-sns-service-default {background:url(http://i1.daumcdn.net/cfs.tistory/static/sns/02_2_n1.png) no-repeat !important;width:98px;}
+.tt-sns-icon-size-small .tt-sns-service-mypeople {width:27px;}
+.tt-sns-icon-size-small .tt-sns-service-twitter {width:27px;}
+.tt-sns-icon-size-small .tt-sns-service-facebook {width:27px;}
+.tt-sns-icon-size-small .tt-sns-service-other {width:17px;}
+
+.tt-share-entry-with-sns .tt-sns-service-more {display:none;}
+.tt-sns-service-more {margin:0 !important;padding:0 !important;background-image:none !important;background-color:transparent !important;border:none !important;
+	list-style-type:none !important;list-style-position:initial !important;list-style-image:none !important;
+	background:url(http://i1.daumcdn.net/cfs.tistory/static/sns/03_3.png) no-repeat !important;z-index:999999;position:absolute;top:0;left:0;width:103px;height:50px;}
+.tt-sns-service-more li {list-style-type:none !important;list-style-position:initial !important;list-style-image:none !important;
+	float:left;width:103px;height:25px;}
+.tt-sns-service-more a {display:block !important;overflow:hidden !important;width:100% !important;height:100% !important;text-indent:-9999px !important;}
+.tt-sns-service-more a,
+.tt-sns-service-more a:hover {text-decoration:none !important;cursor:pointer !important;background-image:none !important;background-color:transparent !important;border:none !important;}
+.tt-sns-service-more a:hover {background-image:url(http://i1.daumcdn.net/cfs.tistory/static/sns/04_2.png) !important;background-repeat:no-repeat !important;}
+.tt-sns-service-more .tt-sns-service-me2day a:hover {background-position:0 0 !important;}
+.tt-sns-service-more .tt-sns-service-yozm a:hover {background-position:0 -25px !important;}
+
+.tt-sns-clear {clear:both;}

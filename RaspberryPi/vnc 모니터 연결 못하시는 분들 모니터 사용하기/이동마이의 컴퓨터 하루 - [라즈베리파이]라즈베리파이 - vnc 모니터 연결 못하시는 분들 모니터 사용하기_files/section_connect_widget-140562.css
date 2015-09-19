@@ -1,0 +1,792 @@
+/* common */
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button{margin:0;padding:0}
+body, input, textarea, select, table{font-family:"µ¸¿ò", Dotum, Helvetica, sans-serif; font-size:12px}
+img, fieldset, button{border:0}
+hr{display:none}
+li{list-style:none}
+em, address{font-style:normal}
+a, a:link{text-decoration:none}
+a:hover, a:active, a:focus{text-decoration:none}
+.blind{position:absolute; top:0; left:0; width:1px; height:1px; overflow:hidden; visibility:hidden; font-size:0; line-height:0}
+
+/* layout */
+.nc_widget{width:100%; overflow:hidden}
+.nc_widget .top_box{width:100%; height:54px; border:0}
+.nc_widget .top_box .desc{background-position:0 0; background-repeat:no-repeat; vertical-align:top}
+.nc_widget .top_box .end{background-position:right 0; background-repeat:no-repeat}
+.nc_widget .top_box .profile{position:relative; margin:11px 0 0 11px; overflow:hidden; zoom:1}
+.nc_widget .top_box .profile .profile_img{position:relative; width:30px; height:34px; zoom:1}
+.nc_widget .top_box .profile .profile_img a{position:absolute; top:0; left:0; width:32px; height:32px}
+.nc_widget .top_box .profile .profile_img a img{position:absolute; top:1px; left:1px; z-index:3}
+.nc_widget .top_box .profile .profile_img .co_box{display:block; position:absolute; top:1px; left:1px; z-index:5; width:28px; height:28px; border:1px solid #000; opacity:0.1; -ms-filter:"Alpha(opacity=10)";filter:alpha(opacity=10)}
+.nc_widget .top_box .profile .profile_img .co_box2{display:block; position:absolute; top:0; left:0; z-index:1; width:30px; height:30px; border:1px solid #fff; opacity:0.2; -ms-filter:"Alpha(opacity=20)";filter:alpha(opacity=20)}
+.nc_widget .top_box .profile .profile_name{position:absolute; top:-1px; left:40px; font-weight:bold; line-height:17px; white-space:nowrap; overflow:hidden}
+.nc_widget .top_box .profile .go_connect{display:inline-block; padding:1px 18px 0 0; font-weight:normal; font-size:11px; line-height:16px; letter-spacing:-1px; background-position:right -150px; background-repeat:no-repeat}
+.nc_widget.nc_eng .top_box .profile .go_connect{font-size:10px; font-family:Tahoma; letter-spacing:0}
+
+.nc_widget .tab{height:28px; border-style:solid; border-width:0; border-left-width:1px; border-right-width:1px; background-repeat:no-repeat}
+.nc_widget .tab li{float:left; width:49%}
+.nc_widget .tab li.col1{width:50%}
+.nc_widget .tab li a{display:block; text-align:center; padding-top:8px; height:20px; font-size:11px; letter-spacign:-1px}
+.nc_widget .tab.tab1on{background-position:50% -54px}
+.nc_widget .tab.tab2on{background-position:50% -82px}
+.nc_widget .tab.tab1on .col1 a,
+.nc_widget .tab.tab2on .col2 a{font-weight:bold}
+.nc_widget.nc_eng .tab .col1 a,
+.nc_widget.nc_eng .tab .col2 a{font-family:Tahoma}
+.nc_widget .wrap{border-style:solid; border-width:0 1px}
+.nc_widget .no_addbuddy{border-bottom-width:1px !important}
+.nc_widget .content{position:relative; border-style:solid; border-width:0; border-top-width:1px; padding:11px 0 24px; overflow:hidden; zoom:1}
+.nc_widget .no_addbuddy .content{padding-bottom:29px !important}
+.nc_widget .sub_select{position:relative; width:88%; height:17px; margin:0 auto; font-size:11px; letter-spacing:-1px; zoom:1}
+.nc_widget .sub_select .select_ui{float:left; display:inline-block; width:49%; height:11px; overflow:hidden; word-break:break-all; word-wrap:break-word; padding:2px 0 0 18px; font-size:11px; letter-spacing:-1px; background-position:0 -151px; background-repeat:no-repeat}
+.nc_widget .sub_select .no_select_ui{float:left; display:inline-block; width:49%; height:11px; overflow:hidden; word-break:break-all; word-wrap:break-word; padding:2px 0 0; font-size:11px; letter-spacing:-1px}
+.nc_widget .sub_select .select_ui img,
+.nc_widget .sub_select .no_select_ui img{vertical-align:top}
+.nc_widget .sub_select .amount{float:right; padding-top:2px; font-size:11px; letter-spacing:-1px}
+.nc_widget .sub_select .amount .co_num{font-size:11px; letter-spacing:0; font-weight:bold; text-decoration:none}
+.nc_widget .sub_view{position:absolute; bottom:1px; left:10px; width:88%; height:20px; margin:0 auto; font-size:11px}
+.nc_widget .sub_view_v2{position:absolute; bottom:1px; left:10px; width:88%; height:20px; margin:0 auto; font-size:11px}
+.nc_widget .no_addbuddy .sub_view,
+.nc_widget .no_addbuddy .sub_view_v2{bottom:1px}
+.nc_widget .sub_view .new_article{float:left; margin-top:2px;font-size:11px; letter-spacing:-1px}
+.nc_widget.nc_eng .sub_view .new_article{font-family:Tahoma; letter-spacing:0}
+
+.nc_widget .sub_view .paging{float:right}
+.nc_widget .sub_view .paging .paging_all{display:inline-block; padding:1px 5px 0 0; font:normal 11px tahoma}
+.nc_widget .sub_view .paging .paging_now{display:inline-block; padding:1px 0 0; font:normal 11px tahoma}
+.nc_widget .sub_view .paging a,
+.nc_widget .sub_view .paging strong{display:inline-block; width:12px; height:14px; vertical-align:top; overflow:hidden; background-repeat:no-repeat}
+.nc_widget .sub_view .paging a span,
+.nc_widget .sub_view .paging strong span{position:absolute; top:-999px; left:-999px}
+.nc_widget .sub_view .paging .pre{background-position:-38px -167px}
+.nc_widget .sub_view .paging .next{background-position:-50px -167px; width:13px}
+.nc_widget .sub_view .paging .pre_n{background-position:-13px -167px}
+.nc_widget .sub_view .paging .next_n{background-position:-25px -167px; width:13px}
+.nc_widget .bottom_box{position:relative; height:31px; padding-top:7px; border-style:solid; border-width:0 1px; background-position:50% -110px}
+.nc_widget .bottom_box a{display:block; position:relative; width:100%; height:26px; overflow:hidden; cursor:pointer; _cursor:hand; background-position:center 0; background-repeat:no-repeat}
+.nc_widget .bottom_box a:hover{background-position:center -27px}
+.nc_widget .bottom_box a span{display:none}
+.nc_widget .add_btn{margin-top:5px; text-align:right; font-size:0}
+.nc_widget .add_btn a{display:inline-block; padding:3px 1px}
+.nc_widget .add_btn img{vertical-align:top; margin-left:2px}
+.nc_widget .buddy_cnt{overflow:hidden}
+.nc_widget .buddy_cnt p{position:relative; height:46px; margin:0 11px; padding-bottom:18px; border-bottom:1px solid #eee}
+.nc_widget .buddy_cnt.no_border p{padding-bottom:0; border-bottom:none}
+.nc_widget .buddy_cnt .numset{display:block; overflow:hidden; position:absolute; top:4px; left:0}
+.nc_widget .buddy_cnt strong{position:relative; top:4px; left:0}
+.nc_widget .buddy_cnt .numset span{float:left; width:19px; height:23px}
+.nc_widget .buddy_cnt .p0{background-position:0 -200px; width:20px !important}
+.nc_widget .buddy_cnt .n0{background-position:0 -229px; width:20px !important}
+.nc_widget .buddy_cnt .n1{background-position:-21px -229px; width:15px !important}
+.nc_widget .buddy_cnt .n2{background-position:-39px -229px}
+.nc_widget .buddy_cnt .n3{background-position:-58px -229px}
+.nc_widget .buddy_cnt .n4{background-position:-77px -229px; width:20px !important}
+.nc_widget .buddy_cnt .n5{background-position:-97px -229px}
+.nc_widget .buddy_cnt .n6{background-position:-116px -229px}
+.nc_widget .buddy_cnt .n7{background-position:-135px -229px}
+.nc_widget .buddy_cnt .n8{background-position:-154px -229px}
+.nc_widget .buddy_cnt .n9{background-position:-173px -229px}
+.nc_widget .buddy_cnt span.desc1{overflow:hidden; width:19px; height:11px; margin:12px 0 0 6px; background-position:0 -258px}
+.nc_widget .buddy_cnt span.desc2{overflow:hidden; clear:left;width:111px; height:11px; margin:8px 0 0 2px; background-position:-21px -258px}
+
+.nc_widget .no_buddy{margin:0 11px; padding-top:6px; height:32px; *height:31px; line-height:15px; text-align:center; border-bottom:1px solid}
+.nc_widget .pwr_blog{margin:21px 11px 12px; text-align:center}
+.nc_widget .pwr_blog img{vertical-align:top}
+.nc_widget .more{text-align:right; padding:1px 2px 0 0; height:18px}
+.nc_widget .more a{margin-right:1px; text-decoration:underline}
+.nc_widget .more img{width:2px; height:4px; vertical-align:middle; background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_more_arrow.png) no-repeat right top; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_more_arrow.png', sizingMethod='crop')}
+
+.nc_widget .install_area{padding:66px 11px 0; height:148px; text-align:center}
+.nc_widget .install_area .desc{line-height:15px}
+.nc_widget .install_area .install{margin-top:18px}
+.nc_widget .install_area .install a{margin-right:1px; text-decoration:underline; font-size:11px; letter-spacing:-1px}
+.nc_widget .install_area .install img{vertical-align:middle}
+
+.nc_widget .msg_area{padding:70px 11px 0; height:auto; text-align:center; line-height:15px}
+
+.nc_widget .no_inbuddy{padding:72px 11px 0; height:77px; text-align:center}
+.nc_widget .no_inbuddy .desc{line-height:15px}
+.nc_widget .no_inbuddy_v2{padding:27px 11px 0; height:122px; text-align:center}
+.nc_widget .no_inbuddy_v2 .desc{margin-bottom:15px; line-height:15px}
+.nc_widget .no_inbuddy_v2 .manage a{margin-right:1px; text-decoration:underline; font-size:11px; line-height:14px; letter-spacing:-1px}
+.nc_widget .no_inbuddy_v2 .manage img{vertical-align:middle}
+
+/* buddy_list */
+.nc_widget .buddy_list{display:none; position:absolute; top:25px; left:0; width:100%; z-index:9}
+.nc_widget .buddy_list ul{overflow:auto; overflow-x:hidden; _width:140px; height:246px; margin:0 11px 1px; padding:0; font-size:12px; letter-spacing:0; border:1px solid #9c9c9f; background-color:#fff}
+.nc_widget .buddy_list li{padding:3px 0 2px 7px; line-height:18px; cursor:pointer; background-color:#fff; color:#666; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.nc_widget .buddy_list li.selected{background-color:#f1f1f1; color:#333}
+.nc_widget .buddy_list li img{vertical-align:middle; margin-bottom:2px}
+
+/* list */
+.thumb_list{position:relative; width:94%; margin:5px auto 3px; overflow:hidden;}
+.thumb_list li{float:left; position:relative; width:33%; height:60px; margin:0 0 1px; text-align:center; white-space:nowrap; overflow:hidden; line-height:normal}
+.thumb_list li.none{}
+.thumb_list .buddy_name{display:inline-block; width:42px; overflow:hidden; font-size:11px}
+.thumb_list2{overflow:hidden; margin:5px 0 12px; padding:0 11px;}
+.thumb_list2 li{overflow:hidden; position:relative; zoom:1}
+.thumb_list2 li.none{}
+.thumb_list2 .buddy_img{float:left}
+.thumb_list2 .buddy_info{overflow:hidden; float:left; width:95px; margin-left:7px; padding-top:9px}
+.thumb_list2 .buddy_info.noname{/* padding-top:16px */}
+.thumb_list2 .buddy_name{display:block; overflow:hidden; height:11px; margin-bottom:4px; font-size:11px}
+.thumb_list2 .blog_name{display:block; overflow:hidden; height:11px; font-size:11px; letter-spacing:-1px}
+.thumb_list2 .bar{display:none}
+
+.thumb_list .buddy_img,
+.thumb_list2 .buddy_img{position:relative; margin:2px auto 3px; margin:1px auto; width:40px; height:40px; zoom:1;}
+.thumb_list .buddy_img img,
+.thumb_list2 .buddy_img img{vertical-align:top; position:absolute; top:0; left:0; z-index:1}
+.thumb_list .buddy_img img.blank_img,
+.thumb_list2 .buddy_img img.blank_img{background:url(http://blogimgs.naver.com/buddyconnect/widget/img_profile_none.gif) no-repeat}
+.nc_skin3 .thumb_list .buddy_img img.blank_img,
+.nc_skin3 .thumb_list2 .buddy_img img.blank_img{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/img_profile_none2.gif) !important} /* black skin blank_img */
+.thumb_list .buddy_img .co_box,
+.thumb_list2 .buddy_img .co_box{display:block; position:absolute; top:0; left:0; z-index:2; width:38px; height:38px; border:1px solid #000; opacity:0.1; -ms-filter:"Alpha(opacity=10)"; filter:alpha(opacity=10)}
+.thumb_list .buddy_img .up,
+.thumb_list2 .buddy_img .up{position:absolute; top:-2px; left:29px; z-index:4; background-position:0 -167px}
+.thumb_list .buddy_img .del,
+.thumb_list2 .buddy_img .del{position:absolute; top:29px; left:29px; z-index:4; background-position:-63px -167px}
+
+.txt_list{margin:11px 0 5px; padding:0 11px}
+.txt_list li{height:25px;vertical-align:top}
+.txt_list li.none{}
+.txt_list .buddy_info{overflow:hidden; width:100%; height:15px; line-height:14px !important; padding-top:1px; white-space:nowrap}
+.txt_list .buddy_name{overflow:hidden; width:100%; font-size:12px; line-height:14px}
+.txt_list .blog_name{font-size:11px; line-height:13px}
+.txt_list .bar{margin:0; font-size:11px; color:#dcdcdc}
+.txt_list .up{background-position:0 -167px; vertical-align:middle; margin-bottom:2px}
+.txt_list .del{background-position:-63px -167px; vertical-align:middle; margin-bottom:2px}
+
+.article_list{margin:0; padding:0 11px; overflow:hidden}
+.article_list li{width:100%; margin:-1px 0 0; height:81px; padding-top:12px; border-top-width:1px; border-top-style:solid}
+.article_list li.none{height:82px; border:0}
+.article_list dl{overflow:hidden;width:100%}
+.article_list dt{margin:0 0 2px; height:14px; zoom:1; overflow:hidden; word-break:break-all; word-wrap:break-word}
+.article_list dd{overflow:hidden; background-color:none !important; padding:0 !important; border:0 !important; width:auto !important}
+.article_list dt .comment_cnt{font-family:Tahoma; font-size:9px; vertical-align:text-top}
+.article_list .pub_desc{height:32px; overflow:hidden; word-break:break-all; word-wrap:break-word}
+.article_list .pub_info{overflow:hidden; margin-top:7px; white-space:nowrap}
+.article_list .pub_info .pub_date{font-size:11px}
+.article_list .pub_info .blog_name{font-size:11px; letter-spacing:-1px}
+
+.tab2 .thumb_list{margin-top:18px}
+.tab2 .thumb_list2{margin-top:20px}
+.tab2 .txt_list{margin-top:13px}
+
+/* 0414 LJI */
+.fresh_view{position:relative;width:148px;margin:0 auto;padding:8px 0 7px;border-top:1px solid #f0f0f0;}
+.fresh_view a{margin-left:-1px;font-size:11px;letter-spacing:-1px;color:#999;line-height:11px}
+.fresh_view a img{margin:0 0 3px 3px;vertical-align:middle}
+.fresh_view a strong{font-size:11px;letter-spacing:0;font-weight:normal;}
+ 
+/* nc_skin1 : green */
+.nc_skin1 .profile_name,
+.nc_skin1 .profile_name a{color:#fff}
+.nc_skin1 .go_connect{color:#cfecce !important}
+.nc_skin1 .co_num{color:#ff7c00}
+.nc_skin1 .tab{border-left-color:#cfcfcf; border-right-color:#cfcfcf}
+.nc_skin1 .tab a{color:#9a9a9a}
+.nc_skin1 .tab.tab1on .col1 a,
+.nc_skin1 .tab.tab2on .col2 a{color:#58b954}
+.nc_skin1 .bg_main{background-color:#f9f9f9; border-left-color:#cfcfcf; border-right-color:#cfcfcf; border-top-color:#fff; border-bottom-color:#cfcfcf}
+.nc_skin1 .thumb_list .buddy_name,
+.nc_skin1 .thumb_list2 .blog_name,
+.nc_skin1 .txt_list .blog_name,
+.nc_skin1 .article_list .blog_name{color:#999}
+.nc_skin1 .thumb_list2 .buddy_name{color:#474747}
+.nc_skin1 .txt_list .buddy_name{color:#333}
+.nc_skin1 .article_title{font-weight:bold; color:#333}
+.nc_skin1 .article_desc{line-height:16px; color:#666}
+.nc_skin1 .comment_cnt{color:#ff7c00}
+.nc_skin1 .pub_date{color:#ff7c00}
+.nc_skin1 .article_list li{border-top-color:#f0f0f0}
+.nc_skin1 .article_list dt,
+.nc_skin1 .article_list dd{background-color:#f9f9f9 !important}
+.nc_skin1 .sub_select,
+.nc_skin1 .sub_select .select_ui,
+.nc_skin1 .sub_select .no_select_ui,
+.nc_skin1 .sub_select .amount{color:#474747}
+.nc_skin1 .sub_view .new_article,
+.nc_skin1 .sub_view .paging_all{color:#999}
+.nc_skin1 .sub_view .paging_now{color:#474747}
+.nc_skin1 .go_connect,
+.nc_skin1 .top_box .desc,
+.nc_skin1 .top_box .end,
+.nc_skin1 .tab,
+.nc_skin1 .thumb_list .buddy_img .up,
+.nc_skin1 .thumb_list2 .buddy_img .up,
+.nc_skin1 .thumb_list .buddy_img .del,
+.nc_skin1 .thumb_list2 .buddy_img .del,
+.nc_skin1 .txt_list .buddy_info .up,
+.nc_skin1 .txt_list .buddy_info .del,
+.nc_skin1 .sub_select .select_ui,
+.nc_skin1 .sub_view .paging a,
+.nc_skin1 .sub_view .paging strong,
+.nc_skin1 .bottom_box{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin1.gif)}
+.nc_skin1 .bottom_box{border-color:#57ac52}
+.nc_skin1 .bottom_box a,
+.nc_skin1 .bottom_box a span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin1_addn.gif)}
+.nc_skin1 .bottom_box a.eng,
+.nc_skin1 .bottom_box a.eng span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin1_addn_eng.gif)}
+.nc_skin1 .add_btn .admin img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_admin.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin1_admin.png', sizingMethod='crop')}
+.nc_skin1 .add_btn .download img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_download.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin1_download.png', sizingMethod='crop')}
+.nc_skin1 .add_btn .help img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_help.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin1_help.png', sizingMethod='crop')}
+.nc_skin1 .buddy_cnt p{border-bottom-color:#eee}
+.nc_skin1 .buddy_cnt .numset span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin1.gif)}
+.nc_skin1 .no_buddy{color:#999; border-bottom-color:#eee}
+.nc_skin1 .more a{color:#999}
+.nc_skin1 .pwr_blog img{background:url(http://blogimgs.naver.com/buddyconnect/widget/p_visit_pwr_blog8.gif) no-repeat 0 0}
+.nc_skin1 .msg_area,
+.nc_skin1 .install_area .desc{color:#999}
+.nc_skin1 .install_area .install a{color:#fc7707}
+.nc_skin1 .install_area .install img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png', sizingMethod='crop')}
+.nc_skin1 .no_inbuddy .desc{color:#999}
+.nc_skin1 .no_inbuddy .desc,
+.nc_skin1 .no_inbuddy_v2 .desc{color:#999}
+.nc_skin1 .no_inbuddy_v2 .manage a{color:#fc7707}
+.nc_skin1 .no_inbuddy_v2 .manage img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png', sizingMethod='crop')}
+.nc_skin1 .fresh_view a strong{color:#58b954;}
+
+/* nc_skin2 : gray */
+.nc_skin2 .profile_name,
+.nc_skin2 .profile_name a{color:#fff}
+.nc_skin2 .go_connect{color:#e7e7e7 !important}
+.nc_skin2 .co_num{color:#75bc61}
+.nc_skin2 .tab{border-left-color:#cfcfcf; border-right-color:#cfcfcf}
+.nc_skin2 .tab a{color:#9a9a9a}
+.nc_skin2 .tab.tab1on .col1 a,
+.nc_skin2 .tab.tab2on .col2 a{color:#666}
+.nc_skin2 .bg_main{background-color:#f9f9f9; border-left-color:#cfcfcf; border-right-color:#cfcfcf; border-top-color:#fff; border-bottom-color:#cfcfcf}
+.nc_skin2 .thumb_list .buddy_name,
+.nc_skin2 .thumb_list2 .blog_name,
+.nc_skin2 .txt_list .blog_name,
+.nc_skin2 .article_list .blog_name{color:#999}
+.nc_skin2 .thumb_list2 .buddy_name{color:#474747}
+.nc_skin2 .txt_list .buddy_name{color:#333}
+.nc_skin2 .article_title{font-weight:bold; color:#333}
+.nc_skin2 .article_desc{line-height:16px; color:#666}
+.nc_skin2 .comment_cnt{color:#75bc61}
+.nc_skin2 .pub_date{color:#75bc61}
+.nc_skin2 .article_list li{border-top-color:#f0f0f0}
+.nc_skin2 .article_list dt,
+.nc_skin2 .article_list dd{background-color:#f9f9f9 !important}
+.nc_skin2 .sub_select,
+.nc_skin2 .sub_select .select_ui,
+.nc_skin2 .sub_select .no_select_ui,
+.nc_skin2 .sub_select .amount{color:#474747}
+.nc_skin2 .sub_view .new_article,
+.nc_skin2 .sub_view .paging_all{color:#999}
+.nc_skin2 .sub_view .paging_now{color:#474747}
+.nc_skin2 .go_connect,
+.nc_skin2 .top_box .desc,
+.nc_skin2 .top_box .end,
+.nc_skin2 .tab,
+.nc_skin2 .thumb_list .buddy_img .up,
+.nc_skin2 .thumb_list2 .buddy_img .up,
+.nc_skin2 .thumb_list .buddy_img .del,
+.nc_skin2 .thumb_list2 .buddy_img .del,
+.nc_skin2 .txt_list .buddy_info .up,
+.nc_skin2 .txt_list .buddy_info .del,
+.nc_skin2 .sub_select .select_ui,
+.nc_skin2 .sub_view .paging a,
+.nc_skin2 .sub_view .paging strong,
+.nc_skin2 .bottom_box{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin2.gif)}
+.nc_skin2 .bottom_box{border-color:#595a5a}
+.nc_skin2 .bottom_box a,
+.nc_skin2 .bottom_box a span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin2_addn.gif)}
+.nc_skin2 .bottom_box a.eng,
+.nc_skin2 .bottom_box a.eng span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin2_addn_eng.gif)}
+.nc_skin2 .add_btn .admin img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_admin.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin2_admin.png', sizingMethod='crop')}
+.nc_skin2 .add_btn .download img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_download.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin2_download.png', sizingMethod='crop')}
+.nc_skin2 .add_btn .help img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_help.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin2_help.png', sizingMethod='crop')}
+.nc_skin2 .buddy_cnt p{border-bottom-color:#eee}
+.nc_skin2 .buddy_cnt .numset span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin2.gif)}
+.nc_skin2 .no_buddy{color:#999; border-bottom-color:#eee}
+.nc_skin2 .more a{color:#999}
+.nc_skin2 .pwr_blog img{background:url(http://blogimgs.naver.com/buddyconnect/widget/p_visit_pwr_blog6.gif) no-repeat 0 0}
+.nc_skin2 .msg_area,
+.nc_skin2 .install_area .desc{color:#999}
+.nc_skin2 .install_area .install a{color:#75bc61}
+.nc_skin2 .install_area .install img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow1.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow1.png', sizingMethod='crop')}
+.nc_skin2 .no_inbuddy .desc,
+.nc_skin2 .no_inbuddy_v2 .desc{color:#999}
+.nc_skin2 .no_inbuddy_v2 .manage a{color:#75bc61}
+.nc_skin2 .no_inbuddy_v2 .manage img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow1.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow1.png', sizingMethod='crop')}
+.nc_skin2 .fresh_view a strong{color:#666666;}
+
+/* nc_skin3 : black */
+.nc_skin3 .profile_name,
+.nc_skin3 .profile_name a{color:#c3c3c3}
+.nc_skin3 .go_connect{color:#8a8a8a !important}
+.nc_skin3 .co_num{color:#5ed147}
+.nc_skin3 .tab{border-left-color:#3c3c3c; border-right-color:#3c3c3d}
+.nc_skin3 .tab a{color:#797979}
+.nc_skin3 .tab.tab1on .col1 a,
+.nc_skin3 .tab.tab2on .col2 a{color:#dadada}
+.nc_skin3 .bg_main{background-color:#5c5c5c; border-left-color:#3c3c3d; border-right-color:#3c3c3d; border-top-color:#616161; border-bottom-color:#3c3c3d}
+.nc_skin3 .thumb_list .buddy_name,
+.nc_skin3 .thumb_list2 .blog_name,
+.nc_skin3 .txt_list .blog_name,
+.nc_skin3 .article_list .blog_name{color:#a6a6a6}
+.nc_skin3 .thumb_list2 .buddy_name{color:#dadada}
+.nc_skin3 .txt_list .buddy_name{color:#dadada}
+.nc_skin3 .txt_list .bar{color:#828282}
+.nc_skin3 .article_title{font-weight:bold; color:#dadada}
+.nc_skin3 .article_desc{line-height:16px; color:#c3c3c3}
+.nc_skin3 .comment_cnt{color:#5ed14c}
+.nc_skin3 .pub_date{color:#5ed147}
+.nc_skin3 .article_list li{border-top-color:#737373}
+.nc_skin3 .article_list dt,
+.nc_skin3 .article_list dd{background-color:#5c5c5c !important}
+.nc_skin3 .sub_select,
+.nc_skin3 .sub_select .select_ui,
+.nc_skin3 .sub_select .no_select_ui,
+.nc_skin3 .sub_select .amount{color:#cecece}
+.nc_skin3 .sub_view .new_article,
+.nc_skin3 .sub_view .paging_all{color:#999}
+.nc_skin3 .sub_view .paging_now{color:#dadada}
+.nc_skin3 .go_connect,
+.nc_skin3 .top_box .desc,
+.nc_skin3 .top_box .end,
+.nc_skin3 .tab,
+.nc_skin3 .thumb_list .buddy_img .up,
+.nc_skin3 .thumb_list2 .buddy_img .up,
+.nc_skin3 .thumb_list .buddy_img .del,
+.nc_skin3 .thumb_list2 .buddy_img .del,
+.nc_skin3 .txt_list .buddy_info .up,
+.nc_skin3 .txt_list .buddy_info .del,
+.nc_skin3 .sub_select .select_ui,
+.nc_skin3 .sub_view .paging a,
+.nc_skin3 .sub_view .paging strong,
+.nc_skin3 .bottom_box{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin3_2.gif)}
+.nc_skin3 .bottom_box{border-color:#2e2e2e}
+.nc_skin3 .bottom_box a,
+.nc_skin3 .bottom_box a span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin3_addn_2.gif)}
+.nc_skin3 .bottom_box a.eng,
+.nc_skin3 .bottom_box a.eng span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin3_addn_eng_2.gif)}
+.nc_skin3 .add_btn .admin img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin3_admin.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin3_admin.png', sizingMethod='crop')}
+.nc_skin3 .add_btn .download img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin3_download.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin3_download.png', sizingMethod='crop')}
+.nc_skin3 .add_btn .help img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin3_help.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin3_help.png', sizingMethod='crop')}
+.nc_skin3 .buddy_cnt p{border-bottom-color:#737373}
+.nc_skin3 .buddy_cnt .numset span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin3_2.gif)}
+.nc_skin3 .no_buddy{color:#a6a6a6; border-bottom-color:#737373}
+.nc_skin3 .more a{color:#a6a6a6}
+.nc_skin3 .pwr_blog img{background:url(http://blogimgs.naver.com/buddyconnect/widget/p_visit_pwr_blog7.gif) no-repeat 0 0}
+.nc_skin3 .msg_area,
+.nc_skin3 .install_area .desc{color:#999}
+.nc_skin3 .install_area .install a{color:#75bc61}
+.nc_skin3 .install_area .install img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow1.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow1.png', sizingMethod='crop')}
+.nc_skin3 .no_inbuddy .desc,
+.nc_skin3 .no_inbuddy_v2 .desc{color:#999}
+.nc_skin3 .no_inbuddy_v2 .manage a{color:#75bc61}
+.nc_skin3 .no_inbuddy_v2 .manage img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow1.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow1.png', sizingMethod='crop')}
+.nc_skin3 .fresh_view a strong{color:#dadada;}
+.nc_skin3 .fresh_view{border-top:1px solid #555;}
+
+/* nc_skin4 : blue */
+.nc_skin4 .profile_name,
+.nc_skin4 .profile_name a{color:#fff}
+.nc_skin4 .go_connect{color:#cce0f8 !important}
+.nc_skin4 .co_num{color:#ff7c00}
+.nc_skin4 .tab{border-left-color:#cfcfcf; border-right-color:#cfcfcf}
+.nc_skin4 .tab a{color:#999}
+.nc_skin4 .tab.tab1on .col1 a,
+.nc_skin4 .tab.tab2on .col2 a{color:#67a6f4}
+.nc_skin4 .bg_main{background-color:#f9f9f9; border-left-color:#cfcfcf; border-right-color:#cfcfcf; border-top-color:#fff; border-bottom-color:#cfcfcf}
+.nc_skin4 .thumb_list .buddy_name,
+.nc_skin4 .thumb_list2 .blog_name,
+.nc_skin4 .txt_list .blog_name,
+.nc_skin4 .article_list .blog_name{color:#999}
+.nc_skin4 .thumb_list2 .buddy_name{color:#474747}
+.nc_skin4 .txt_list .buddy_name{color:#333}
+.nc_skin4 .article_title{font-weight:bold; color:#333}
+.nc_skin4 .article_desc{line-height:16px; color:#666}
+.nc_skin4 .comment_cnt{color:#ff7c00}
+.nc_skin4 .pub_date{color:#ff7c00}
+.nc_skin4 .article_list li{border-top-color:#f0f0f0}
+.nc_skin4 .article_list dt,
+.nc_skin4 .article_list dd{background-color:#f9f9f9 !important}
+.nc_skin4 .sub_select,
+.nc_skin4 .sub_select .select_ui,
+.nc_skin4 .sub_select .no_select_ui,
+.nc_skin4 .sub_select .amount{color:#474747}
+.nc_skin4 .sub_view .new_article,
+.nc_skin4 .sub_view .paging_all{color:#999}
+.nc_skin4 .sub_view .paging_now{color:#474747}
+.nc_skin4 .go_connect,
+.nc_skin4 .top_box .desc,
+.nc_skin4 .top_box .end,
+.nc_skin4 .tab,
+.nc_skin4 .thumb_list .buddy_img .up,
+.nc_skin4 .thumb_list2 .buddy_img .up,
+.nc_skin4 .thumb_list .buddy_img .del,
+.nc_skin4 .thumb_list2 .buddy_img .del,
+.nc_skin4 .txt_list .buddy_info .up,
+.nc_skin4 .txt_list .buddy_info .del,
+.nc_skin4 .sub_select .select_ui,
+.nc_skin4 .sub_view .paging a,
+.nc_skin4 .sub_view .paging strong,
+.nc_skin4 .bottom_box{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin4.gif)}
+.nc_skin4 .bottom_box{border-color:#548bcb}
+.nc_skin4 .bottom_box a,
+.nc_skin4 .bottom_box a span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin4_addn.gif)}
+.nc_skin4 .bottom_box a.eng,
+.nc_skin4 .bottom_box a.eng span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin4_addn_eng.gif)}
+.nc_skin4 .add_btn .admin img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_admin.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin4_admin.png', sizingMethod='crop')}
+.nc_skin4 .add_btn .download img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_download.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin4_download.png', sizingMethod='crop')}
+.nc_skin4 .add_btn .help img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_help.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin4_help.png', sizingMethod='crop')}
+.nc_skin4 .buddy_cnt p{border-bottom-color:#eee}
+.nc_skin4 .buddy_cnt .numset span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin4.gif)}
+.nc_skin4 .no_buddy{color:#999; border-bottom-color:#eee}
+.nc_skin4 .more a{color:#999}
+.nc_skin4 .pwr_blog img{background:url(http://blogimgs.naver.com/buddyconnect/widget/p_visit_pwr_blog8.gif) no-repeat 0 0}
+.nc_skin4 .msg_area,
+.nc_skin4 .install_area .desc{color:#999}
+.nc_skin4 .install_area .install a{color:#fc7707}
+.nc_skin4 .install_area .install img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png', sizingMethod='crop')}
+.nc_skin4 .no_inbuddy .desc,
+.nc_skin4 .no_inbuddy_v2 .desc{color:#999}
+.nc_skin4 .no_inbuddy_v2 .manage a{color:#fc7707}
+.nc_skin4 .no_inbuddy_v2 .manage img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png', sizingMethod='crop')}
+.nc_skin4 .fresh_view a strong{color:#67a6f4;}
+
+/* nc_skin5 : cyan */
+.nc_skin5 .profile_name,
+.nc_skin5 .profile_name a{color:#fff}
+.nc_skin5 .go_connect{color:#c1e9ef !important}
+.nc_skin5 .co_num{color:#ff7c00}
+.nc_skin5 .tab{border-left-color:#cfcfcf; border-right-color:#cfcfcf}
+.nc_skin5 .tab a{color:#9a9a9a}
+.nc_skin5 .tab.tab1on .col1 a,
+.nc_skin5 .tab.tab2on .col2 a{color:#4ac0d2}
+.nc_skin5 .bg_main{background-color:#f9f9f9; border-left-color:#cfcfcf; border-right-color:#cfcfcf; border-top-color:#fff; border-bottom-color:#cfcfcf}
+.nc_skin5 .thumb_list .buddy_name,
+.nc_skin5 .thumb_list2 .blog_name,
+.nc_skin5 .txt_list .blog_name,
+.nc_skin5 .article_list .blog_name{color:#999}
+.nc_skin5 .thumb_list2 .buddy_name{color:#474747}
+.nc_skin5 .txt_list .buddy_name{color:#333}
+.nc_skin5 .article_title{font-weight:bold; color:#333}
+.nc_skin5 .article_desc{line-height:16px; color:#666}
+.nc_skin5 .comment_cnt{color:#ff7c00}
+.nc_skin5 .pub_date{color:#ff7c00}
+.nc_skin5 .article_list li{border-top-color:#f0f0f0}
+.nc_skin5 .article_list dt,
+.nc_skin5 .article_list dd{background-color:#f9f9f9 !important}
+.nc_skin5 .sub_select,
+.nc_skin5 .sub_select .select_ui,
+.nc_skin5 .sub_select .no_select_ui,
+.nc_skin5 .sub_select .amount{color:#474747}
+.nc_skin5 .sub_view .new_article,
+.nc_skin5 .sub_view .paging_all{color:#999}
+.nc_skin5 .sub_view .paging_now{color:#474747}
+.nc_skin5 .go_connect,
+.nc_skin5 .top_box .desc,
+.nc_skin5 .top_box .end,
+.nc_skin5 .tab,
+.nc_skin5 .thumb_list .buddy_img .up,
+.nc_skin5 .thumb_list2 .buddy_img .up,
+.nc_skin5 .thumb_list .buddy_img .del,
+.nc_skin5 .thumb_list2 .buddy_img .del,
+.nc_skin5 .txt_list .buddy_info .up,
+.nc_skin5 .txt_list .buddy_info .del,
+.nc_skin5 .sub_select .select_ui,
+.nc_skin5 .sub_view .paging a,
+.nc_skin5 .sub_view .paging strong,
+.nc_skin5 .bottom_box{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin5.gif)}
+.nc_skin5 .bottom_box{border-color:#38a4b5}
+.nc_skin5 .bottom_box a,
+.nc_skin5 .bottom_box a span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin5_addn.gif)}
+.nc_skin5 .bottom_box a.eng,
+.nc_skin5 .bottom_box a.eng span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin5_addn_eng.gif)}
+.nc_skin5 .add_btn .admin img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_admin.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin5_admin.png', sizingMethod='crop')}
+.nc_skin5 .add_btn .download img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_download.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin5_download.png', sizingMethod='crop')}
+.nc_skin5 .add_btn .help img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_help.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin5_help.png', sizingMethod='crop')}
+.nc_skin5 .buddy_cnt p{border-bottom-color:#eee}
+.nc_skin5 .buddy_cnt .numset span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin5.gif)}
+.nc_skin5 .no_buddy{color:#999; border-bottom-color:#eee}
+.nc_skin5 .more a{color:#999}
+.nc_skin5 .pwr_blog img{background:url(http://blogimgs.naver.com/buddyconnect/widget/p_visit_pwr_blog8.gif) no-repeat 0 0}
+.nc_skin5 .msg_area,
+.nc_skin5 .install_area .desc{color:#999}
+.nc_skin5 .install_area .install a{color:#fc7707}
+.nc_skin5 .install_area .install img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png', sizingMethod='crop')}
+.nc_skin5 .no_inbuddy .desc{color:#999}
+.nc_skin5 .no_inbuddy .desc,
+.nc_skin5 .no_inbuddy_v2 .desc{color:#999}
+.nc_skin5 .no_inbuddy_v2 .manage a{color:#fc7707}
+.nc_skin5 .no_inbuddy_v2 .manage img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png', sizingMethod='crop')}
+.nc_skin5 .fresh_view a strong{color:#4ac0d2;}
+
+/* nc_skin6 : purple */
+.nc_skin6 .profile_name,
+.nc_skin6 .profile_name a{color:#fff}
+.nc_skin6 .go_connect{color:#d8d3f1 !important}
+.nc_skin6 .co_num{color:#ff7c00}
+.nc_skin6 .tab{border-left-color:#cfcfcf; border-right-color:#cfcfcf}
+.nc_skin6 .tab a{color:#9a9a9a}
+.nc_skin6 .tab.tab1on .col1 a,
+.nc_skin6 .tab.tab2on .col2 a{color:#857bd9}
+.nc_skin6 .bg_main{background-color:#f9f9f9; border-left-color:#cfcfcf; border-right-color:#cfcfcf; border-top-color:#fff; border-bottom-color:#cfcfcf}
+.nc_skin6 .thumb_list .buddy_name,
+.nc_skin6 .thumb_list2 .blog_name,
+.nc_skin6 .txt_list .blog_name,
+.nc_skin6 .article_list .blog_name{color:#999}
+.nc_skin6 .thumb_list2 .buddy_name{color:#474747}
+.nc_skin6 .txt_list .buddy_name{color:#333}
+.nc_skin6 .article_title{font-weight:bold; color:#333}
+.nc_skin6 .article_desc{line-height:16px; color:#666}
+.nc_skin6 .comment_cnt{color:#ff7c00}
+.nc_skin6 .pub_date{color:#ff7c00}
+.nc_skin6 .article_list li{border-top-color:#f0f0f0}
+.nc_skin6 .article_list dt,
+.nc_skin6 .article_list dd{background-color:#f9f9f9 !important}
+.nc_skin6 .sub_select,
+.nc_skin6 .sub_select .select_ui,
+.nc_skin6 .sub_select .no_select_ui,
+.nc_skin6 .sub_select .amount{color:#474747}
+.nc_skin6 .sub_view .new_article,
+.nc_skin6 .sub_view .paging_all{color:#999}
+.nc_skin6 .sub_view .paging_now{color:#474747}
+.nc_skin6 .go_connect,
+.nc_skin6 .top_box .desc,
+.nc_skin6 .top_box .end,
+.nc_skin6 .tab,
+.nc_skin6 .thumb_list .buddy_img .up,
+.nc_skin6 .thumb_list2 .buddy_img .up,
+.nc_skin6 .thumb_list .buddy_img .del,
+.nc_skin6 .thumb_list2 .buddy_img .del,
+.nc_skin6 .txt_list .buddy_info .up,
+.nc_skin6 .txt_list .buddy_info .del,
+.nc_skin6 .sub_select .select_ui,
+.nc_skin6 .sub_view .paging a,
+.nc_skin6 .sub_view .paging strong,
+.nc_skin6 .bottom_box{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin6.gif)}
+.nc_skin6 .bottom_box{border-color:#7063bc}
+.nc_skin6 .bottom_box a,
+.nc_skin6 .bottom_box a span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin6_addn.gif)}
+.nc_skin6 .bottom_box a.eng,
+.nc_skin6 .bottom_box a.eng span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin6_addn_eng.gif)}
+.nc_skin6 .add_btn .admin img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_admin.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin6_admin.png', sizingMethod='crop')}
+.nc_skin6 .add_btn .download img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_download.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin6_download.png', sizingMethod='crop')}
+.nc_skin6 .add_btn .help img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_help.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin6_help.png', sizingMethod='crop')}
+.nc_skin6 .buddy_cnt p{border-bottom-color:#eee}
+.nc_skin6 .buddy_cnt .numset span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin6.gif)}
+.nc_skin6 .no_buddy{color:#999; border-bottom-color:#eee}
+.nc_skin6 .more a{color:#999}
+.nc_skin6 .pwr_blog img{background:url(http://blogimgs.naver.com/buddyconnect/widget/p_visit_pwr_blog8.gif) no-repeat 0 0}
+.nc_skin6 .msg_area,
+.nc_skin6 .install_area .desc{color:#999}
+.nc_skin6 .install_area .install a{color:#fc7707}
+.nc_skin6 .install_area .install img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png', sizingMethod='crop')}
+.nc_skin6 .no_inbuddy .desc{color:#999}
+.nc_skin6 .no_inbuddy .desc,
+.nc_skin6 .no_inbuddy_v2 .desc{color:#999}
+.nc_skin6 .no_inbuddy_v2 .manage a{color:#fc7707}
+.nc_skin6 .no_inbuddy_v2 .manage img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png', sizingMethod='crop')}
+.nc_skin6 .fresh_view a strong{color:#8578d9;}
+
+/* nc_skin7 : pink */
+.nc_skin7 .profile_name,
+.nc_skin7 .profile_name a{color:#fff}
+.nc_skin7 .go_connect{color:#ffccd9 !important}
+.nc_skin7 .co_num{color:#ff7c00}
+.nc_skin7 .tab{border-left-color:#cfcfcf; border-right-color:#cfcfcf}
+.nc_skin7 .tab a{color:#9a9a9a}
+.nc_skin7 .tab.tab1on .col1 a,
+.nc_skin7 .tab.tab2on .col2 a{color:#ff5a82}
+.nc_skin7 .bg_main{background-color:#f9f9f9; border-left-color:#cfcfcf; border-right-color:#cfcfcf; border-top-color:#fff; border-bottom-color:#cfcfcf}
+.nc_skin7 .thumb_list .buddy_name,
+.nc_skin7 .thumb_list2 .blog_name,
+.nc_skin7 .txt_list .blog_name,
+.nc_skin7 .article_list .blog_name{color:#999}
+.nc_skin7 .thumb_list2 .buddy_name{color:#474747}
+.nc_skin7 .txt_list .buddy_name{color:#333}
+.nc_skin7 .article_title{font-weight:bold; color:#333}
+.nc_skin7 .article_desc{line-height:16px; color:#666}
+.nc_skin7 .comment_cnt{color:#ff7c00}
+.nc_skin7 .pub_date{color:#ff7c00}
+.nc_skin7 .article_list li{border-top-color:#f0f0f0}
+.nc_skin7 .article_list dt,
+.nc_skin7 .article_list dd{background-color:#f9f9f9 !important}
+.nc_skin7 .sub_select,
+.nc_skin7 .sub_select .select_ui,
+.nc_skin7 .sub_select .no_select_ui,
+.nc_skin7 .sub_select .amount{color:#474747}
+.nc_skin7 .sub_view .new_article,
+.nc_skin7 .sub_view .paging_all{color:#999}
+.nc_skin7 .sub_view .paging_now{color:#474747}
+.nc_skin7 .go_connect,
+.nc_skin7 .top_box .desc,
+.nc_skin7 .top_box .end,
+.nc_skin7 .tab,
+.nc_skin7 .thumb_list .buddy_img .up,
+.nc_skin7 .thumb_list2 .buddy_img .up,
+.nc_skin7 .thumb_list .buddy_img .del,
+.nc_skin7 .thumb_list2 .buddy_img .del,
+.nc_skin7 .txt_list .buddy_info .up,
+.nc_skin7 .txt_list .buddy_info .del,
+.nc_skin7 .sub_select .select_ui,
+.nc_skin7 .sub_view .paging a,
+.nc_skin7 .sub_view .paging strong,
+.nc_skin7 .bottom_box{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin7.gif)}
+.nc_skin7 .bottom_box{border-color:#da4d71}
+.nc_skin7 .bottom_box a,
+.nc_skin7 .bottom_box a span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin7_addn.gif)}
+.nc_skin7 .bottom_box a.eng,
+.nc_skin7 .bottom_box a.eng span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin7_addn_eng.gif)}
+.nc_skin7 .add_btn .admin img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_admin.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin7_admin.png', sizingMethod='crop')}
+.nc_skin7 .add_btn .download img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_download.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin7_download.png', sizingMethod='crop')}
+.nc_skin7 .add_btn .help img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_help.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin7_help.png', sizingMethod='crop')}
+.nc_skin7 .buddy_cnt p{border-bottom-color:#eee}
+.nc_skin7 .buddy_cnt .numset span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin7.gif)}
+.nc_skin7 .no_buddy{color:#999; border-bottom-color:#eee}
+.nc_skin7 .more a{color:#999}
+.nc_skin7 .pwr_blog img{background:url(http://blogimgs.naver.com/buddyconnect/widget/p_visit_pwr_blog8.gif) no-repeat 0 0}
+.nc_skin7 .msg_area,
+.nc_skin7 .install_area .desc{color:#999}
+.nc_skin7 .install_area .install a{color:#fc7707}
+.nc_skin7 .install_area .install img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png', sizingMethod='crop')}
+.nc_skin7 .no_inbuddy .desc{color:#999}
+.nc_skin7 .no_inbuddy .desc,
+.nc_skin7 .no_inbuddy_v2 .desc{color:#999}
+.nc_skin7 .no_inbuddy_v2 .manage a{color:#fc7707}
+.nc_skin7 .no_inbuddy_v2 .manage img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png', sizingMethod='crop')}
+.nc_skin7 .fresh_view a strong{color:#ff5a82;}
+
+/* nc_skin8 : orange */
+.nc_skin8 .profile_name,
+.nc_skin8 .profile_name a{color:#fff}
+.nc_skin8 .go_connect{color:#fcdac1 !important}
+.nc_skin8 .co_num{color:#ff7c00}
+.nc_skin8 .tab{border-left-color:#cfcfcf; border-right-color:#cfcfcf}
+.nc_skin8 .tab a{color:#9a9a9a}
+.nc_skin8 .tab.tab1on .col1 a,
+.nc_skin8 .tab.tab2on .col2 a{color:#fd8f3e}
+.nc_skin8 .bg_main{background-color:#f9f9f9; border-left-color:#cfcfcf; border-right-color:#cfcfcf; border-top-color:#fff; border-bottom-color:#cfcfcf}
+.nc_skin8 .thumb_list .buddy_name,
+.nc_skin8 .thumb_list2 .blog_name,
+.nc_skin8 .txt_list .blog_name,
+.nc_skin8 .article_list .blog_name{color:#999}
+.nc_skin8 .thumb_list2 .buddy_name{color:#474747}
+.nc_skin8 .txt_list .buddy_name{color:#333}
+.nc_skin8 .article_title{font-weight:bold; color:#333}
+.nc_skin8 .article_desc{line-height:16px; color:#666}
+.nc_skin8 .comment_cnt{color:#ff7c00}
+.nc_skin8 .pub_date{color:#ff7c00}
+.nc_skin8 .article_list li{border-top-color:#f0f0f0}
+.nc_skin8 .article_list dt,
+.nc_skin8 .article_list dd{background-color:#f9f9f9 !important}
+.nc_skin8 .sub_select,
+.nc_skin8 .sub_select .select_ui,
+.nc_skin8 .sub_select .no_select_ui,
+.nc_skin8 .sub_select .amount{color:#474747}
+.nc_skin8 .sub_view .new_article,
+.nc_skin8 .sub_view .paging_all{color:#999}
+.nc_skin8 .sub_view .paging_now{color:#474747}
+.nc_skin8 .go_connect,
+.nc_skin8 .top_box .desc,
+.nc_skin8 .top_box .end,
+.nc_skin8 .tab,
+.nc_skin8 .thumb_list .buddy_img .up,
+.nc_skin8 .thumb_list2 .buddy_img .up,
+.nc_skin8 .thumb_list .buddy_img .del,
+.nc_skin8 .thumb_list2 .buddy_img .del,
+.nc_skin8 .txt_list .buddy_info .up,
+.nc_skin8 .txt_list .buddy_info .del,
+.nc_skin8 .sub_select .select_ui,
+.nc_skin8 .sub_view .paging a,
+.nc_skin8 .sub_view .paging strong,
+.nc_skin8 .bottom_box{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin8.gif)}
+.nc_skin8 .bottom_box{border-color:#d97f35}
+.nc_skin8 .bottom_box a,
+.nc_skin8 .bottom_box a span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin8_addn.gif)}
+.nc_skin8 .bottom_box a.eng,
+.nc_skin8 .bottom_box a.eng span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin8_addn_eng.gif)}
+.nc_skin8 .add_btn .admin img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_admin.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin8_admin.png', sizingMethod='crop')}
+.nc_skin8 .add_btn .download img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_download.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin8_download.png', sizingMethod='crop')}
+.nc_skin8 .add_btn .help img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_help.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin8_help.png', sizingMethod='crop')}
+.nc_skin8 .buddy_cnt p{border-bottom-color:#eee}
+.nc_skin8 .buddy_cnt .numset span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin8.gif)}
+.nc_skin8 .no_buddy{color:#999; border-bottom-color:#eee}
+.nc_skin8 .more a{color:#999}
+.nc_skin8 .pwr_blog img{background:url(http://blogimgs.naver.com/buddyconnect/widget/p_visit_pwr_blog8.gif) no-repeat 0 0}
+.nc_skin8 .msg_area,
+.nc_skin8 .install_area .desc{color:#999}
+.nc_skin8 .install_area .install a{color:#fc7707}
+.nc_skin8 .install_area .install img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png', sizingMethod='crop')}
+.nc_skin8 .no_inbuddy .desc{color:#999}
+.nc_skin8 .no_inbuddy .desc,
+.nc_skin8 .no_inbuddy_v2 .desc{color:#999}
+.nc_skin8 .no_inbuddy_v2 .manage a{color:#fc7707}
+.nc_skin8 .no_inbuddy_v2 .manage img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow2.png', sizingMethod='crop')}
+.nc_skin8 .fresh_view a strong{color:#fd8f3e;}
+
+/* nc_skin9 : white */
+.nc_skin9 .profile_name,
+.nc_skin9 .profile_name a{color:#333}
+.nc_skin9 .go_connect{color:#a0a0a0 !important}
+.nc_skin9 .co_num{color:#75bc61}
+.nc_skin9 .tab{border-left-color:#e0e0e0; border-right-color:#e0e0e0}
+.nc_skin9 .tab a{color:#a0a0a0}
+.nc_skin9 .tab.tab1on .col1 a,
+.nc_skin9 .tab.tab2on .col2 a{color:#666}
+.nc_skin9 .bg_main{background-color:#fff; border-left-color:#e0e0e0; border-right-color:#e0e0e0; border-top-color:#fff; border-bottom-color:#e0e0e0}
+.nc_skin9 .thumb_list .buddy_name,
+.nc_skin9 .thumb_list2 .blog_name,
+.nc_skin9 .txt_list .blog_name,
+.nc_skin9 .article_list .blog_name{color:#999}
+.nc_skin9 .thumb_list2 .buddy_name{color:#474747}
+.nc_skin9 .txt_list .buddy_name{color:#333}
+.nc_skin9 .article_title{font-weight:bold; color:#333}
+.nc_skin9 .article_desc{line-height:16px; color:#666}
+.nc_skin9 .comment_cnt{color:#75bc61}
+.nc_skin9 .pub_date{color:#75bc61}
+.nc_skin9 .article_list li{border-top-color:#f0f0f0}
+.nc_skin9 .article_list dt,
+.nc_skin9 .article_list dd{background-color:#fff !important}
+.nc_skin9 .sub_select,
+.nc_skin9 .sub_select .select_ui,
+.nc_skin9 .sub_select .no_select_ui,
+.nc_skin9 .sub_select .amount{color:#474747}
+.nc_skin9 .sub_view .new_article,
+.nc_skin9 .sub_view .paging_all{color:#999}
+.nc_skin9 .sub_view .paging_now{color:#474747}
+.nc_skin9 .go_connect,
+.nc_skin9 .top_box .desc,
+.nc_skin9 .top_box .end,
+.nc_skin9 .tab,
+.nc_skin9 .thumb_list .buddy_img .up,
+.nc_skin9 .thumb_list2 .buddy_img .up,
+.nc_skin9 .thumb_list .buddy_img .del,
+.nc_skin9 .thumb_list2 .buddy_img .del,
+.nc_skin9 .txt_list .buddy_info .up,
+.nc_skin9 .txt_list .buddy_info .del,
+.nc_skin9 .sub_select .select_ui,
+.nc_skin9 .sub_view .paging a,
+.nc_skin9 .sub_view .paging strong,
+.nc_skin9 .bottom_box{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin9.gif)}
+.nc_skin9 .bottom_box{border-color:#e0e0e0}
+.nc_skin9 .bottom_box a,
+.nc_skin9 .bottom_box a span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_addn.gif)}
+.nc_skin9 .bottom_box a.eng,
+.nc_skin9 .bottom_box a.eng span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_addn_eng.gif)}
+.nc_skin9 .add_btn .admin img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_admin.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_admin.png', sizingMethod='crop')}
+.nc_skin9 .add_btn .download img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_download.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_download.png', sizingMethod='crop')}
+.nc_skin9 .add_btn .help img{background:url('http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_help.png') no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/btn_skin9_help.png', sizingMethod='crop')}
+.nc_skin9 .buddy_cnt p{border-bottom-color:#eee}
+.nc_skin9 .buddy_cnt .numset span{background-image:url(http://blogimgs.naver.com/buddyconnect/widget/bg_skin9.gif)}
+.nc_skin9 .no_buddy{color:#999; border-bottom-color:#eee}
+.nc_skin9 .more a{color:#999}
+.nc_skin9 .pwr_blog img{background:url(http://blogimgs.naver.com/buddyconnect/widget/p_visit_pwr_blog5.gif) no-repeat 0 0}
+.nc_skin9 .msg_area,
+.nc_skin9 .install_area .desc{color:#999}
+.nc_skin9 .install_area .install a{color:#75bc61}
+.nc_skin9 .install_area .install img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow1.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow1.png', sizingMethod='crop')}
+.nc_skin9 .no_inbuddy .desc,
+.nc_skin9 .no_inbuddy_v2 .desc{color:#999}
+.nc_skin9 .no_inbuddy_v2 .manage a{color:#75bc61}
+.nc_skin9 .no_inbuddy_v2 .manage img{background:url(http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow1.png) no-repeat; _background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://blogimgs.naver.com/buddyconnect/widget/bu_install_arrow1.png', sizingMethod='crop')}
+.nc_skin9 .fresh_view a strong{color:#666666;}
